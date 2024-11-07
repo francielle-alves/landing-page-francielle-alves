@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+/* Antes e Depois */
+
+.description {
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+}
+
 body {
     font-family: 'Roboto', sans-serif; /* Fonte para textos de descrição */
     background-color: #EFECE8;
@@ -14,19 +22,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: flex-start; /* Garante que o conteúdo comece do topo */
 }
 
-.product-section {
-    background-color: #EFECE8; /* Define a cor de fundo */
-}
-
-.result-item {
-    background-color: #EFECE8; /* Define a cor de fundo */
-}
-
-.treatment {
-    background-color: #EFECE8; /* Define a cor de fundo */
-}
 
 header {
     padding: 20px;
@@ -40,12 +38,6 @@ main {
     padding: 20px;
 }
 
-footer {
-    padding: 20px;
-    background-color: #3D4C35;
-    color: #EFECE8;
-    text-align: center;
-}
 
 .logo {
     width: 80px;
@@ -57,6 +49,7 @@ footer {
     color: #3D4C35; /* Define a cor do texto */
     font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 16px; /* Adiciona uma pequena margem no topo */
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Seções */
@@ -75,7 +68,7 @@ footer {
 }
 
 .produto-destaque {
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
     color: #3D4C35; /* Define a cor do texto */
     font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 10px; /* Adicione uma margem superior se desejar */
@@ -100,31 +93,9 @@ footer {
         align-items: flex-start;
     }
 
-    .product-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    @media (min-width: 768px) {
-        .product-content {
-            flex-direction: row;
-            align-items: flex-start;
-        }
-
-        .product-description {
-            margin-top: 10px; /* Add top margin for desktop */
-        }
-
-        .product-description {
-            margin-left: 20px;
-            align-self: flex-start; /* Ensure the text aligns with the top of the image */
-        }
-    }
-
     .product-description {
         margin-left: 20px;
+        align-self: flex-start; /* Ensure the text aligns with the top of the image */
     }
 }
 
@@ -144,11 +115,22 @@ footer {
 }
 
 .profile-image {
-    width: 100%; /* Define a largura da imagem para ocupar até 70% da tela */
+    width: 100%; /* Define a largura da imagem para ocupar até 100% da tela */
     height: auto; /* Ajusta a altura automaticamente */
     border-radius: 15px; /* Adiciona borda arredondada */
     object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
     margin-top: 24px;
+    max-width: 300px; /* Define a largura máxima da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+@media (min-width: 768px) {
+    .course-header .profile-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .result-title {
@@ -164,24 +146,6 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: left;
-}
-
-@media (min-width: 768px) {
-    .profile-content {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .profile-text {
-        flex: 1;
-        margin-right: 20px;
-    }
-
-    .profile-image {
-        flex: 1;
-        max-width: 300px;
-        margin-right: 20px; /* Espaço entre a imagem e o texto */
-    }
 }
 
 @media (min-width: 768px) {
@@ -227,22 +191,7 @@ footer {
         justify-content: center;
     }
 
-    .button, .button-agende {
-        margin: 10px;
-    }
-
-    .button + .button {
-        margin-left: 20px; /* Espaço entre os botões */
-    }
-}
-
-@media (min-width: 768px) {
-    .buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .button, .button-agende {
+    .button, .button-agende, .button-curso {
         margin: 10px;
     }
 
@@ -252,7 +201,7 @@ footer {
 }
 
 .button, .button-agende, .button-pedido, .button.curso {
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
     padding: 15px;
     width: 350px;
     background-color: #3D4C35;
@@ -280,7 +229,7 @@ footer {
     margin-bottom: 10px; /* Adiciona margem inferior */
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -386,7 +335,12 @@ footer {
     text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
 }
 
-/* Tratamentos */
+
+.feedback-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3d4c35;
+}
 
 .treatment-item-title {
     font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
@@ -407,45 +361,50 @@ footer {
     padding-top: 0; /* Remove padding superior */
 }
 footer {
-    padding: 0; /* Remove padding */
+    padding: 20px;
     background-color: #3d4c35; /* Define a cor de fundo do rodapé */
-    margin-top: 0; /* Remove margem superior */
-    border-top: none; /* Remove qualquer borda superior */
-    padding-top: 0; /* Remove padding superior */
-    padding-bottom: 0; /* Remove padding inferior */
-    margin-bottom: 0; /* Remove margem inferior */
+    color: #efece8; /* Define a cor do texto como branco */
+    text-align: center;
 }
-footer {
-    padding: 0; /* Remove padding */
-    background-color: #3d4c35; /* Define a cor de fundo do rodapé */
-    margin-top: 0; /* Remove margem superior */
-    border-top: none; /* Remove qualquer borda superior */
-    padding-top: 0; /* Remove padding superior */
-    padding-bottom: 0; /* Remove padding inferior */
+
+.footer-text {
+    color: #EFECE8; /* Define a cor do texto */
+    margin-bottom: 20px; /* Adiciona mais margem inferior aos parágrafos */
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.9em; /* Diminui o tamanho da fonte */
+}
+
+.footer-link {
+    color: #61C0BF;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
 }
 
 .treatment-grid {
     display: flex;
     flex-wrap: wrap; /* Permite que os cards se empilhem conforme necessário */
     justify-content: center; /* Centraliza os cards */
-    gap: 10px; /* Espaço entre os cards */
-    padding: 0 10px; /* Adiciona padding lateral para evitar que itens vazem */
-    margin: 0; /* Remove margens padrão */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 0; /* Remove padding lateral */
+    margin: 0 auto; /* Centraliza o contêiner */
     width: 100%; /* Garante que ocupe toda a largura da tela */
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
 }
 
 .treatment {
-    background-color: #EFECE8;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 330px; /* Limita a largura máxima do card */
-    width: 100%; /* Garante que o card ocupe a largura total disponível */
+    background-color: #FFFFFF; /* Define a cor de fundo como branco */
+    border-radius: 25px;
+    padding: 20px; /* Adiciona padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    max-width: 350px; /* Define a largura máxima menor que o card de produto */
+    width: calc(100% - 20px); /* Garante que o card ocupe a largura total disponível menos 20px de margem */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; /* Garante que o botão fique na parte inferior */
+    margin: 10px; /* Adiciona margem ao redor do card */
 }
 
 /* Ajuste de imagens nos tratamentos */
@@ -466,7 +425,7 @@ footer {
     margin-top: auto; /* Garante que o botão fique na parte inferior */
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -514,4 +473,198 @@ footer a {
     .feedback-item, .treatment {
         width: 100%; /* Ajusta a largura para 100% */
     }
+}
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+    background-color: #EFECE8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #3D4C35;
+    color: #EFECE8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #dad4c6;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question {
+    background-color: #2b3824;
+}
+
+.arrow {
+    font-size: 1.2em;
+}
+.button-curso {
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    padding: 15px;
+    width: 350px;
+    background-color: #3D4C35;
+    color: #EFECE8;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button-curso:hover {
+    background-color: #2b3824; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de ampliar ao passar o mouse */
+}
+
+.intro-section {
+    padding: 20px;
+    background-color: #EFECE8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.intro-content {
+    color: #3D4C35;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.course-section {
+    background-color: #EFECE8;
+    max-width: 800px;
+    margin: 0 auto; /* Remove a margem superior e inferior */
+    text-align: left;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.course-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px; /* Reduz a margem inferior */
+}
+
+.course-item .section-title {
+    font-size: 1.5em;
+    color: #3D4C35;
+    margin-bottom: 10px;
+}
+
+.course-item .description {
+    font-size: 1em;
+    color: #3D4C35;
+    margin-bottom: 20px;
+}
+
+.course-item .button-agende {
+    padding: 15px;
+    width: 100%; /* Faz o botão ocupar a largura total do card */
+    background-color: #3D4C35; /* Cor de fundo do botão */
+    color: #EFECE8; /* Cor do texto */
+    border-radius: 8px;
+    margin-top: auto; /* Garante que o botão fique na parte inferior */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-item .button-agende:hover {
+    background-color: #2b3824; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de ampliar ao passar o mouse */
+}
+.course-header {
+    text-align: center;
+    margin-bottom: 20px; /* Reduz o espaçamento inferior */
+}
+
+.course-header .section-title {
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    color: #3D4C35; /* Define a cor do texto */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+.course-content {
+    font-family: 'Roboto', sans-serif;
+    color: #3D4C35;
+    line-height: 1.6; /* Reduz o espaçamento entre linhas */
+    margin-bottom: 20px; /* Reduz o espaçamento inferior */
+    font-size: 1em; /* Reduz o tamanho da fonte */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.course-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Reduz a margem inferior */
+}
+
+.course-item .section-title {
+    font-size: 1.8em; /* Aumenta o tamanho da fonte */
+    color: #3D4C35;
+    margin-bottom: 20px; /* Aumenta o espaçamento inferior */
+    text-align: center;
+}
+
+.course-item .description {
+    font-size: 1.1em; /* Aumenta o tamanho da fonte */
+    color: #3D4C35;
+    margin-bottom: 0; /* Remove o espaçamento inferior */
+    text-align: justify;
+    line-height: 1.4; /* Reduz o espaçamento entre linhas */
+}
+
+.course-item .button-agende {
+    background-color: #3D4C35;
+    color: #EFECE8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.course-item .button-agende:hover {
+    background-color: #2b3824;
 }
