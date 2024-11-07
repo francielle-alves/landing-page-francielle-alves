@@ -19,19 +19,19 @@
 .courses-title {
     font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
     color: #3D4C35; /* Define a cor do texto */
-    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 20px; /* Adiciona uma margem no topo */
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+
     text-align: center; /* Centraliza o texto */
     letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
     margin-bottom: 20px; /* Adiciona uma margem na parte inferior */
 }
 
 .career-title {
-    font-family: 'Roboto', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Roboto', sans-serif; /* Define a fonte como Roboto */
     color: #3D4C35; /* Define a cor do texto */
     font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 20px; /* Adiciona uma margem no topo */
-    margin-bottom: 40px; /* Adiciona uma margem no topo */
+    margin-bottom: 40px; /* Adiciona uma margem na parte inferior */
     text-align: center; /* Centraliza o texto */
     letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
 }
@@ -40,7 +40,7 @@
     border: 0;
     height: 1px;
     background: #3D4C35; /* Cor da linha */
-    margin: 40px 0; /* Espaçamento acima e abaixo da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
 }
 
 
@@ -440,7 +440,7 @@ main {
 }
 
 .treatment-item-title {
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
+    font-family: 'Roboto', sans-serif; /* Define a fonte como Montserrat Alternates */
     color: #3D4C35; /* Define a cor do texto */
     font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
     margin-top: 8px;
