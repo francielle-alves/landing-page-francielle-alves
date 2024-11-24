@@ -5,43 +5,6 @@
     padding: 0;
 }
 
-.course-title {
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
-    color: #3D4C35; /* Define a cor do texto */
-    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 20px; /* Adiciona uma margem no topo */
-    text-align: center; /* Centraliza o texto */
-    text-transform: uppercase; /* Transforma o texto para maiúsculas */
-    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
-    margin-bottom: 20px; /* Adiciona uma margem na parte inferior */
-}
-
-.courses-title {
-    font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
-    color: #3D4C35; /* Define a cor do texto */
-    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
-
-    text-align: center; /* Centraliza o texto */
-    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
-    margin-bottom: 20px; /* Adiciona uma margem na parte inferior */
-}
-
-.career-title {
-    font-family: 'Roboto', sans-serif; /* Define a fonte como Roboto */
-    color: #3D4C35; /* Define a cor do texto */
-    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
-    margin-top: 20px; /* Adiciona uma margem no topo */
-    margin-bottom: 40px; /* Adiciona uma margem na parte inferior */
-    text-align: center; /* Centraliza o texto */
-    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
-}
-
-.section-divider {
-    border: 0;
-    height: 1px;
-    background: #3D4C35; /* Cor da linha */
-    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
-}
 
 
 /* Antes e Depois */
@@ -371,11 +334,13 @@ main {
 }
 
 /* Ajuste de imagens nos resultados */
-.result-image {
+.result-image, .treatment-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover; /* Mantém a proporção da imagem */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    max-height: 200px; /* Define uma altura máxima para as imagens */
 }
 
 /* Feedbacks */
@@ -482,7 +447,7 @@ footer {
     display: flex;
     flex-wrap: wrap; /* Permite que os cards se empilhem conforme necessário */
     justify-content: center; /* Centraliza os cards */
-    gap: 20px; /* Espaço entre os cards */
+    gap: 10px; /* Reduz o espaço entre os cards */
     padding: 0; /* Remove padding lateral */
     margin: 0 auto; /* Centraliza o contêiner */
     width: 100%; /* Garante que ocupe toda a largura da tela */
@@ -492,21 +457,22 @@ footer {
 .treatment {
     background-color: #FFFFFF; /* Define a cor de fundo como branco */
     border-radius: 25px;
-    padding: 20px; /* Adiciona padding interno */
+    padding: 15px; /* Reduz o padding interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
     max-width: 350px; /* Define a largura máxima menor que o card de produto */
-    width: calc(100% - 20px); /* Garante que o card ocupe a largura total disponível menos 20px de margem */
+    width: calc(100% - 10px); /* Garante que o card ocupe a largura total disponível menos 10px de margem */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; /* Garante que o botão fique na parte inferior */
-    margin: 10px; /* Adiciona margem ao redor do card */
+    margin: 5px; /* Reduz a margem ao redor do card */
 }
 
 /* Ajuste de imagens nos tratamentos */
-.treatment-image {
-    max-width: 100%;
+
+.treatment-image, .image-container {
+    width: 100%;
     height: auto;
     object-fit: cover; /* Mantém a proporção da imagem */
     border-radius: 8px;
@@ -764,4 +730,15 @@ footer a {
 
 .course-item .button-agende:hover {
     background-color: #2b3824;
+}
+.treatment-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.treatment-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
