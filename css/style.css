@@ -267,19 +267,21 @@ main {
         justify-content: center;
     }
 
-    .button, .button-agende, .button-curso {
+    .button-agende, .button-curso {
         margin: 10px;
+        width: 350px; /* Garante que ambos os botões tenham a mesma largura */
     }
 
-    .button + .button {
+    .button-agende + .button-curso {
         margin-left: 20px; /* Espaço entre os botões */
     }
 }
 
-.button, .button-agende, .button-pedido, .button.curso {
+.button, .button-agende, .button-pedido, .button-curso {
     font-family: 'Poppins', sans-serif; /* Define a fonte como Poppins */
     padding: 15px;
-    width: 350px;
+    width: 100%; /* Ajusta a largura para 100% */
+    max-width: 350px; /* Define a largura máxima */
     background-color: #3D4C35;
     color: #EFECE8;
     border-radius: 8px;
@@ -290,7 +292,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover, .button-agende:hover {
+.button:hover, .button-agende:hover, .button-curso:hover {
     background-color: #2b3824; /* Cor de fundo ao passar o mouse */
     transform: scale(1.05); /* Efeito de ampliar ao passar o mouse */
 }
@@ -492,6 +494,39 @@ footer {
     height: auto;
     object-fit: cover; /* Mantém a proporção da imagem */
     border-radius: 8px;
+    position: relative; /* Necessário para posicionar o texto */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: #FFFFFF; /* Nova cor do texto */
+    text-align: center;
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    font-size: 1em;
+    line-height: 1; /* Remove qualquer espaço extra */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura e altura */
+    border-bottom-left-radius: 8px; /* Adiciona canto arredondado na parte inferior esquerda */
+    border-bottom-right-radius: 8px; /* Adiciona canto arredondado na parte inferior direita */
 }
 
 /* Botão de agendamento */
