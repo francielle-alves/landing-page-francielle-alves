@@ -54,6 +54,22 @@ main {
     text-align: center; /* Centraliza o texto */
 }
 
+.courses-title {
+    font-family: 'Roboto', sans-serif; /* Define a fonte como Montserrat Alternates */
+    color: #3D4C35; /* Define a cor do texto */
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 16px; /* Adiciona uma pequena margem no topo */
+    text-align: center; /* Centraliza o texto */
+}
+
+.career-title {
+    font-family: 'Roboto', sans-serif; /* Define a fonte como Montserrat Alternates */
+    color: #3D4C35; /* Define a cor do texto */
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 16px; /* Adiciona uma pequena margem no topo */
+    text-align: center; /* Centraliza o texto */
+}
+
 .highlight-title {
     font-family: 'Montserrat Alternates', sans-serif; /* Define a fonte como Montserrat Alternates */
     color: #3D4C35; /* Define a cor do texto */
