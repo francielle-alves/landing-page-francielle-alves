@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile-name {
   font-size: 2.5em;
+  text-align: center;
 }
 
 .description, .welcome-text {
@@ -179,7 +180,7 @@ footer {
   height: auto;
   border-radius: var(--border-radius);
   object-fit: cover;
-  margin-bottom: 20px;
+  margin: 25px auto 20px auto;
   align-self: stretch;
 }
 
@@ -209,7 +210,17 @@ footer {
   max-width: 350px;
   width: 100%;
   text-align: center;
+  position: relative;
 }
+
+.treatment .button-agende {
+  margin-top: auto;
+}
+
+.treatment-item-title {                                                                                                                                                                                                                                                                                                                         
+  text-align: center;                                                                                                          
+  margin-top: 20px;                                                                                                            
+} 
 
 .treatment-images {
   display: flex;
@@ -401,7 +412,7 @@ footer {
   }
 
   .product-image {
-      margin: 0 auto 20px;
+    margin: 20px auto 20px auto;                                                                                                 
   }
 }
 
