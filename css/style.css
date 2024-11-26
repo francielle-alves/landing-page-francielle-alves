@@ -243,6 +243,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 15%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   color: var(--color-background);
   text-align: center;
@@ -251,6 +252,12 @@ footer {
   font-size: 1em;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+}
+
+.image-container img {
+  position: relative;
+  z-index: 0;
+  display: block;
 }
 
 .footer-social, .map-link {
