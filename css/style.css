@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile-name {
   font-size: 2.5em;
   text-align: center;
+  font-family: var(--font-secondary);
 }
 
 .description, .welcome-text {
