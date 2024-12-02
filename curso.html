@@ -10,10 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="assets/icon/logo.png" alt="Logo Franciele Alves" class="logo">
-        </a>
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#pos-operatorio">Pós Operatório</a></li>
+                <li><a href="#taping-pos-parto">Taping Pós Parto</a></li>
+                <li><a href="#drenagem-linfatica">Drenagem Linfática</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
     <main>
         <section class="course-section">
@@ -44,7 +58,7 @@
             
             <h2 class="courses-title">Cursos</h2>
 
-            <div class="course-item">
+            <div id="pos-operatorio" class="course-item">
                 <h3 class="section-title">PÓS OPERATÓRIO</h3>
                 <p class="description">
                     Quer oferecer aos seus clientes uma <strong>recuperação mais rápida, confortável e com resultados surpreendentes?</strong>
@@ -70,10 +84,10 @@
                 <p class="description">
                     Adquirindo o curso de <strong>Pós Operatório</strong> você <strong>GANHA</strong> o curso de <strong>Taping para cirurgia Plástica</strong>
                 </p>
-                <a href="https://wa.me/5519993772963?text=Gostaria%20de%20agendar%20meu%20curso%20vip%20de%20pos%20operatorio" class="button-curso-vip">ME TORNAR REFERÊNCIA EM POS OPERATORIO</a>
+                <a href="https://wa.me/5519993772963?text=Gostaria%20de%20agendar%20meu%20curso%20vip%20de%20pos%20operatorio" class="button-curso-vip">ME TORNAR REFERÊNCIA EM PÓS OPERATÓRIO</a>
             </div>
 
-            <div class="course-item">
+            <div id="taping-pos-parto" class="course-item">
                 <h3 class="section-title">Curso Taping Pós Parto: Técnicas e Cuidados Essenciais</h3>
                 <p class="description">                                 
                     Quer ser um profissional de referência no apoio à recuperação das novas mães?                                                               
@@ -113,10 +127,10 @@
                         Garanta já sua vaga e inicie uma nova fase de atendimento! <strong>Invista em conhecimento</strong> e faça parte de um atendimento diferenciado e essencial para mães que desejam uma recuperação tranquila e eficiente.
                     </p>
                 </div>
-                <a href="https://wa.me/5519993772963?text=Gostaria%20de%20agendar%20meu%20curso%20vip%20de%20pos%20parto" class="button-curso-vip">CURSO PÓS PARTO</a>
+                <a href="https://wa.me/5519993772963?text=Gostaria%20de%20agendar%20meu%20curso%20vip%20de%20pos%20parto" class="button-curso-vip">CURSO PÓS-PARTO</a>
             </div>
 
-            <div class="course-item">
+            <div id="drenagem-linfatica" class="course-item">
                 <h3 class="section-title">Curso de Descomplicando a Drenagem Linfática</h3>
                 <p class="description">
                     Chega de métodos e métodos… Aqui você vai aprender <strong>Drenagem Linfática</strong> de forma fácil, prática e com Resultados.
@@ -158,21 +172,37 @@
                         Venha <strong>Descomplicar os seus resultados</strong>, se inscreva já no curso de Drenagem Linfática.
                     </p>
                 </div>
-                <a href="https://wa.me/5519993772963?text=Ola%20gostaria%20de%20agendar%20curso%20vip%20de%20Drenagem%20Linfática" class="button-curso-vip">CURSO DESCOMPLICANDO DRENAGEM LINFÁTICA</a>
+                <a href="https://wa.me/5519993772963?text=Ola%20gostaria%20de%20agendar%20curso%20vip%20de%20Drenagem%20Linfática" class="button-curso-vip">CURSO DESCOMPLICANDO A DRENAGEM LINFÁTICA</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Siga-me nas redes sociais:</p>
-        <div class="footer-social">
-            <a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                <i class="fab fa-instagram"></i> @franciellealvesoficial
-            </a>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Francielle Alves. Todos os direitos reservados.</p>
+            </div>
         </div>
-        <div class="map-link">
-            <a href="https://www.google.com/maps/place/ESTETICISTA+FRANCIELLE+ALVES/@-22.7087318,-46.990675,20.21z/" target="_blank" rel="noopener noreferrer" class="footer-link">R. Cândido Bueno, 434 - Centro, Jaguariúna - SP</a>
-        </div>
-        <p>&copy; 2024 Franciele Alves. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            if (navItems.length > 0) {
+                navItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

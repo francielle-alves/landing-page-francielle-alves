@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const faqItems = document.querySelectorAll(".faq-item");
     const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links a');
     const menuToggle = document.querySelector('.menu-toggle');
+    const navItems = document.querySelectorAll('.nav-links a');
 
     if (faqItems.length > 0) {
         faqItems.forEach(item => {
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+    }
 
-        if (navItems.length > 0) {
-            navItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                });
+    if (navItems.length > 0) {
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
             });
-        }
+        });
     }
 });
