@@ -179,30 +179,10 @@
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Francielle Alves. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Francielle Alves. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const navLinks = document.querySelector('.nav-links');
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navItems = document.querySelectorAll('.nav-links a');
-
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('active');
-                });
-            }
-
-            if (navItems.length > 0) {
-                navItems.forEach(item => {
-                    item.addEventListener('click', () => {
-                        navLinks.classList.remove('active');
-                    });
-                });
-            }
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
