@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-book Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações. Francielle Alves.">
+    <meta name="keywords" content="desinflamar, detox, e-book, saúde, bem-estar, Francielle Alves, sucos detox, alimentação saudável">
+    <meta name="author" content="Francielle Alves">
+    <meta property="og:title" content="E-book Detox - Francielle Alves">
+    <meta property="og:description" content="Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações.">
+    <meta property="og:image" content="assets/banner-detox.png">
+    <title>Desinflamar Seu Corpo em 15 Dias - E-book | Francielle Alves</title>
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --swiper-theme-color: var(--color-primary);
+            --color-highlight: #d7bc7a;
+            --color-success: #4CAF50;
+            --color-warning: #ff9800;
+        }
+        body {
+            margin-top: 0;
+            background-color: #ffffff;
+        }
+        .hero-section {
+            background-image: url('assets/bg-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 120px 0 140px;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(61, 76, 53, 0.85);
+        }
+        .benefit-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--color-primary);
+        }
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        .cta-section {
+            position: relative;
+            padding: 80px 0;
+            background-color: #f8f7f5;
+        }
+        .pricing-tag {
+            background-color: var(--color-highlight);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .button-cta {
+            background-color: var(--color-highlight);
+            color: #333;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .button-cta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .button-cta::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+        .button-cta:hover::after {
+            left: 100%;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+        .feature-list li {
+            padding: 10px 0 10px 35px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .feature-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: var(--color-success);
+        }
+        .testimonial-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 15px;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '\f10d';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: rgba(61, 76, 53, 0.1);
+            font-size: 30px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .guarantee-badge {
+            display: flex;
+            align-items: center;
+            background-color: rgba(61, 76, 53, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        .page-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sidebar {
+            width: 250px;
+            padding: 30px 20px;
+        }
+        .content-area {
+            flex: 1;
+            min-width: 320px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        .highlight-box {
+            background-color: rgba(215, 188, 122, 0.15);
+            border-left: 4px solid var(--color-highlight);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        .countdown-timer {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 20px 0;
+            text-align: center;
+            border: 1px dashed var(--color-warning);
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .comparison-table th {
+            background-color: var(--color-primary);
+            color: white;
+            text-align: left;
+            padding: 15px;
+        }
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader"><div class="spinner"></div></div>
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#profile">Perfil</a></li>
+                <li><a href="index.html#slimshape">Slim Shape</a></li>
+                <li><a href="index.html#ebooks" class="active">E-books</a></li>
+                <li><a href="index.html#tratamentos">Tratamentos</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tapping.html">Curso</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20o%20e-book%20Detox" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <div class="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></div>
+    <main>
+        <!-- HERO -->
+        <section class="product-hero">
+            <div class="product-hero-bg"></div>
+            <div class="product-hero-overlay"></div>
+            <div class="container">
+                <div class="product-hero-content">
+                    <div class="product-hero-text">
+                        <div class="product-badge">E-BOOK EXCLUSIVO</div>
+                        <h1 class="product-hero-title fade-in">DESINFLAMAR SEU CORPO EM 15 DIAS</h1>
+                        <h2 class="product-hero-subtitle fade-in">Guia prático para eliminar inflamações, recuperar energia e transformar sua saúde</h2>
+                        <div class="product-highlights fade-in">
+                            <div class="product-highlight-item"><i class="fas fa-blender"></i><span>Mais de 20 receitas detox exclusivas</span></div>
+                            <div class="product-highlight-item"><i class="fas fa-clipboard-list"></i><span>Plano alimentar completo para 15 dias</span></div>
+                            <div class="product-highlight-item"><i class="fas fa-apple-alt"></i><span>Guia dos alimentos anti-inflamatórios</span></div>
+                        </div>
+                        <div class="product-hero-cta fade-in">
+                            <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold button-lg">QUERO ADQUIRIR AGORA <i class="fas fa-arrow-right"></i></a>
+                            <div class="product-hero-guarantee"><i class="fas fa-shield-alt"></i><span>Satisfação garantida ou seu dinheiro de volta</span></div>
+                        </div>
+                    </div>
+                    <div class="product-hero-image fade-in">
+                        <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias">
+                        <div class="product-hero-badge"><div class="pulse-effect"></div><span>LANÇAMENTO</span></div>
+                        <div class="testimonial-float">
+                            <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image">
+                            <div class="testimonial-float-content">"Eu mesma aplico esse método!"<span>- Francielle Alves</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BENEFÍCIOS -->
+        <section class="section bg-pattern">
+            <div class="container">
+                <div class="section-header centered">
+                    <div class="section-icon"><i class="fas fa-leaf"></i></div>
+                    <h2 class="section-title fade-in">O Que Você Vai Encontrar Neste E-book</h2>
+                    <p class="section-description fade-in">Um método completo para desintoxicar seu corpo, reduzir inflamações e restaurar sua vitalidade em apenas 15 dias</p>
+                </div>
+                <div class="benefits-cards-wrapper">
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-blender benefit-icon"></i>
+                        <h3>Mais de 20 Receitas Detox</h3>
+                        <p>Receitas exclusivas de sucos, smoothies e chás detox cuidadosamente formuladas para maximizar o poder de desintoxicação e fornecer nutrientes essenciais.</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-clipboard-list benefit-icon"></i>
+                        <h3>Plano de 15 Dias Completo</h3>
+                        <p>Um cronograma diário detalhado que você pode seguir facilmente, com instruções claras sobre o que consumir em cada refeição do dia.</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <i class="fas fa-apple-alt benefit-icon"></i>
+                        <h3>Guia de Alimentos Anti-inflamatórios</h3>
+                        <p>Lista completa dos alimentos mais potentes para combater inflamações, com explicações sobre seus benefícios e como incorporá-los na sua dieta diária.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROBLEMA/SOLUÇÃO -->
+        <section class="section bg-pattern">
+            <div class="container">
+                <div class="section-header centered">
+                    <div class="section-icon"><i class="fas fa-exclamation-circle"></i></div>
+                    <h2 class="section-title fade-in">Por que fazer o Detox?</h2>
+                    <p class="section-description fade-in">Compare como é a vida sem um programa detox versus os benefícios de adotar esse método</p>
+                </div>
+                <div class="problem-solution-wrapper">
+                    <div class="problem-box fade-in">
+                        <div class="problem-header"><i class="fas fa-times-circle"></i><span>Sem o Programa Detox</span></div>
+                        <ul>
+                            <li>Cansaço constante e falta de energia</li>
+                            <li>Inchaço e desconforto digestivo</li>
+                            <li>Pele sem viço e com problemas</li>
+                            <li>Dificuldade para perder peso</li>
+                            <li>Dores articulares e musculares</li>
+                        </ul>
+                    </div>
+                    <div class="vs-circle"><span>VS</span></div>
+                    <div class="solution-box fade-in">
+                        <div class="solution-header"><i class="fas fa-check-circle"></i><span>Com o Programa Detox</span></div>
+                        <ul>
+                            <li>Aumento significativo de energia e disposição</li>
+                            <li>Sistema digestivo funcionando melhor</li>
+                            <li>Pele mais saudável e radiante</li>
+                            <li>Auxílio no processo de emagrecimento</li>
+                            <li>Redução de dores e desconfortos inflamatórios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DEPOIMENTOS -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-header centered">
+                    <div class="section-icon"><i class="fas fa-comment-alt"></i></div>
+                    <h2 class="section-title fade-in">O Que Dizem Nossos Clientes</h2>
+                </div>
+                <div class="swiper testimonials-slider" aria-label="Depoimentos de clientes">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card fade-in">
+                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-name">Juliana S.</div>
+                                    <p>“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card fade-in">
+                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-name">Carlos M.</div>
+                                    <p>“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card fade-in">
+                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-name">Renata F.</div>
+                                    <p>“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next" aria-label="Próximo depoimento"></div>
+                    <div class="swiper-button-prev" aria-label="Depoimento anterior"></div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA FINAL -->
+        <section class="section cta-final-section">
+            <div class="container centered">
+                <h2 class="section-title fade-in">Garanta Agora Seu E-book Exclusivo</h2>
+                <p class="section-description fade-in">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
+                <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
+                    <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;">
+                    <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
+                </div>
+                <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold button-lg primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>
+                <div style="margin-top: 16px; color: #888; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fas fa-lock" style="color: var(--color-highlight);"></i>
+                    Pagamento 100% seguro via Kiwify
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Menu mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        }
+        // Back to top
+        const backToTop = document.querySelector('.back-to-top');
+        if (backToTop) {
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        // Swiper depoimentos
+        new Swiper('.testimonials-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: { delay: 6000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            speed: 800
+        });
+    </script>
+</body>
+
+
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#profile">Perfil</a></li>
+                <li><a href="index.html#slimshape">Slim Shape</a></li>
+                <li><a href="index.html#ebooks" class="active">E-books</a></li>
+                <li><a href="index.html#tratamentos">Tratamentos</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tapping.html">Curso</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="main-content-area">
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="product-hero">
+                        <div class="product-hero-content">
+                            <div class="product-hero-text">
+                                <div class="pricing-tag">E-BOOK EXCLUSIVO</div>
+                                <h1 style="font-size: 2.8rem; margin-bottom: 20px; line-height: 1.2; color: white; font-weight: 700;">DESINFLAMAR SEU CORPO EM 15 DIAS</h1>
+                                <p style="margin-bottom: 25px; font-size: 1.2rem; line-height: 1.6;">
+                                    Descubra como eliminar inflamações, <strong>recuperar sua energia</strong> e transformar sua saúde com um <strong>programa completo e prático</strong> de desintoxicação.                                  
+                                </p>
+                                <ul class="feature-list" style="color: white;">
+                                    <li style="color: white;"><strong>Mais de 20 receitas detox</strong> exclusivas e fáceis de preparar</li>
+                                    <li style="color: white;"><strong>Plano alimentar completo</strong> estruturado para 15 dias</li>
+                                    <li style="color: white;"><strong>Lista detalhada</strong> dos mais poderosos alimentos anti-inflamatórios</li>
+                                </ul>
+                                <div class="guarantee-badge" style="background-color: rgba(255,255,255,0.1);">
+                                    <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;">
+                                    <div>
+                                        <strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong>
+                                        <p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="countdown-timer" style="border-color: var(--color-highlight); background-color: rgba(255,255,255,0.1);">
+                                    <p style="margin: 0 0 5px; font-size: 0.9rem;">Oferta por tempo limitado:</p>
+                                    <div style="font-size: 1.1rem; font-weight: bold; color: var(--color-highlight);">APENAS R$49,90</div>
+                                </div>
+                                
+                                <a href="https://pay.kiwify.com.br/0QaAAyo" class="button-cta" style="margin-top: 20px; width: 100%; max-width: 300px;">
+                                    <i class="fas fa-shopping-cart" style="margin-right: 10px;"></i> QUERO TRANSFORMAR MINHA SAÚDE
+                                </a>
+                        </div>
+                        <div class="product-hero-image fade-in">
+                            <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias">
+                            <div class="product-hero-badge">
+                                <div class="pulse-effect"></div>
+                                <span>LANÇAMENTO</span>
+                            </div>
+                            <div class="testimonial-float">
+                                <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image">
+                                <div class="testimonial-float-content">
+                                    "Eu mesma aplico esse método!"
+                                    <span>- Francielle Alves</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefícios Section -->
+            <section class="section bg-pattern">
+                <div class="container">
+                    <div class="section-header centered">
+                        <div class="section-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h2 class="section-title fade-in">O Que Você Vai Encontrar Neste E-book</h2>
+                        <p class="section-description fade-in">Um método completo para desintoxicar seu corpo, reduzir inflamações e restaurar sua vitalidade em apenas 15 dias</p>
+                    </div>
+                    <div class="benefits-cards-wrapper">
+                        <div class="benefit-card fade-in">
+                            <i class="fas fa-blender benefit-icon"></i>
+                            <h3>Mais de 20 Receitas Detox</h3>
+                            <p>Receitas exclusivas de sucos, smoothies e chás detox cuidadosamente formuladas para maximizar o poder de desintoxicação e fornecer nutrientes essenciais.</p>
+                        </div>
+                        <div class="benefit-card fade-in">
+                            <i class="fas fa-clipboard-list benefit-icon"></i>
+                            <h3>Plano de 15 Dias Completo</h3>
+                            <p>Um cronograma diário detalhado que você pode seguir facilmente, com instruções claras sobre o que consumir em cada refeição do dia.</p>
+                        </div>
+                        <div class="benefit-card fade-in">
+                            <i class="fas fa-apple-alt benefit-icon"></i>
+                            <h3>Guia de Alimentos Anti-inflamatórios</h3>
+                            <p>Lista completa dos alimentos mais potentes para combater inflamações, com explicações sobre seus benefícios e como incorporá-los na sua dieta diária.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problema e Solução Section -->
+            <section class="section bg-pattern">
+                <div class="container">
+                    <div class="section-header centered">
+                        <div class="section-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <h2 class="section-title fade-in">Por que fazer o Detox?</h2>
+                        <p class="section-description fade-in">Compare como é a vida sem um programa detox versus os benefícios de adotar esse método</p>
+                    </div>
+                    <div class="problem-solution-wrapper">
+                        <div class="problem-box fade-in">
+                            <div class="problem-header">
+                                <i class="fas fa-times-circle"></i>
+                                <span>Sem o Programa Detox</span>
+                            </div>
+                            <ul>
+                                <li>Cansaço constante e falta de energia</li>
+                                <li>Inchaço e desconforto digestivo</li>
+                                <li>Pele sem viço e com problemas</li>
+                                <li>Dificuldade para perder peso</li>
+                                <li>Dores articulares e musculares</li>
+                            </ul>
+                        </div>
+                        <div class="vs-circle">
+                            <span>VS</span>
+                        </div>
+                        <div class="solution-box fade-in">
+                            <div class="solution-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Com o Programa Detox</span>
+                            </div>
+                            <ul>
+                                <li>Aumento significativo de energia e disposição</li>
+                                <li>Sistema digestivo funcionando melhor</li>
+                                <li>Pele mais saudável e radiante</li>
+                                <li>Auxílio no processo de emagrecimento</li>
+                                <li>Redução de dores e desconfortos inflamatórios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Depoimentos Section -->
+            <section class="section testimonials-section">
+                <div class="container">
+                    <div class="section-header centered">
+                        <div class="section-icon">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <h2 class="section-title fade-in">O Que Dizem Nossos Clientes</h2>
+                    </div>
+                    <div class="swiper testimonials-slider" aria-label="Depoimentos de clientes">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card fade-in">
+                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-name">Juliana S.</div>
+                                        <p>“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card fade-in">
+                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-name">Carlos M.</div>
+                                        <p>“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-card fade-in">
+                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-name">Renata F.</div>
+                                        <p>“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next" aria-label="Próximo depoimento"></div>
+                        <div class="swiper-button-prev" aria-label="Depoimento anterior"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Final Section -->
+            <section class="section cta-final-section">
+                <div class="container centered">
+                    <h2 class="section-title fade-in">Garanta Agora Seu E-book Exclusivo</h2>
+                    <p class="section-description fade-in">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
+                    <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
+                        <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold button-lg primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>
+                    <div style="margin-top: 16px; color: #888; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-lock" style="color: var(--color-highlight);"></i>
+                        Pagamento 100% seguro via Kiwify
+                    </div>
+                </div>
+            </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                new Swiper('.testimonials-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: { delay: 6000, disableOnInteraction: false },
+                    pagination: { el: '.swiper-pagination', clickable: true },
+                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    effect: 'fade',
+                    fadeEffect: { crossFade: true },
+                    speed: 800
+                });
+            </script>
+
+                            
+                            <div style="flex: 1; min-width: 320px; position: relative; margin-bottom: 30px;" class="fade-in">
+                                <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border: 4px solid var(--color-highlight); border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                                
+                                <div style="position: absolute; bottom: -20px; right: -20px; display: flex; align-items: center; max-width: 250px; z-index: 3; background-color: rgba(61, 76, 53, 0.85); padding: 10px; border-radius: 8px;">
+                                    <img src="assets/profile.png" alt="Francielle Alves" style="width: 70px; height: 70px; border-radius: 4px; object-fit: cover; margin-right: 12px; border: 2px solid var(--color-highlight);">
+                                    <div style="font-size: 1rem; font-style: italic; color: white; line-height: 1.4; font-weight: 600;">
+                                        "Eu mesma aplico esse método!"
+                                        <span style="display: block; font-size: 0.9rem; font-weight: 700; color: var(--color-highlight); margin-top: 5px;">- Francielle Alves</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- O Que Você Vai Encontrar Neste E-book Section -->
+                <section class="section" style="background-color: #ffffff; padding: 80px 0;">
+                    <div class="container">
+                        <h2 class="section-title fade-in" style="text-align: center; color: var(--color-primary); margin-bottom: 10px;">O Que Você Vai Encontrar Neste E-book</h2>
+                        <p class="section-subtitle" style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem;">Um método completo para desintoxicar seu corpo, reduzir inflamações e restaurar sua vitalidade em apenas 15 dias</p>
+                        
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 40px;">
+                            <!-- Benefit Card 1 -->
+                            <div class="benefit-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-blender" style="font-size: 45px; color: var(--color-primary); background: rgba(61, 76, 53, 0.1); padding: 20px; border-radius: 50%;"></i>
+                                </div>
+                                <h3 style="font-size: 1.3rem; text-align: center; margin-bottom: 15px;">Mais de 20 Receitas Detox</h3>
+                                <p style="text-align: center;">Receitas exclusivas de sucos, smoothies e chás detox cuidadosamente formuladas para maximizar o poder de desintoxicação e fornecer nutrientes essenciais.</p>
+                            </div>
+                            
+                            <!-- Benefit Card 2 -->
+                            <div class="benefit-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-clipboard-list" style="font-size: 45px; color: var(--color-primary); background: rgba(61, 76, 53, 0.1); padding: 20px; border-radius: 50%;"></i>
+                                </div>
+                                <h3 style="font-size: 1.3rem; text-align: center; margin-bottom: 15px;">Plano de 15 Dias Completo</h3>
+                                <p style="text-align: center;">Um cronograma diário detalhado que você pode seguir facilmente, com instruções claras sobre o que consumir em cada refeição do dia.</p>
+                            </div>
+                            
+                            <!-- Benefit Card 3 -->
+                            <div class="benefit-card" style="flex: 1; min-width: 280px; max-width: 350px;">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-apple-alt" style="font-size: 45px; color: var(--color-primary); background: rgba(61, 76, 53, 0.1); padding: 20px; border-radius: 50%;"></i>
+                                </div>
+                                <h3 style="font-size: 1.3rem; text-align: center; margin-bottom: 15px;">Guia de Alimentos Anti-inflamatórios</h3>
+                                <p style="text-align: center;">Lista completa dos alimentos mais potentes para combater inflamações, com explicações sobre seus benefícios e como incorporá-los na sua dieta diária.</p>
+                            </div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(to right, #f5f5f5, #ffffff, #f5f5f5); padding: 40px; border-radius: 10px; margin: 30px 0;">
+                            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+                                <div style="flex: 1; min-width: 300px;">
+                                    <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                                </div>
+                                <div style="flex: 1; min-width: 300px;">
+                                    <h3 style="color: var(--color-primary); margin-bottom: 15px; font-family: var(--font-secondary);">Por Que Este E-book É Diferente?</h3>
+                                    <p>O <strong>E-book Desinflamar Seu Corpo em 15 Dias</strong> foi desenvolvido após anos de experiência no tratamento de pessoas com problemas relacionados à inflamação crônica. Ele oferece:</p>
+                                    
+                                    <ul style="list-style: none; padding: 0; margin: 20px 0;">
+                                        <li style="padding: 8px 0 8px 30px; position: relative;">
+                                            <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 10px;"></i>
+                                            <strong>Método prático e testado</strong> com resultados comprovados
+                                        </li>
+                                        <li style="padding: 8px 0 8px 30px; position: relative;">
+                                            <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 10px;"></i>
+                                            <strong>Receitas saborosas e simples</strong> com ingredientes fáceis de encontrar
+                                        </li>
+                                        <li style="padding: 8px 0 8px 30px; position: relative;">
+                                            <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 10px;"></i>
+                                            <strong>Plano estruturado</strong> que pode ser adaptado ao seu estilo de vida
+                                        </li>
+                                        <li style="padding: 8px 0 8px 30px; position: relative;">
+                                            <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 10px;"></i>
+                                            <strong>Explicações detalhadas</strong> sobre como cada receita ajuda seu corpo
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="highlight-box">
+                                        <p style="font-weight: bold; margin: 0; display: flex; align-items: center;">
+                                            <i class="fas fa-bolt" style="color: var(--color-highlight); margin-right: 15px; font-size: 18px;"></i> 
+                                            <span><strong>COMECE HOJE MESMO</strong> a cuidar do seu corpo e descubra o poder de desinflamar de dentro para fora!</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Problemas e Soluções Section -->
+                <section class="section" style="background-color: #f8f7f5; padding: 80px 0;">
+                    <div class="container">
+                        <h2 class="section-title fade-in" style="text-align: center; color: var(--color-primary); margin-bottom: 20px;">Transforme Sua Saúde Em Apenas 15 Dias</h2>
+                        <p class="section-subtitle" style="text-align: center; max-width: 700px; margin: 0 auto 50px;">Veja como nosso programa detox pode ajudar a resolver problemas comuns de saúde</p>
+                        
+                        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; max-width: 900px; margin: 0 auto;">
+                            <div style="flex: 1; background-color: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                                <h3 style="color: #c25c5c; margin-bottom: 20px; text-align: center;">Sem o Programa Detox</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-times" style="color: #c25c5c; position: absolute; left: 0; top: 5px;"></i>
+                                        Cansaço constante e falta de energia
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-times" style="color: #c25c5c; position: absolute; left: 0; top: 5px;"></i>
+                                        Inchaço e desconforto digestivo
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-times" style="color: #c25c5c; position: absolute; left: 0; top: 5px;"></i>
+                                        Pele sem viço e com problemas
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-times" style="color: #c25c5c; position: absolute; left: 0; top: 5px;"></i>
+                                        Dificuldade para perder peso
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-times" style="color: #c25c5c; position: absolute; left: 0; top: 5px;"></i>
+                                        Dores articulares e musculares
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div style="width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; background-color: var(--color-primary); color: white; font-weight: bold; border-radius: 50%; flex-shrink: 0;">
+                                VS
+                            </div>
+                            
+                            <div style="flex: 1; background-color: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--color-success);">
+                                <h3 style="color: var(--color-success); margin-bottom: 20px; text-align: center;">Com o Programa Detox</h3>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 5px;"></i>
+                                        Aumento significativo de energia e disposição
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 5px;"></i>
+                                        Sistema digestivo funcionando melhor
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 5px;"></i>
+                                        Pele mais saudável e radiante
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 5px;"></i>
+                                        Auxílio no processo de emagrecimento
+                                    </li>
+                                    <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                                        <i class="fas fa-check" style="color: var(--color-success); position: absolute; left: 0; top: 5px;"></i>
+                                        Redução de dores e desconfortos inflamatórios
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 40px;">
+                            <a href="https://pay.kiwify.com.br/0QaAAyo" class="button-cta">
+                                <i class="fas fa-shopping-cart" style="margin-right: 10px;"></i> QUERO TRANSFORMAR MINHA SAÚDE
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Depoimentos Section -->
+                <section class="section" style="background: #fff; padding: 80px 0 60px 0;">
+                  <div class="container">
+                    <h2 class="section-title fade-in" style="text-align: center; color: var(--color-primary); margin-bottom: 40px;">O Que Dizem Nossos Clientes</h2>
+                    <div class="swiper testimonials-slider" aria-label="Depoimentos de clientes">
+                      <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                          <div class="testimonial-card fade-in">
+                            <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
+                              <img src="assets/profile.png" alt="Cliente 1" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <div style="font-weight: 700; color: var(--color-primary);">Juliana S.</div>
+                            </div>
+                            <p style="font-size: 1.1rem; margin-bottom: 0;">“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
+                          </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                          <div class="testimonial-card fade-in">
+                            <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
+                              <img src="assets/profile.png" alt="Cliente 2" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <div style="font-weight: 700; color: var(--color-primary);">Carlos M.</div>
+                            </div>
+                            <p style="font-size: 1.1rem; margin-bottom: 0;">“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
+                          </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                          <div class="testimonial-card fade-in">
+                            <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
+                              <img src="assets/profile.png" alt="Cliente 3" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <div style="font-weight: 700; color: var(--color-primary);">Renata F.</div>
+                            </div>
+                            <p style="font-size: 1.1rem; margin-bottom: 0;">“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                      <div class="swiper-button-next" aria-label="Próximo depoimento"></div>
+                      <div class="swiper-button-prev" aria-label="Depoimento anterior"></div>
+                    </div>
+                  </div>
+                </section>
+                <!-- CTA Final Section -->
+                <section class="cta-section fade-in" style="background: linear-gradient(90deg, #f8f7f5 60%, #d7bc7a20 100%);">
+                  <div class="container" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <h2 style="color: var(--color-primary); margin-bottom: 16px; font-size: 2.2rem; font-weight: 700;">Garanta Agora Seu E-book Exclusivo</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.15rem;">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
+                    <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
+                      <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;">
+                      <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/0QaAAyo" class="button-cta primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>
+                    <div style="margin-top: 16px; color: #888; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                      <i class="fas fa-lock" style="color: var(--color-highlight);"></i>
+                      Pagamento 100% seguro via Kiwify
+                    </div>
+                  </div>
+                </section>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+                <script>
+                  new Swiper('.testimonials-slider', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: { delay: 6000, disableOnInteraction: false },
+                    pagination: { el: '.swiper-pagination', clickable: true },
+                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    effect: 'fade',
+                    fadeEffect: { crossFade: true },
+                    speed: 800
+                  });
+                </script>
+            </main>
+        </div>
+    </div>
+<script>
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+}
+// Back to top button
+const backToTop = document.querySelector('.back-to-top');
+if (backToTop) {
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+</script>
+</body>

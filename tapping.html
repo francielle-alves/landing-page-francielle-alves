@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Profissional de Taping | Francielle Alves</title>
+    <meta name="description" content="Aprenda técnicas avançadas de Taping e transforme sua prática profissional. Curso completo ministrado por Francielle Alves, referência no mercado de estética e bem-estar.">
+    <meta name="keywords" content="taping, EFT, curso de taping, técnicas de taping, Francielle Alves, estética avançada">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Preload de fontes críticas para melhor performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" as="style">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <style>
+        /* Estilos específicos para a página de vendas - Design System */
+        :root {
+            --color-primary: #3D4C35;
+            --color-secondary: #d7bc7a;
+            --color-light: #f4f2ed;
+            --color-dark: #2a2a2a;
+            --color-accent: #c75d45;
+            --color-neutral-100: #ffffff;
+            --color-neutral-200: #f8f8f8;
+            --color-neutral-300: #f0f0f0;
+            --color-neutral-400: #e0e0e0;
+            --color-neutral-500: #c0c0c0;
+            --color-text-primary: #333333;
+            --color-text-secondary: #666666;
+            --color-text-muted: #888888;
+            --font-primary: 'Montserrat Alternates', sans-serif;
+            --font-secondary: 'Playfair Display', serif;
+            --box-shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
+            --box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            --box-shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+            --border-radius-sm: 6px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --transition-fast: all 0.2s ease;
+            --transition: all 0.3s ease;
+            --transition-slow: all 0.5s ease;
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+        }
+        
+        /* Sobrescrever cores do menu */
+        .header, .header.scrolled {
+            background-color: #EFECE8 !important;
+        }
+        
+        .navbar {
+            background-color: transparent !important;
+        }
+        
+        /* Redefinir todas as cores do menu */
+        .nav-links a {
+            color: var(--color-primary) !important;
+        }
+        
+        .nav-links a:hover {
+            color: #3D4C35 !important;
+        }
+        
+        .nav-links a::after {
+            background-color: #3D4C35 !important;
+        }
+        
+        .menu-toggle span {
+            background-color: #3D4C35 !important;
+        }
+        
+        /* Garantir que o menu móvel tenha a cor correta */
+        @media (max-width: 768px) {
+            .nav-links {
+                background-color: #EFECE8 !important;
+            }
+            
+            .nav-links li a {
+                color: #3D4C35 !important;
+            }
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            color: var(--color-dark);
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(45, 58, 39, 0.92), rgba(45, 58, 39, 0.95));
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 140px 0 120px;
+            margin-top: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--box-shadow-lg);
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom right, transparent 49%, #fff 50%);
+        }
+        
+        .hero-section h1 {
+            color: #fff;
+            font-family: var(--font-secondary);
+            font-size: calc(2.5rem + 1.5vw);
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-section p {
+            font-size: calc(1rem + 0.2vw);
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+        }
+        
+        .hero-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        
+        .price-tag {
+            background: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 15px 30px;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 25px 0;
+            font-size: 1.7em;
+            box-shadow: 0 5px 15px rgba(215, 188, 122, 0.4);
+            transform: rotate(-2deg);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .price-tag::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            right: -8px;
+            bottom: -8px;
+            border: 2px dashed var(--color-secondary);
+            border-radius: 50px;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
+        .benefits-section {
+            background: var(--color-light);
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefits-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIiBmaWxsPSIjM0Q0QzM1IiBmaWxsLW9wYWNpdHk9IjAuMSIvPjwvc3ZnPg==');
+            opacity: 0.5;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            background: #fff;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            background: var(--color-primary);
+            color: #fff;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            flex-shrink: 0;
+            font-size: 1.5em;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(61, 76, 53, 0.2);
+        }
+        
+        .benefit-icon::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 2px dashed var(--color-primary);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        
+        .benefit-text {
+            flex-grow: 1;
+        }
+        
+        .benefit-text h3 {
+            margin-top: 0;
+            color: var(--color-primary);
+            font-family: var(--font-secondary);
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-text p {
+            color: var(--color-dark);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        .testimonials-section {
+            background: #fff;
+            padding: 60px 20px;
+        }
+        
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial {
+            background: #f5f5f5;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 350px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-name {
+            font-weight: bold;
+            color: #3D4C35;
+        }
+        
+        .guarantee-section {
+            background: #f9f7f5;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .guarantee-box {
+            border: 2px dashed #3D4C35;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(rgba(61, 76, 53, 0.9), rgba(61, 76, 53, 1));
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .cta-button {
+            background: #d7bc7a;
+            color: #3D4C35;
+            font-size: 1.3em;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        .faq-section {
+            padding: 60px 20px;
+        }
+        
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        
+        .faq-item h3 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-item h3::after {
+            content: '+';
+            font-size: 1.5em;
+        }
+        
+        .faq-item.active h3::after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            display: none;
+            padding-top: 15px;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .module-section {
+            padding: 60px 20px;
+            background: #f5f5f5;
+        }
+        
+        .module-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        
+        .module-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .module-number {
+            background: #3D4C35;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+
+        
+        .bonus-section {
+            background: #EFECE8;
+            padding: 60px 20px;
+        }
+        
+        .bonus-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .bonus-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bonus-badge {
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: #d7bc7a;
+            color: #3D4C35;
+            transform: rotate(45deg);
+            padding: 5px 30px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        
+        @media (max-width: 768px) {
+            .benefit-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .benefit-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cursos-vip.html">Curso VIP</a></li>
+                <li><a href="#modulos">Módulos</a></li>
+                <li><a href="#bonus">Bônus</a></li>
+                <li><a href="#garantia">Garantia</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Seção Hero com Francielle em Destaque -->
+        <section class="hero-section">
+            <div class="container">
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                    <div style="flex: 1; min-width: 300px; max-width: 600px; text-align: left; z-index: 2;" data-aos="fade-right" data-aos-duration="800">
+                        <h1>Domine a Técnica de Taping com <span style="color: var(--color-secondary);">Francielle Alves</span></h1>
+                        <p>
+                            <strong>Transforme sua prática profissional</strong> com um método avançado que traz resultados imediatos para seus pacientes e valoriza seus atendimentos.
+                        </p>
+                        
+                        <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+                            <a href="#matricula" class="cta-button" style="display: inline-block; padding: 18px 36px; font-size: 1.1em; font-weight: bold; background: var(--color-secondary); color: var(--color-primary); border-radius: 50px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 5px 20px rgba(215, 188, 122, 0.3); transition: all 0.3s ease;">Quero Me Inscrever</a>
+                            <span style="color: var(--color-secondary); display: flex; align-items: center; gap: 10px; font-weight: 600;">
+                                <i class="fas fa-graduation-cap" style="font-size: 1.5em;"></i> Alunos formados
+                            </span>
+                        </div>
+                    </div>
+                    <div style="flex: 1; min-width: 330px; max-width: 500px; z-index: 2; position: relative; text-align: center;" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                        <div style="position: relative; margin-top: 20px;">
+                            <!-- Elementos decorativos -->
+                            <div style="position: absolute; top: -15px; left: -15px; width: 80px; height: 80px; border: 3px solid var(--color-secondary); border-radius: 50%; z-index: -1;"></div>
+                            <div style="position: absolute; bottom: -25px; right: -25px; width: 120px; height: 120px; border: 3px dashed rgba(215, 188, 122, 0.4); border-radius: 50%; z-index: -1;"></div>
+                            
+                            <img src="assets/profile.png" alt="Francielle Alves" style="max-width: 85%; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); border: 8px solid rgba(255,255,255,0.15);" />
+                            
+                            <div style="position: absolute; bottom: -25px; right: 30px; background: var(--color-secondary); color: var(--color-primary); padding: 12px 25px; border-radius: 50px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                <i class="fas fa-award" style="margin-right: 8px;"></i> 9+ Anos de Experiência
+                            </div>
+                        </div>
+                        
+                        <!-- Badges de credibilidade -->
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 50px;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 10px 15px; border-radius: 8px; display: flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-certificate" style="color: var(--color-secondary);"></i>
+                                <span>Certificado</span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 10px 15px; border-radius: 8px; display: flex; align-items: center; gap: 8px;">
+                                <i class="fas fa-video" style="color: var(--color-secondary);"></i>
+                                <span>Acesso Vitalício</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay effect para melhorar legibilidade -->
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(61, 76, 53, 0.85), rgba(61, 76, 53, 0.95)); z-index: 1;"></div>
+        </section>
+        
+        <!-- Seção Benefícios -->
+        <section class="benefits-section">
+            <div class="section-header">
+                <h2 class="section-title">Por que aprender <span class="highlight">Taping</span> vai revolucionar seus atendimentos?</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <!-- Layout de destaque com imagem maior -->
+            <div style="max-width: 1100px; margin: 0 auto 60px; display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 0 20px;">
+                <div style="flex: 1; min-width: 300px; position: relative;">
+                    <div style="position: relative; z-index: 2;">
+                        <img src="assets/tapping1.jpg" alt="Técnica de Taping aplicada por Francielle Alves" style="width: 100%; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
+                        <!-- Elementos decorativos -->
+                        <div style="position: absolute; top: -15px; left: -15px; width: 70px; height: 70px; border: 3px solid var(--color-secondary); border-radius: 50%; z-index: -1;"></div>
+                        <div style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; border: 3px dashed rgba(215, 188, 122, 0.4); border-radius: 50%; z-index: -1;"></div>
+                    </div>
+                    <div style="position: absolute; bottom: -15px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 8px 20px; border-radius: 30px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1); z-index: 3;">
+                        <i class="fas fa-certificate" style="margin-right: 8px;"></i> Técnica Exclusiva
+                    </div>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="color: var(--color-primary); font-family: var(--font-secondary); font-size: 1.8em; margin-bottom: 20px;">Aprenda com quem domina a técnica</h3>
+                    <p style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.7;">
+                        O Taping é uma técnica avançada que transforma completamente seus resultados e valoriza seu trabalho como profissional. Com a orientação especializada de Francielle Alves, você vai aprender todos os detalhes para aplicação perfeita.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-money-bill-wave fa-2x"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Aumente o valor dos seus atendimentos</h3>
+                    <p>Ao dominar as técnicas de Taping, você poderá oferecer um serviço diferenciado e valorizado no mercado, aumentando significativamente seus ganhos. Profissionais que dominam esta técnica conseguem cobrar até 3x mais por sessão.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-user-check fa-2x"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Resultados visíveis desde a primeira aplicação</h3>
+                    <p>O Taping proporciona resultados imediatos que seus clientes podem ver e sentir logo na primeira sessão. Essa eficácia gera fidelização e recomendações, expandindo sua clientela naturalmente.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-medal fa-2x"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Torne-se referência em sua região</h3>
+                    <p>Ao se especializar em Taping, você se destaca entre os profissionais convencionais, posicionando-se como autoridade e referência em técnicas avançadas, atraindo clientes que buscam o que há de melhor no mercado.</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-tools fa-2x"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Versatilidade em diferentes tratamentos</h3>
+                    <p>Aprenda a aplicar o Taping em diversos tratamentos: pós-operatório, modelagem corporal, redução de edemas, tratamento para diástase, tensão muscular e muito mais. Uma técnica, múltiplas aplicações.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Módulos -->
+        <section id="modulos" class="module-section">
+            <div class="section-header">
+                <h2 class="section-title">O que você vai <span class="highlight">aprender</span> neste curso</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Clique para expandir e conhecer mais sobre cada módulo</p>
+            </div>
+            
+            <div class="syllabus-container">
+                <div class="syllabus-item">
+                    <div class="syllabus-header" data-target="syllabus-1">
+                        <div class="syllabus-icon"><i class="fas fa-book"></i></div>
+                        <h3>Fundamentos do Taping</h3>
+                        <div class="syllabus-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="syllabus-content" id="syllabus-1">
+                        <p>Aprenda o que é o taping, suas funções e princípios básicos para uma aplicação segura e eficaz nos diferentes tipos de pós-operatório.</p>
+                    </div>
+                </div>
+                
+                <div class="syllabus-item">
+                    <div class="syllabus-header" data-target="syllabus-2">
+                        <div class="syllabus-icon"><i class="fas fa-toolbox"></i></div>
+                        <h3>Fisiologia do Taping</h3>
+                        <div class="syllabus-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="syllabus-content" id="syllabus-2">
+                        <p>Entenda como o taping atua na pele, nos músculos e no sistema linfático, acelerando a recuperação e potencializando os resultados.</p>
+                    </div>
+                </div>
+                
+                <div class="syllabus-item">
+                    <div class="syllabus-header" data-target="syllabus-3">
+                        <div class="syllabus-icon"><i class="fas fa-hands"></i></div>
+                        <h3>Fases da cicatrização</h3>
+                        <div class="syllabus-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="syllabus-content" id="syllabus-3">
+                        <p>Conheça as fases da cicatrização e saiba como aplicar o taping em cada etapa para otimizar o processo de regeneração dos tecidos.</p>
+                    </div>
+                </div>
+                
+                <div class="syllabus-item">
+                    <div class="syllabus-header" data-target="syllabus-4">
+                        <div class="syllabus-icon"><i class="fas fa-spa"></i></div>
+                        <h3>Tecnicas de aplicação</h3>
+                        <div class="syllabus-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="syllabus-content" id="syllabus-4">
+                        <p>Aprenda técnicas específicas de taping para acelerar a cicatrização, prevenir fibroses e reduzir hematomas, e como os cortes podem melhorar o resultado estético das cirurgias</p>
+                    </div>
+                </div>
+                
+                <div class="syllabus-item">
+                    <div class="syllabus-header" data-target="syllabus-5">
+                        <div class="syllabus-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Aulas práticas</h3>
+                        <div class="syllabus-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="syllabus-content" id="syllabus-5">
+                        <p>Demonstrações de taping na prática: abdominoplastia, lipoaspiração, lipo de papada, blefaroplastia e rinoplastia para aplicação segura e com resultados reais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Bônus -->
+        <section id="bonus" class="bonus-section">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">Bônus</span> Exclusivos</h2>
+                <div class="section-divider"></div>
+                <p class="description">Além de todo o conteúdo principal do curso, você receberá estes bônus especiais para maximizar sua experiência de aprendizado e resultados:</p>
+            </div>
+            
+            <!-- Desktop: Grid de bônus -->
+            <div class="bonus-desktop" style="margin: 40px auto; max-width: 1200px; padding: 0 20px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center;">
+                    <!-- Bônus 1 -->
+                    <div style="background: white; border-radius: 10px; padding: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); position: relative; transition: transform 0.3s ease;">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 5px 15px; border-radius: 30px; font-weight: bold; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">BÔNUS 1</div>
+                        <div style="width: 80px; height: 80px; background-color: var(--color-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 20px auto;">
+                            <i class="fas fa-book fa-2x"></i>
+                        </div>
+                        <h3 style="text-align: center; font-size: 1.2rem; margin: 20px 0; color: var(--color-primary);">Apostila: Protocolos Avançados</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: #555; font-size: 0.95rem;">Um guia digital com 15 protocolos avançados de Taping para diferentes objetivos, incluindo ilustrações e passo a passo detalhado.</p>
+                    </div>
+                    <!-- Bônus 2 -->
+                    <div style="background: white; border-radius: var(--border-radius); padding: 35px 30px; box-shadow: var(--box-shadow); position: relative; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03);">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 5px 15px; border-radius: 30px; font-weight: bold; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">BÔNUS 2</div>
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--color-primary), #4c5f42); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 25px auto; box-shadow: 0 6px 15px rgba(61, 76, 53, 0.15);">
+                            <i class="fas fa-certificate fa-2x"></i>
+                        </div>
+                        <h3 style="display: block; text-align: center; font-size: 1.25rem; margin: 24px 0; color: var(--color-primary); font-weight: 700 !important;">Certificado Digital</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">Receba um certificado digital de conclusão do curso, aumentando sua credibilidade profissional e valorizando seu portfólio.</p>
+                    </div>
+                    <!-- Bônus 3 -->
+                    <div style="background: white; border-radius: var(--border-radius); padding: 35px 30px; box-shadow: var(--box-shadow); position: relative; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03);">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 5px 15px; border-radius: 30px; font-weight: bold; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">BÔNUS 3</div>
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--color-primary), #4c5f42); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 25px auto; box-shadow: 0 6px 15px rgba(61, 76, 53, 0.15);">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </div>
+                        <h3 style="display: block; text-align: center; font-size: 1.25rem; margin: 24px 0; color: var(--color-primary); font-weight: 700 !important;">Suporte pelo WhatsApp</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">Tire suas dúvidas diretamente comigo pelo WhatsApp durante o curso para potencializar seus resultados e não ficar com nenhuma dúvida!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Versão Móvel: Carrossel como implementado na página index -->
+            <div class="bonus-mobile" style="margin: 0 0 50px; width: 100vw; position: relative; left: 50%; transform: translateX(-50%); overflow: hidden;">
+                <div class="bonus-carousel-container" style="position: relative; overflow-x: auto; scroll-snap-type: x mandatory; display: flex; width: 100%; padding: 15px 0; margin: 0; scrollbar-width: none; -ms-overflow-style: none;">
+                    <!-- Bônus 1 -->
+                    <div class="bonus-carousel-card" style="background: white; border-radius: var(--border-radius); padding: 35px 15px; box-shadow: var(--box-shadow); flex: 0 0 96%; scroll-snap-align: center; margin: 0 2%; border: 1px solid rgba(0,0,0,0.03); position: relative;">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 6px 16px; border-radius: 30px; font-weight: 600; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.08); letter-spacing: 0.03em;">BÔNUS 1</div>
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--color-primary), #4c5f42); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 25px auto; box-shadow: 0 6px 15px rgba(61, 76, 53, 0.15);">
+                            <i class="fas fa-book fa-2x"></i>
+                        </div>
+                        <h3 style="text-align: center; font-size: 1.25rem; margin: 24px 0; color: var(--color-primary); font-weight: 600;">Apostila: Protocolos Avançados</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">Um guia digital com 15 protocolos avançados de Taping para diferentes objetivos, incluindo ilustrações e passo a passo detalhado.</p>
+                    </div>
+                    <!-- Bônus 2 -->
+                    <div class="bonus-carousel-card" style="background: white; border-radius: var(--border-radius); padding: 35px 15px; box-shadow: var(--box-shadow); flex: 0 0 96%; scroll-snap-align: center; margin: 0 2%; border: 1px solid rgba(0,0,0,0.03); position: relative;">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 6px 16px; border-radius: 30px; font-weight: 600; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.08); letter-spacing: 0.03em;">BÔNUS 2</div>
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--color-primary), #4c5f42); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 25px auto; box-shadow: 0 6px 15px rgba(61, 76, 53, 0.15);">
+                            <i class="fas fa-certificate fa-2x"></i>
+                        </div>
+                        <h3 style="display: block; text-align: center; font-size: 1.25rem; margin: 24px 0; color: var(--color-primary); font-weight: 700 !important;">Certificado Digital</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">Receba um certificado digital de conclusão do curso, aumentando sua credibilidade profissional e valorizando seu portfólio.</p>
+                    </div>
+                    <!-- Bônus 3 -->
+                    <div class="bonus-carousel-card" style="background: white; border-radius: var(--border-radius); padding: 35px 15px; box-shadow: var(--box-shadow); flex: 0 0 96%; scroll-snap-align: center; margin: 0 2%; border: 1px solid rgba(0,0,0,0.03); position: relative;">
+                        <div style="position: absolute; top: -12px; left: 20px; background-color: var(--color-secondary); color: var(--color-primary); padding: 6px 16px; border-radius: 30px; font-weight: 600; font-size: 0.85rem; box-shadow: 0 3px 10px rgba(0,0,0,0.08); letter-spacing: 0.03em;">BÔNUS 3</div>
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--color-primary), #4c5f42); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 25px auto; box-shadow: 0 6px 15px rgba(61, 76, 53, 0.15);">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </div>
+                        <h3 style="display: block; text-align: center; font-size: 1.25rem; margin: 24px 0; color: var(--color-primary); font-weight: 700 !important;">Suporte pelo WhatsApp</h3>
+                        <p style="text-align: center; margin-bottom: 25px; color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">Tire suas dúvidas diretamente comigo pelo WhatsApp durante o curso para potencializar seus resultados e não ficar com nenhuma dúvida!</p>
+                    </div>
+                </div>
+                
+                <!-- Navegação do carrossel -->
+                <div class="bonus-navigation" style="display: flex; justify-content: center; margin-top: 20px;">
+                    <span class="bonus-nav-dot active" data-index="0" style="width: 12px; height: 12px; border-radius: 50%; background-color: var(--color-primary); margin: 0 6px; cursor: pointer;"></span>
+                    <span class="bonus-nav-dot" data-index="1" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dddddd; margin: 0 6px; cursor: pointer;"></span>
+                </div>
+            </div>
+            
+            <style>
+                /* Media queries para controlar a exibição desktop vs mobile */
+                @media (min-width: 769px) {
+                    /* No desktop, mostrar grid e esconder carrossel */
+                    .bonus-desktop {
+                        display: block;
+                    }
+                    .bonus-mobile {
+                        display: none;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    /* No mobile, esconder grid e mostrar carrossel */
+                    .bonus-desktop {
+                        display: none;
+                    }
+                    .bonus-mobile {
+                        display: block;
+                        margin-bottom: 40px;
+                    }                    
+                    .floating-image {
+                        display: none;
+                    }                    
+                    /* Remover o padding e permitir a cor de fundo natural do site */
+                    .bonus-section {
+                        padding: 0;
+                        overflow-x: hidden;
+                    }
+                }
+                /* Estilos para o Swiper */
+                .swiper-container.bonus-swiper {
+                    padding-bottom: 40px; /* Espaço para paginação */
+                    overflow: hidden;
+                    width: 100%;
+                }
+                
+                .swiper-container.bonus-swiper .swiper-slide {
+                    height: auto;
+                }
+                
+                .swiper-pagination {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                /* Animação ao passar o mouse (somente desktop) */
+                @media (min-width: 769px) {
+                    .bonus-desktop > div > div:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                    }
+                }
+                
+                /* Animação para efeitos de destaque */
+                @keyframes pulse {
+                    0% { transform: translateX(-100%); }
+                    100% { transform: translateX(100%); }
+                }
+                
+                /* Estilos dos elementos dentro dos cards */
+                .bonus-icon-container {
+                    background-color: rgba(61, 76, 53, 0.1);
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    position: relative;
+                    transition: transform 0.3s ease;
+                }
+                
+                .bonus-icon-container i {
+                    color: var(--color-primary);
+                    font-size: 2.8rem;
+                }
+                
+                .bonus-card:hover .bonus-icon-container {
+                    transform: scale(1.05);
+                }
+                
+                /* Estilos do cabeçalho da seção */
+                .section-header {
+                    text-align: center;
+                    max-width: 800px;
+                    margin: 0 auto 50px;
+                }
+                
+                .section-header .highlight {
+                    color: var(--color-secondary);
+                }
+                
+                .section-divider {
+                    width: 80px;
+                    height: 3px;
+                    background: var(--color-primary);
+                    margin: 15px auto 25px;
+                    border-radius: 2px;
+                }
+                
+                .section-header .description {
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    color: #555;
+                    margin-bottom: 30px;
+                }
+                
+                /* Estilos para as imagens flutuantes */
+                .floating-image-container {
+                    position: absolute;
+                    right: 5%;
+                    top: 100px;
+                    width: 220px;
+                    height: 250px;
+                    z-index: 10;
+                }
+                
+                .floating-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+                    border: 5px solid white;
+                    transition: transform 0.3s ease;
+                }
+                
+                .floating-image:hover {
+                    transform: scale(1.05);
+                }
+                
+                .image-badge {
+                    position: absolute;
+                    bottom: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: var(--color-secondary);
+                    color: var(--color-primary);
+                    padding: 8px 20px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    font-size: 0.9em;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    white-space: nowrap;
+                }
+                
+                @media (max-width: 1200px) {
+                    .floating-image-container {
+                        position: relative;
+                        right: auto;
+                        top: auto;
+                        width: 180px;
+                        height: 200px;
+                        margin: 0 auto 40px;
+                    }
+                }
+                
+                /* Estilos para seção de garantia - imagem removida */
+                
+                .guarantee-box {
+                    flex: 1;
+                    background: white;
+                    padding: 40px;
+                    border-radius: 15px;
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                    text-align: center;
+                    position: relative;
+                    border: 1px solid rgba(61, 76, 53, 0.1);
+                    max-width: 600px;
+                }
+                
+                @media (max-width: 992px) {
+                    .guarantee-container {
+                        flex-direction: column;
+                        gap: 30px;
+                    }
+                    
+                    .guarantee-image-container {
+                        width: 180px;
+                        height: 230px;
+                    }
+                }
+                
+                /* Estilos para a seção de FAQ */
+                .faq-section {
+                    position: relative;
+                    padding-top: 80px;
+                    padding-bottom: 100px;
+                }
+                
+                .faq-image-container {
+                    position: absolute;
+                    left: 5%;
+                    top: 150px;
+                    width: 260px;
+                    height: 320px;
+                    z-index: 10;
+                }
+                
+                .faq-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+                    border: 5px solid white;
+                    transition: transform 0.3s ease;
+                }
+                
+                .faq-item {
+                    margin-left: 320px;
+                    max-width: 800px;
+                }
+                
+                @media (max-width: 1200px) {
+                    .faq-image-container {
+                        position: relative;
+                        left: auto;
+                        top: auto;
+                        width: 200px;
+                        height: 250px;
+                        margin: 0 auto 40px;
+                    }
+                    
+                    .faq-item {
+                        margin-left: 0;
+                        max-width: 100%;
+                    }
+                }
+                
+                /* Estilos para o syllabus */
+                .module-section {
+                    background-color: #f9f9f9;
+                    padding: 70px 0;
+                    position: relative;
+                }
+                
+                .section-subtitle {
+                    text-align: center;
+                    color: #777;
+                    font-size: 1.1rem;
+                    margin-top: 10px;
+                }
+                
+                .syllabus-container {
+                    max-width: 850px;
+                    margin: 40px auto;
+                }
+                
+                .syllabus-item {
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+                    overflow: hidden;
+                    background-color: white;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .syllabus-item:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+                }
+                
+                .syllabus-header {
+                    display: flex;
+                    align-items: center;
+                    padding: 20px;
+                    cursor: pointer;
+                    background-color: white;
+                    transition: background-color 0.2s ease;
+                }
+                
+                .syllabus-header:hover {
+                    background-color: #f9f9f9;
+                }
+                
+                .syllabus-icon {
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(to bottom right, var(--color-primary), #3a4933);
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+                    margin-right: 20px;
+                    flex-shrink: 0;
+                    box-shadow: 0 3px 10px rgba(61, 76, 53, 0.2);
+                }
+                
+                .syllabus-icon i {
+                    font-size: 1.5rem;
+                }
+                
+                .syllabus-header h3 {
+                    flex: 1;
+                    margin: 0;
+                    font-size: 1.25rem;
+                    color: #444;
+                    font-weight: 600;
+                }
+                
+                .syllabus-toggle {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(61, 76, 53, 0.1);
+                    border-radius: 50%;
+                    color: var(--color-primary);
+                    transition: all 0.3s ease;
+                    margin-left: 15px;
+                }
+                
+                .syllabus-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 20px;
+                    background-color: white;
+                    border-top: 1px solid #f0f0f0;
+                    transition: all 0.3s ease;
+                    opacity: 0;
+                }
+                
+                .syllabus-content p {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1.7;
+                    color: #555;
+                }
+                
+                .syllabus-item.active .syllabus-header {
+                    background-color: rgba(61, 76, 53, 0.03);
+                }
+                
+                .syllabus-item.active .syllabus-toggle {
+                    background-color: var(--color-secondary);
+                    color: var(--color-primary);
+                    transform: rotate(45deg);
+                }
+                
+                .syllabus-item.active .syllabus-content {
+                    max-height: 300px;
+                    padding: 20px 20px 30px 90px; /* Alinha o texto com o título */
+                    opacity: 1;
+                }
+                
+                @media (max-width: 768px) {
+                    .syllabus-header h3 {
+                        font-size: 1.1rem;
+                    }
+                    
+                    .syllabus-icon {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 15px;
+                    }
+                    
+                    .syllabus-icon i {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .syllabus-item.active .syllabus-content {
+                        padding: 20px;
+                    }
+                }
+                
+                .bonus-title {
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                    color: var(--color-primary);
+                    font-weight: 600;
+                }
+                
+                .bonus-description {
+                    color: #555;
+                    line-height: 1.6;
+                    margin-bottom: 30px;
+                }
+                
+                .bonus-value {
+                    background-color: rgba(61, 76, 53, 0.08);
+                    padding: 12px 25px;
+                    border-radius: 8px;
+                    margin-top: auto;
+                    width: 100%;
+                }
+                
+                .bonus-value span {
+                    font-size: 0.9rem;
+                    color: #555;
+                    margin-right: 5px;
+                }
+                
+                .bonus-value strong {
+                    font-size: 1.4rem;
+                    color: var(--color-primary);
+                }
+                
+                /* Responsividade para dispositivos móveis */
+                @media (max-width: 768px) {
+                    .bonus-carousel {
+                        max-width: 350px;
+                    }
+                    
+                    .bonus-title {
+                        font-size: 1.3rem;
+                    }
+                    
+                    .bonus-icon-container {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            </style>
+        </section>
+        
+        <!-- Seção Garantia -->
+        <section id="garantia" class="guarantee-section">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">Garantia</span> Incondicional de 7 Dias</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="guarantee-box" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <i class="fas fa-shield-alt fa-4x" style="color: #3D4C35; margin-bottom: 20px;"></i>
+                    <h3>Satisfação Garantida ou Seu Dinheiro de Volta</h3>
+                    <p>Se dentro de 7 dias após a compra você não estiver completamente satisfeito com o conteúdo do curso, basta nos enviar um e-mail solicitando o reembolso. Devolvemos 100% do seu investimento, sem perguntas e sem burocracia.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Depoimentos -->
+        <!-- Seção Depoimentos Repaginada -->
+        <section class="section" style="background: linear-gradient(180deg, #f8f7f5 0%, white 100%); padding: 80px 20px;">
+            <div class="container">
+                <!-- Destaque da Francielle como Professora -->
+                <div style="position: relative; margin-bottom: 70px; text-align: center;">
+                    <div style="position: relative; max-width: 700px; margin: 0 auto; z-index: 2;">
+                        <div style="text-align: center;">
+                            <img src="assets/tapping4.png" alt="Francielle Alves Professora" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--color-primary); box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: 0 auto 20px; display: block;">
+                        </div>
+                        <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">Aprenda com Quem Conhece na Prática</h2>
+                        <p style="color: var(--color-accent); font-size: 1.1em; margin-bottom: 25px; font-weight: bold; text-align: center;">Francielle Alves compartilha toda sua experiência profissional</p>
+                        <div style="background-color: var(--color-primary); color: white; padding: 25px; border-radius: 15px; text-align: left; position: relative;">
+                            <i class="fas fa-quote-left" style="position: absolute; top: -15px; left: 20px; font-size: 3rem; color: var(--color-gold); opacity: 0.5;"></i>
+                            <p style="font-style: italic; font-size: 1.1em; margin-bottom: 20px; padding: 0 20px;">
+                                "Minha paixão é transformar vidas através da estética. Neste curso, compartilho todas as técnicas que desenvolvi em 9 anos de carreira para que você também possa oferecer resultados excepcionais aos seus clientes."
+                            </p>
+                            <div style="text-align: right; padding-right: 20px;">
+                                <strong style="color: var(--color-gold);">Francielle Alves</strong><br>
+                                <span style="font-size: 0.9em;">Esteticista e Linfoterapeuta Especializada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Elementos decorativos -->
+                    <div style="position: absolute; top: 30px; left: 5%; width: 40px; height: 40px; background-color: var(--color-gold); opacity: 0.5; border-radius: 10px; transform: rotate(25deg); z-index: 1;"></div>
+                    <div style="position: absolute; bottom: 20px; right: 8%; width: 60px; height: 60px; border: 4px solid var(--color-primary); opacity: 0.3; border-radius: 50%; z-index: 1;"></div>
+                </div>
+
+                
+                <!-- Certificado por Francielle -->
+                <div style="margin: 60px auto 0; max-width: 800px; border: 2px dashed var(--color-gold); border-radius: 15px; padding: 30px; background-color: rgba(255,255,255,0.6); position: relative;">
+                    <div style="text-align: center;">
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: 15px;">CERTIFICADO RECONHECIDO</h3>
+                            <p style="margin-bottom: 15px;">Ao final do curso, você receberá um certificado digital assinado, reconhecido no mercado e que valoriza seu portfólio profissional.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Perguntas Frequentes -->
+        <section class="faq-section">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            
+            <div class="faq-item">
+                <h3>Preciso ter experiência prévia para fazer o curso?</h3>
+                <div class="faq-answer">
+                    <p>Não! O curso foi estruturado para atender tanto iniciantes quanto profissionais experientes. Começamos com os fundamentos básicos e avançamos gradualmente para técnicas mais complexas, garantindo que todos consigam acompanhar.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Quanto tempo tenho acesso ao conteúdo do curso?</h3>
+                <div class="faq-answer">
+                    <p>O acesso ao curso é vitalício! Uma vez adquirido, você poderá assistir às aulas quantas vezes quiser e sempre terá acesso a atualizações futuras sem custo adicional.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>O curso é presencial ou online?</h3>
+                <div class="faq-answer">
+                    <p>Oferecemos duas modalidades: online (acesso imediato a todas as aulas) e presencial VIP (turmas reduzidas com prática supervisionada). Esta página refere-se à versão online, mas você pode entrar em contato para saber mais sobre as turmas presenciais.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Quais formas de pagamento são aceitas?</h3>
+                <div class="faq-answer">
+                    <p>Aceitamos cartão de crédito e PIX. Todos os pagamentos são processados em ambiente seguro pela plataforma Kiwify.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>O certificado é reconhecido?</h3>
+                <div class="faq-answer">
+                    <p>Sim! Nosso certificado é reconhecido e valorizado no mercado de estética e saúde. Ele contém carga horária detalhada e conteúdo programático, podendo ser incluído em seu currículo profissional.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Terei suporte para minhas dúvidas?</h3>
+                <div class="faq-answer">
+                    <p>Sim! Além das aulas detalhadas, você terá acesso ao grupo exclusivo de alunos onde poderá tirar dúvidas diretamente comigo, compartilhar experiências com outros profissionais e receber feedback sobre seus casos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sua Instrutora Section -->
+        <section class="section" style="background-color: #f8f7f5; padding: 60px 20px;">
+            <div class="container">
+                <h2 class="section-title">Sua Instrutora</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px; align-items: center;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <img src="assets/fran-v.jpg" alt="Franciele Alves" style="width: 100%; border-radius: 10px; box-shadow: var(--box-shadow);">
+                    </div>
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 style="color: var(--color-primary); font-family: var(--font-secondary); margin-bottom: 15px;">Franciele Alves</h3>
+                        <p class="instructor-title" style="color: var(--color-accent); font-weight: bold; margin-bottom: 20px;">Esteticista e Linfoterapeuta Especializada</p>
+                        <p>Com mais de 9 anos de experiência na área de estética e tratamentos corporais, Franciele Alves desenvolveu uma abordagem única combinando técnicas tradicionais e inovadoras para oferecer resultados excepcionais a seus clientes.</p>
+                        <p>Especialista em linfoterapia e técnicas de Taping, Franciele compartilha seu conhecimento e expertise para ajudar outros profissionais a alcançarem excelência em seus atendimentos.</p>
+                        <div style="margin-top: 30px;">
+                            <div style="display: flex; align-items: center; margin-bottom: 15px; flex-wrap: nowrap;">
+                                <div style="background: var(--color-primary); color: white; width: 50px; height: 50px; min-width: 50px; min-height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; box-shadow: 0 3px 10px rgba(61, 76, 53, 0.2); flex-shrink: 0; aspect-ratio: 1/1;">
+                                    <i class="fas fa-graduation-cap fa-lg"></i>
+                                </div>
+                                <span>Especialista em Linfoterapia</span>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 15px; flex-wrap: nowrap;">
+                                <div style="background: var(--color-primary); color: white; width: 50px; height: 50px; min-width: 50px; min-height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; box-shadow: 0 3px 10px rgba(61, 76, 53, 0.2); flex-shrink: 0; aspect-ratio: 1/1;">
+                                    <i class="fas fa-certificate fa-lg"></i>
+                                </div>
+                                <span>Certificada em Técnicas Avançadas de Taping</span>
+                            </div>
+                            <div style="display: flex; align-items: center; flex-wrap: nowrap;">
+                                <div style="background: var(--color-primary); color: white; width: 50px; height: 50px; min-width: 50px; min-height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; box-shadow: 0 3px 10px rgba(61, 76, 53, 0.2); flex-shrink: 0; aspect-ratio: 1/1;">
+                                    <i class="fas fa-user-md fa-lg"></i>
+                                </div>
+                                <span>9+ Anos de Experiência Clínica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+        
+        <!-- Seção Final CTA -->
+        <section id="matricula" style="position: relative; overflow: hidden; background-image: linear-gradient(135deg, rgba(61, 76, 53, 0.98) 0%, rgba(61, 76, 53, 0.85) 100%); background-size: cover; background-position: center; background-attachment: fixed; color: white; padding: 60px 0;">
+            <!-- Elementos decorativos (escondidos em mobile) -->
+            <div style="position: absolute; top: 5%; left: 10%; width: 150px; height: 150px; background: radial-gradient(circle, rgba(215, 188, 122, 0.2) 0%, rgba(215, 188, 122, 0) 70%); border-radius: 50%; display: none;"></div>
+            <div style="position: absolute; bottom: 5%; right: 10%; width: 120px; height: 120px; background: radial-gradient(circle, rgba(215, 188, 122, 0.15) 0%, rgba(215, 188, 122, 0) 70%); border-radius: 50%; display: none;"></div>
+            
+            <div style="position: absolute; top: 0; right: 0; bottom: 0; width: 40%; background-color: rgba(215, 188, 122, 0.1); clip-path: polygon(100% 0, 0 0, 100% 100%); display: none;"></div>
+            
+            <div class="container" style="width: 100%; max-width: 90%; margin: 0 auto; padding: 0 15px; position: relative; z-index: 2;">
+                <!-- Box de Inscrição (vem primeiro em mobile para melhor conversão) -->
+                <div style="width: 100%; max-width: 100%; background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); padding: 25px 20px; color: var(--color-dark); position: relative; z-index: 3; margin-bottom: 40px;" data-aos="fade-up" data-aos-duration="600">
+                    
+                    <h3 style="font-family: var(--font-secondary); color: var(--color-primary); text-align: center; margin-bottom: 20px; font-size: 1.5em;">Curso Profissional de Taping</h3>
+                    
+                    <div style="background: rgba(61, 76, 53, 0.05); padding: 15px; border-radius: 12px; margin-bottom: 25px; text-align: center;">
+                        <p style="color: var(--color-primary); font-weight: 600; margin-bottom: 8px; font-size: 0.9em;">Valor promocional por tempo limitado</p>
+                        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px;">
+                            <span style="font-size: 0.8em; color: #666; text-decoration: line-through; margin-right: 10px;">De R$399</span>
+                            <span style="font-size: 2em; font-weight: bold; color: var(--color-primary);">R$299</span>
+                        </div>
+                        <p style="color: #666; margin: 5px 0 0; font-size: 0.9em;">ou 10x de <strong>R$29,90</strong> sem juros</p>
+                    </div>
+                    
+                    <a href="#" class="cta-button" style="display: block; background: var(--color-secondary); color: var(--color-primary); padding: 16px; border-radius: 10px; font-size: 1.1em; font-weight: 700; text-decoration: none; text-align: center; box-shadow: 0 5px 15px rgba(215, 188, 122, 0.3); transition: all 0.3s ease; margin-bottom: 20px; letter-spacing: 0.5px;">
+                        <i class="fas fa-graduation-cap" style="margin-right: 8px;"></i> QUERO COMEÇAR AGORA
+                    </a>
+                    
+                    <!-- Formas de pagamento -->
+                    <div style="margin-top: 20px;">
+                        <p style="font-size: 0.8em; text-align: center; margin-bottom: 10px; color: #666;">Formas de pagamento aceitas:</p>
+                        <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 15px; flex-wrap: wrap;">
+                            <i class="fab fa-cc-visa" style="font-size: 1.5em; color: #666;"></i>
+                            <i class="fab fa-cc-mastercard" style="font-size: 1.5em; color: #666;"></i>
+                            <i class="fab fa-cc-amex" style="font-size: 1.5em; color: #666;"></i>
+                            <i class="fab fa-pix" style="font-size: 1.5em; color: #666;"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Garantias -->
+                    <div style="display: flex; justify-content: space-between; margin-top: 15px; flex-wrap: wrap;">
+                        <div style="text-align: center; flex: 1 0 30%;">
+                            <i class="fas fa-shield-alt" style="font-size: 1.2em; color: var(--color-primary); margin-bottom: 5px;"></i>
+                            <p style="font-size: 0.75em; margin: 0; color: #666;">Pagamento Seguro</p>
+                        </div>
+                        <div style="text-align: center; flex: 1 0 30%;">
+                            <i class="fas fa-undo" style="font-size: 1.2em; color: var(--color-primary); margin-bottom: 5px;"></i>
+                            <p style="font-size: 0.75em; margin: 0; color: #666;">7 Dias de Garantia</p>
+                        </div>
+                        <div style="text-align: center; flex: 1 0 30%;">
+                            <i class="fas fa-headset" style="font-size: 1.2em; color: var(--color-primary); margin-bottom: 5px;"></i>
+                            <p style="font-size: 0.75em; margin: 0; color: #666;">Suporte Exclusivo</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Informações do Curso -->
+                <div style="width: 100%;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h2 style="font-family: var(--font-secondary); font-size: 2em; margin-bottom: 20px; color: white; text-align: center;">
+                        Comece a transformar sua carreira <span style="color: var(--color-secondary); display: block; margin-top: 5px;">ainda hoje</span>
+                    </h2>
+                    
+                    <div style="margin: 30px 0;">
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                            <div style="background: var(--color-secondary); width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                                <i class="fas fa-check" style="color: var(--color-primary); font-size: 0.8em;"></i>
+                            </div>
+                            <p style="margin: 0; font-size: 1em;">Acesso imediato ao conteúdo prático e teórico</p>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                            <div style="background: var(--color-secondary); width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                                <i class="fas fa-check" style="color: var(--color-primary); font-size: 0.8em;"></i>
+                            </div>
+                            <p style="margin: 0; font-size: 1em;">Certificado profissional reconhecido no mercado</p>
+                        </div>
+                        <div style="display: flex; align-items: flex-start;">
+                            <div style="background: var(--color-secondary); width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 12px; flex-shrink: 0; margin-top: 2px;">
+                                <i class="fas fa-check" style="color: var(--color-primary); font-size: 0.8em;"></i>
+                            </div>
+                            <p style="margin: 0; font-size: 1em;">Suporte e grupo exclusivo de alunos para tirar dúvidas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Média Queries para desktop -->
+            <style>
+                @media (min-width: 768px) {
+                    #matricula {
+                        padding: 80px 0;
+                    }
+                    
+                    #matricula .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        max-width: 1200px;
+                    }
+                    
+                    #matricula h2 {
+                        font-size: 2.5em;
+                        text-align: left;
+                    }
+                    
+                    #matricula [data-aos="fade-up"] {
+                        flex: 0 0 45%;
+                        max-width: 450px;
+                        margin-left: auto;
+                        order: 2;
+                        margin-bottom: 0;
+                        padding: 35px 30px;
+                    }
+                    
+                    #matricula [data-aos="fade-up"] .fas,
+                    #matricula [data-aos="fade-up"] .fab {
+                        font-size: 1.6em;
+                    }
+                    
+                    #matricula [data-aos="fade-up"] h3 {
+                        font-size: 1.7em;
+                    }
+                    
+                    #matricula [data-aos="fade-up-right"] {
+                        font-size: 2.2em;
+                    }
+                    
+                    #matricula [data-aos="fade-up"] + div {
+                        flex: 0 0 48%;
+                        order: 1;
+                        padding-right: 30px;
+                    }
+                    
+                    /* Mostrar elementos decorativos em desktop */
+                    #matricula > div:nth-child(1),
+                    #matricula > div:nth-child(2),
+                    #matricula > div:nth-child(3) {
+                        display: block;
+                    }
+                }
+                
+                @media (min-width: 992px) {
+                    #matricula [data-aos="fade-up"] {
+                        flex: 0 0 40%;
+                    }
+                    
+                    #matricula [data-aos="fade-up"] + div {
+                        flex: 0 0 55%;
+                    }
+                }
+            </style>
+        </section>
+    </main>
+    
+    <!-- Botão fixo de inscrição -->
+    <div id="botao-fixo" style="position: fixed; bottom: 15px; left: 0; right: 0; background: transparent; padding: 0; z-index: 999; text-align: center; display: flex; justify-content: center; align-items: center; transition: opacity 0.3s ease;">
+        <a href="#matricula" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 350px; background: var(--color-secondary); color: var(--color-primary); padding: 14px 25px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); font-size: 1em; transition: transform 0.2s ease, box-shadow 0.3s ease;">
+            <span style="margin-right: 10px; font-size: 1.2em;"><i class="fas fa-graduation-cap fa-lg"></i></span>
+            <span>COMPRAR ESTE CURSO</span>
+        </a>
+    </div>
+
+    <!-- Footer simples e sóbrio -->
+    <footer style="background-color: var(--color-primary); padding: 40px 0 100px; margin-top: 0;"> <!-- Padding-bottom maior para dar espaço ao botão fixo -->
+        <div class="container">
+            <!-- Seção principal do footer com grid simples -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                <!-- Coluna 1: Logo e Informações -->
+                <div>
+                    <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                    <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                        Transformando vidas através da estética avançada e educação profissional de qualidade.
+                    </p>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Links Rápidos</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 10px;">
+                            <a href="index.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Página Inicial</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="index.html#tratamentos" style="color: white; text-decoration: none; font-size: 0.95rem;">Tratamentos</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="ebook-detox.html" style="color: white; text-decoration: none; font-size: 0.95rem;">E-book Detox</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="slimshape.html" style="color: white; text-decoration: none; font-size: 0.95rem;">SlimShape</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Contato</h3>
+                    <div style="margin-bottom: 15px;">
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Endereço:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Rua Cândido Bueno, 434<br>Centro, Jaguariúna - SP</p>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Telefone:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">(19) 99377-2963</p>
+                    </div>
+                    <div>
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Email:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">esteticafranciellealves@gmail.com</p>
+                    </div>
+                </div>
+                
+                <!-- Coluna 4: Botões CTA -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20Taping" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Falar sobre o curso
+                        </a>
+                        <a href="#matricula" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                            <i class="fas fa-graduation-cap" style="margin-right: 8px;"></i> Quero começar agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div style="background-color: rgba(0,0,0,0.2); padding: 20px 0; margin-top: 30px;">
+            <div class="container">
+                <p style="color: rgba(255,255,255,0.6); margin: 0; text-align: center; font-size: 0.9rem;">
+                    &copy; 2025 Francielle Alves | Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script para esconder/mostrar o botão fixo dependendo da posição na página -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const botaoFixo = document.getElementById('botao-fixo');
+            const matriculaSection = document.getElementById('matricula');
+            
+            // Função para verificar a posição de rolagem
+            function verificarPosicao() {
+                const matriculaRect = matriculaSection.getBoundingClientRect();
+                
+                // Se a seção de matrícula está visível na tela, esconde o botão fixo
+                if (matriculaRect.top <= window.innerHeight && matriculaRect.bottom >= 0) {
+                    botaoFixo.style.opacity = '0';
+                    botaoFixo.style.pointerEvents = 'none';
+                } else {
+                    botaoFixo.style.opacity = '1';
+                    botaoFixo.style.pointerEvents = 'auto';
+                }
+            }
+            
+            // Adiciona o listener para o evento de rolagem
+            window.addEventListener('scroll', verificarPosicao);
+            
+            // Verifica a posição inicial
+            verificarPosicao();
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa as animações AOS
+            AOS.init();
+            
+            // Script para FAQ
+            const faqItems = document.querySelectorAll('.faq-item h3');
+            faqItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.parentElement.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modern-script.js"></script>
+    
+    <!-- Script para garantir funcionamento do menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menu toggle functionality
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', function() {
+                    console.log('Menu toggle clicked');
+                    navLinks.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+                
+                // Close menu when clicking on links
+                const navItems = document.querySelectorAll('.nav-links a');
+                navItems.forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        navLinks.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+        });
+    </script>
+    
+
+    <!-- Script do carrossel de bônus removido e substituído pelo Swiper -->
+    <script>
+        console.log('Usando Swiper para o carrossel de bônus');
+    </script>
+    
+    <!-- Script para os itens do syllabus -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const syllabusItems = document.querySelectorAll('.syllabus-item');
+            
+            // Inicializa o primeiro item como ativo
+            if (syllabusItems.length > 0) {
+                syllabusItems[0].classList.add('active');
+            }
+            
+            syllabusItems.forEach(item => {
+                const header = item.querySelector('.syllabus-header');
+                
+                header.addEventListener('click', () => {
+                    // Se o item já estiver ativo, apenas feche-o
+                    if (item.classList.contains('active')) {
+                        item.classList.remove('active');
+                    } else {
+                        // Fechando todos os outros itens
+                        syllabusItems.forEach(otherItem => {
+                            otherItem.classList.remove('active');
+                        });
+                        
+                        // Abrindo apenas o item clicado
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Script para FAQ e Carrossel de Bônus -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ - Expandir/colapsar perguntas frequentes
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('h3');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Função para setup do carrossel como implementado na página index
+            function setupBonusCarousel() {
+                // Esta função só funciona em mobile
+                if (window.innerWidth <= 767) {
+                    const container = document.querySelector('.bonus-carousel-container');
+                    const dots = document.querySelectorAll('.bonus-nav-dot');
+                    const cards = document.querySelectorAll('.bonus-carousel-card');
+                    
+                    if (!container || !cards.length || !dots.length) {
+                        console.warn('Não foi possível configurar o carrossel de bônus');
+                        return;
+                    }
+                    
+                    console.log('Inicializando carrossel de bônus:', cards.length, 'cards');
+                    
+                    // Esconder a barra de rolagem mas manter funcionalidade
+                    container.style.msOverflowStyle = 'none'; // Edge/IE
+                    container.style.scrollbarWidth = 'none'; // Firefox
+                    container.addEventListener('scroll', function() { // Remover sempre que o usuario rolar
+                        userInteracted = true;
+                    });
+                    
+                    // Adicionar CSS para esconder scrollbar no WebKit
+                    const style = document.createElement('style');
+                    style.textContent = '.bonus-carousel-container::-webkit-scrollbar { display: none; }';
+                    document.head.appendChild(style);
+                    
+                    // Event listeners para os dots
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            // Scroll para o card correspondente
+                            const card = cards[index];
+                            const cardRect = card.getBoundingClientRect();
+                            const containerRect = container.getBoundingClientRect();
+                            
+                            let targetPosition;
+                            if (index === 0) {
+                                targetPosition = 0; // Forçar scroll para o início
+                            } else {
+                                targetPosition = card.offsetLeft - container.offsetLeft - 
+                                               (containerRect.width / 2) + (cardRect.width / 2);
+                            }
+                            
+                            container.scrollTo({
+                                left: targetPosition,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Atualizar dot ativo
+                            dots.forEach(d => d.classList.remove('active'));
+                            dot.classList.add('active');
+                        });
+                    });
+                    
+                    // Atualizar dot ativo durante scroll
+                    container.addEventListener('scroll', () => {
+                        const scrollPosition = container.scrollLeft;
+                        const containerWidth = container.offsetWidth;
+                        
+                        cards.forEach((card, index) => {
+                            const cardLeft = card.offsetLeft - container.offsetLeft;
+                            const cardCenter = cardLeft + (card.offsetWidth / 2);
+                            const containerCenter = scrollPosition + (containerWidth / 2);
+                            const distance = Math.abs(cardCenter - containerCenter);
+                            
+                            // Verifica qual card está mais próximo do centro
+                            if (distance < card.offsetWidth * 0.75) {
+                                dots.forEach(d => d.classList.remove('active'));
+                                dots[index].classList.add('active');
+                                dots[index].style.backgroundColor = 'var(--color-primary)';
+                            } else {
+                                dots[index].style.backgroundColor = '#ddd';
+                            }
+                        });
+                    });
+                    
+                    // Inicializar posicionamento
+                    setTimeout(() => {
+                        container.scrollLeft = 0; // Garantir que começa no primeiro item
+                        dots[0].classList.add('active');
+                        dots[0].style.backgroundColor = 'var(--color-primary)';
+                        dots.forEach((d, i) => {
+                            if (i > 0) d.style.backgroundColor = '#ddd';
+                        });
+                    }, 100);
+                }
+            }
+            
+            setupBonusCarousel();
+            
+            // Reinicializar quando a janela for redimensionada
+            window.addEventListener('resize', function() {
+                setupBonusCarousel();
+            });
+        });
+    </script>
+    
+    <!-- Incluindo o Swiper.js antes do fechamento do body -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>

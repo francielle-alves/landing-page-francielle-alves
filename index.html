@@ -3,226 +3,1461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Franciele Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
-    <meta name="keywords" content="pós-operatório, esteticista, beleza, tratamentos, Franciele Alves, estética corporal, drenagem linfática, taping">
-    <meta name="author" content="Franciele Alves">
+    <meta name="description" content="Francielle Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
+    <meta name="keywords" content="pós-operatório, esteticista, beleza, tratamentos, Francielle Alves, estética corporal, drenagem linfática, taping">
+    <meta name="author" content="Francielle Alves">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Franciele Alves - Esteticista">
-    <meta property="og:description" content="Franciele Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
+    <meta property="og:title" content="Francielle Alves - Esteticista">
+    <meta property="og:description" content="Francielle Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
     <meta property="og:image" content="assets/icon/logo.png">
     <meta property="og:url" content="https://franciellealves.com/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Franciele Alves - Esteticista">
-    <meta name="twitter:description" content="Franciele Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
+    <meta name="twitter:title" content="Francielle Alves - Esteticista">
+    <meta name="twitter:description" content="Francielle Alves - Esteticista especializada em tratamentos de estética e beleza. Confira nossos serviços e agende seu horário.">
     <meta name="twitter:image" content="assets/icon/logo.png">
-    <title>Franciele Alves - Esteticista Especializada em Tratamentos de Beleza</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <title>Francielle Alves - Esteticista Especializada em Tratamentos de Beleza</title>
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/BeerSlider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <style>
+        /* Estilos para os cards de produtos premium */
+        .premium-product-card {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 60px 0;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .premium-product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-ribbon {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--color-primary);
+            color: white;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            z-index: 10;
+            font-weight: 600;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 150px;
+            text-align: center;
+        }
+        
+        .premium-product-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .reverse-layout .premium-product-wrapper {
+            flex-direction: row-reverse;
+        }
+        
+        .premium-product-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .premium-product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .premium-product-image img.hover-scale:hover {
+            transform: scale(1.03);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--color-primary);
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            z-index: 5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        .premium-product-content {
+            flex: 1.5;
+            min-width: 300px;
+            padding: 40px;
+        }
+        
+        .product-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            color: var(--color-primary);
+        }
+        
+        .product-subtitle {
+            font-size: 1.2rem;
+            color: #777;
+            margin: 0 0 25px 0;
+        }
+        
+        .premium-feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .premium-feature-icon {
+            background: linear-gradient(to bottom right, var(--color-primary), #2a362a);
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        
+        .premium-feature-icon i {
+            color: white;
+            font-size: 20px;
+        }
+        
+        .premium-feature p {
+            margin: 0;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .product-highlight {
+            background: rgba(215, 188, 122, 0.12);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 4px solid var(--color-gold);
+        }
+        
+        .product-highlight p {
+            font-weight: bold;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .product-highlight i {
+            color: var(--color-gold);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .product-price-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .price-block {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .original-price {
+            color: #999;
+            text-decoration: line-through;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .sale-price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin: 5px 0;
+        }
+        
+        .sale-price span {
+            font-size: 1.8rem;
+        }
+        
+        .installment-price {
+            color: #777;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .product-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .btn-purchase {
+            padding: 12px 25px;
+            font-size: 1rem;
+        }
+        
+        .button-outline {
+            background-color: transparent; 
+            color: var(--color-primary); 
+            border: 2px solid var(--color-primary);
+            transition: all 0.3s ease;
+        }
+        
+        .button-outline:hover {
+            background-color: rgba(60, 76, 52, 0.1);
+        }
+        
+        /* Animação de pulso para o badge */
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(60, 76, 52, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(60, 76, 52, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(60, 76, 52, 0);
+            }
+        }
+        
+        /* Responsividade para os cards de produtos */
+        @media (max-width: 768px) {
+            .premium-product-card {
+                margin: 40px 0;
+            }
+            
+            .premium-product-content,
+            .premium-product-image {
+                padding: 20px;
+            }
+            
+            .product-title {
+                font-size: 1.8rem;
+            }
+            
+            .product-subtitle {
+                font-size: 1rem;
+            }
+            
+            .premium-feature-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .product-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn-purchase {
+                width: 100%;
+            }
+            
+            .product-price-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .price-block {
+                margin-bottom: 15px;
+            }
+        }
+        
+        /* Estilos avançados para o footer premium com parallax */
+        .footer-photo-section {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: -1px;
+            perspective: 1000px;
+        }
+        
+        /* Elementos decorativos de fundo */
+        .footer-accent-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .accent-circle {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(215, 188, 122, 0.2);
+            opacity: 0.6;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -50px;
+            border-width: 3px;
+            animation: float-slow 15s infinite alternate ease-in-out;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            right: 10%;
+            border-width: 2px;
+            animation: float-slow 12s infinite alternate-reverse ease-in-out;
+        }
+        
+        .accent-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, rgba(215, 188, 122, 0.2), transparent);
+            height: 1px;
+        }
+        
+        .line-1 {
+            width: 80%;
+            top: 30%;
+            left: 10%;
+            transform: rotate(-5deg);
+            animation: fade-in-out 8s infinite alternate ease-in-out;
+        }
+        
+        .line-2 {
+            width: 60%;
+            bottom: 25%;
+            right: 10%;
+            transform: rotate(3deg);
+            animation: fade-in-out 10s infinite alternate-reverse ease-in-out;
+        }
+        
+        @keyframes float-slow {
+            0% { transform: translateY(0) rotate(0); }
+            100% { transform: translateY(20px) rotate(5deg); }
+        }
+        
+        @keyframes fade-in-out {
+            0% { opacity: 0.2; }
+            100% { opacity: 0.7; }
+        }
+        
+        /* Container da imagem com efeito parallax */
+        .footer-image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+        
+        .footer-profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            transition: transform 1s ease;
+            transform: translateZ(0);
+            filter: brightness(0.9) contrast(1.1);
+            will-change: transform; /* Otimização para animações */
+        }
+        
+        /* Overlay com gradiente premium */
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, 
+                rgba(60, 76, 52, 0.98) 0%, 
+                rgba(60, 76, 52, 0.9) 20%,
+                rgba(60, 76, 52, 0.7) 40%, 
+                rgba(60, 76, 52, 0.5) 60%,
+                rgba(60, 76, 52, 0.1) 80%,
+                transparent 100%);
+            padding: 120px 20px 40px;
+            color: white;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .overlay-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 20;
+        }
+        
+        /* Assinatura da marca com linhas decorativas */
+        .brand-signature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .signature-line {
+            height: 2px;
+            width: 70px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            margin: 0 20px;
+        }
+        
+        .brand-signature h4 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            color: var(--color-gold);
+            font-family: 'Montserrat Alternates', sans-serif;
+            letter-spacing: 1px;
+        }
+        
+        .profession-title {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+        
+        .brand-tagline {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin: 0 0 25px;
+            opacity: 0.85;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        /* Área de CTA com botões premium */
+        .overlay-cta {
+            margin: 0 0 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            min-width: 200px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .overlay-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255,255,255,0.1);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .overlay-button:hover:before {
+            width: 100%;
+        }
+        
+        .primary-btn {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+        }
+        
+        .primary-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(215, 188, 122, 0.4);
+        }
+        
+        .secondary-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--color-gold);
+        }
+        
+        .secondary-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-color: white;
+        }
+        
+        .overlay-button i {
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+        
+        /* Ícones de redes sociais */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .social-icon:hover {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .social-icon i {
+            font-size: 1.2rem;
+        }
+        
+        /* Estilos para o footer após a foto */
+        .footer {
+            position: relative;
+            padding-top: 70px; /* Aumenta o espaço do conteúdo principal do footer */
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .footer-photo-section {
+                height: 450px;
+            }
+            
+            .image-overlay {
+                padding: 80px 15px 30px;
+            }
+            
+            .brand-signature h4 {
+                font-size: 2.2rem;
+            }
+            
+            .signature-line {
+                width: 40px;
+                margin: 0 10px;
+            }
+            
+            .profession-title {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+            
+            .brand-tagline {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+            }
+            
+            .overlay-cta {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .overlay-button {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                min-width: unset;
+                width: 100%;
+            }
+            
+            .circle-1 {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .circle-2 {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
     <header class="header" role="banner">
-        <!-- <div class="header-content"> -->
-            <nav class="navbar" role="navigation">
-                <div class="logo-container">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#profile">Perfil</a></li>
-                    <li><a href="#slimshape">Slim Shape</a></li>
-                    <li><a href="#ebooks">E-books</a></li>
-                    <li><a href="#tratamentos">Tratamentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="curso.html">Curso</a></li>
-                </ul>
-                <button class="menu-toggle" aria-label="Abrir menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
-        <!-- </div> -->
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#slimshape">Slim Shape</a></li>
+                <li><a href="#ebooks">E-books</a></li>
+                <li><a href="#tratamentos">Tratamentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="tapping.html">Curso de Taping</a></li>
+                <li><a href="cursos-vip.html">Curso VIP</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
+    
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20mais%20informações" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
 
     <main>
-        <section id="profile" class="profile-section">
-            <div class="profile-content">
-                <div class="profile-text">
-                    <h1 class="profile-name">Francielle Alves</h1>
-                    <p class="welcome-text">
-                        Olá seja bem vinda, antes de tudo deixa eu me apresentar, me chamo <strong>Francielle Alves</strong>, sou esteticista e linfoterapeuta, já atuo na área há 9 anos e estou aqui para cuidar de você com um tratamento totalmente personalizado.<br><br>
-                        Aqui você vai encontrar todas as informações que precisa para agendar o seu horário com facilidade ou para se inscrever nos meus cursos especializados em estética corporal e pós operatório.
-                    </p>
-                </div>
-                <img src="assets/profile.png" alt="Foto de Franciele Alves - Esteticista" class="profile-image">
-            </div>
-        </section>
-
-        <section class="buttons">
-            <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20horário" class="button-agende">
-                <i class="fab fa-whatsapp"></i> AGENDE AGORA SEU HORÁRIO
-            </a>
-            <a href="curso.html" class="button-curso">
-                <i class="fas fa-book"></i> CONHEÇA NOSSOS CURSOS
-            </a>
-        </section>
-
-        <section id="slimshape" class="product-section">
-            <h2>SLIM SHAPE - Descubra o poder do slim shape</h2>
-            <div class="product-content">
-                <img src="assets/product.png" alt="Imagem do produto Slim Shape" class="product-image">
-                <div class="product-description">
-                    <p>
-                        Vontade incontrolável de comer doces? Com slim shape isso vai acabar!<br><br>
-                        O slimShape é um suplemento com fórmula exclusiva que age diretamente no controle da sua vontade de comer açúcar, ajudando você a manter uma dieta equilibrada sem sacrifícios.<br><br>
-                        <strong>FÁCIL DE USAR</strong> - Basta tomar 2 cápsulas do slim shape ao dia na sua rotina e começar a sentir diferença.<br><br>
-                        <strong>SEM DIETAS MALUCAS E SEM SOFRIMENTO.</strong>
-                    </p>
-                </div>
-            </div>
-            <div class="button-container">
-                <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20adquirir%20um%20slim%20shape" class="button-pedido"><strong>APROVEITE E GARANTA O SEU</strong></a>
-            </div>
-        </section>
-
-        <section id="ebooks" class="product-section">
-            <h2>DESINFLAMAR SEU CORPO EM 15 DIAS - Transforme sua saúde</h2>
-            <div class="product-content">
-                <img src="assets/banner-detox.png" alt="Imagem do produto Desinflamar Seu Corpo em 15 Dias - Ebook" class="product-image">
-                <div class="product-description">
-                    <p>
-                        <strong>UM EBOOK COMPLETO E PRÁTICO</strong> para quem deseja transformar sua saúde, reduzir a inflamação e recuperar a energia em apenas 15 dias com receitas de sucos detox que vão ajudar a eliminar toxinas do seu corpo.<br><br>
-                        Ele foi pensado para oferecer uma <strong>SOLUÇÃO PRÁTICA E ACESSÍVEL</strong>, permitindo que você siga uma rotina sem complicações.<br><br>
-                        <strong>COMECE HOJE MESMO</strong> a cuidar do seu corpo e descubra o poder de desinflamar de dentro para fora.
-                    </p>
-                </div>
-            </div>
-            <div class="button-container">
-                <a href="https://pay.kiwify.com.br/0QaAAyo" class="button-pedido"><strong>APROVEITE E GARANTA O SEU</strong></a>
-            </div>
-        </section>
-
-        <hr class="section-divider">
-
-        <section id="tratamentos" class="treatments">
-            <h2 class="section-title">Nossos Tratamentos</h2>
-            <div class="treatment-grid">
-                <article class="treatment">
-                    <div class="treatment-images">
-                        <div class="image-container">
-                            <img src="assets/antes_pos_operatorio.png" alt="Resultado do tratamento pós-operatório - antes" class="treatment-image result-image">
-                            <p>Antes</p>
-                        </div>
-                        <div class="image-container">
-                            <img src="assets/depois_pos_operatorio.png" alt="Resultado do tratamento pós-operatório - depois" class="treatment-image result-image">
-                            <p>Depois</p>
+        <!-- Hero Section com foto à esquerda -->
+        <section id="profile" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content-flex">
+                    
+                    <!-- Imagem da Francielle à esquerda -->
+                    <div class="hero-image fade-in">
+                        <img src="assets/profile.png" alt="Francielle Alves" class="profile-image">
+                    </div>
+                    
+                    <!-- Conteúdo de texto à direita -->
+                    <div class="hero-text">
+                        <h1 class="hero-title fade-in">Francielle Alves</h1>
+                        <p class="hero-subtitle fade-in">
+                            Esteticista e Linfoterapeuta especializada em tratamentos personalizados para sua beleza e bem-estar
+                        </p>
+                        <div class="hero-buttons fade-in">
+                            <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20horário" class="button button-gold">
+                                <i class="fab fa-whatsapp"></i> AGENDE SEU HORÁRIO
+                            </a>
+                            <a href="tapping.html" class="button button-secondary">
+                                <i class="fas fa-book"></i> CURSO DE TAPING
+                            </a>
                         </div>
                     </div>
-                    <h3 class="treatment-item-title">PÓS-OPERATÓRIO</h3>
-                    <p class="description">
-                        A recuperação é uma fase fundamental para o sucesso da sua cirurgia. <br><br>Nosso tratamento pós-operatório é pensado para acelerar sua recuperação, minimizar inchaços e potencializar o resultado da sua cirurgia.
-                        Com técnicas avançadas e acompanhamento especializado, ajudo você a alcançar o corpo dos seus sonhos com segurança e conforto.<br><br>
-                        <strong>Agende seu atendimento e garanta um pós-operatório tranquilo e eficaz!</strong>
-                    </p>
-                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20tratamento%20pós-operatório" class="button-agende">AGENDE AGORA SEU HORÁRIO</a>
-                </article>
-
-                <article class="treatment">
-                    <div class="treatment-images">
-                        <div class="image-container">
-                            <img src="assets/antes_tratamento_corporal.png" alt="Resultado do tratamento corporal - antes" class="treatment-image result-image">
-                            <p>Antes</p>
-                        </div>
-                        <div class="image-container">
-                            <img src="assets/depois_tratamento_corporal.png" alt="Resultado do tratamento corporal - depois" class="treatment-image result-image">
-                            <p>Depois</p>
-                        </div>
-                    </div>
-                    <h3 class="treatment-item-title">TRATAMENTO CORPORAL</h3>
-                    <p class="description">
-                        Algo está te incomodando no seu corpo? Está com a autoestima baixa?<br><br>
-                        Nossos tratamentos corporais são personalizados para atender suas necessidades, focando em gordura localizada, celulite, fortalecimento.
-                        Combinamos tecnologia e técnicas manuais para modelar seu corpo e devolver sua autoestima.<br><br>
-                        <strong>O primeiro passo para seu corpo dos sonhos começa aqui! Agende sua avaliação e descubra o melhor tratamento para você!</strong>
-                    </p>
-                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20a%20minha%20avaliação%20corporal" class="button-agende">AGENDE AGORA SEU HORÁRIO</a>
-                </article>
-
-                <article class="treatment">
-                    <div class="treatment-images">
-                        <div class="image-container">
-                            <img src="assets/antes_drenagem.png" alt="Resultado da drenagem linfática - antes" class="treatment-image result-image">
-                            <p>Antes</p>
-                        </div>
-                        <div class="image-container">
-                            <img src="assets/depois_drenagem.png" alt="Resultado da drenagem linfática - depois" class="treatment-image result-image">
-                            <p>Depois</p>
-                        </div>
-                    </div>
-                    <h3 class="treatment-item-title">DRENAGEM LINFÁTICA</h3>
-                    <p class="description">
-                        Sentindo inchada? A drenagem linfática é a solução!<br><br>
-                        Com uma técnica suave e precisa, ela estimula o sistema linfático, eliminando toxinas, a retenção de líquido e melhorando a circulação.
-                        Ideal para quem quer se sentir com o corpo mais leve. <br><br>Cuide de você agora mesmo e veja como a drenagem pode te ajudar.<br><br>
-                        <strong>Agende sua sessão e sinta a diferença!</strong>
-                    </p>
-                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20a%20minha%20drenagem" class="button-agende">AGENDE AGORA SEU HORÁRIO</a>
-                </article>
-
-                <article class="treatment">
-                    <div class="treatment-images">
-                        <div class="image-container">
-                            <img src="assets/antes_pos_parto.png" alt="Resultado do tratamento pós-parto - antes" class="treatment-image result-image">
-                            <p>Antes</p>
-                        </div>
-                        <div class="image-container">
-                            <img src="assets/depois_pos_parto.png" alt="Resultado do tratamento pós-parto - depois" class="treatment-image result-image">
-                            <p>Depois</p>
-                        </div>
-                    </div>
-                    <h3 class="treatment-item-title">PÓS-PARTO</h3>
-                    <p class="description">
-                        O corpo pós-parto precisa de cuidados especiais para se recuperar e a mamãe também precisa de conforto e sem dores nesse momento tão especial.<br><br>
-                        Com taping trazemos segurança, ele vai auxiliar na drenagem da região abdominal, no tratamento de diástase e ajudamos você a se reconectar com seu corpo.<br><br>
-                        <strong>Agende sua sessão e viva o pós-parto de forma leve.</strong>
-                    </p>
-                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20tratamento%20pós-parto" class="button-agende">AGENDE AGORA SEU HORÁRIO</a>
-                </article>
+                </div>
             </div>
         </section>
-        <section id="contato" class="contact-section">
-            <h2 class="section-title">Informações de Contato</h2>
-            <div class="contact-content">
-                <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong></p>
-                    <p><a href="https://www.google.com/maps/place/ESTETICISTA+FRANCIELLE+ALVES/@-22.7087318,-46.990675,20z/data=!4m6!3m5!1s0x94c8e9734579839d:0xf29682c37fe475eb!8m2!3d-22.7086177!4d-46.9901234!16s%2Fg%2F11sqf197l7?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--color-primary);">Rua Cândido Bueno, 434 - Centro, Jaguariúna - SP</a></p>
-                    <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong></p>
-                    <p style="margin-left: 30px;">(19) 99377-2963</p>
-                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong></p>
-                    <p style="margin-left: 30px;"><a href="mailto:esteticafranciellealves@gmail.com" style="color: var(--color-primary);">esteticafranciellealves@gmail.com</a></p>
-                    <p><i class="fab fa-instagram"></i> <strong>Rede Social:</strong></p>
-                    <p style="margin-left: 30px;"><a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" style="color: var(--color-primary);">@franciellealvesoficial</a></p>
+        
+        <!-- About Section -->
+        <section class="section about-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Quem Sou Eu</h2>
+                <div class="about-content">
+                    <div class="about-text slide-in-left">
+                        <p>
+                            Olá, seja bem-vinda! Me chamo <strong>Francielle Alves</strong>, sou esteticista e linfoterapeuta com 9 anos de experiência na área. 
+                        </p>
+                        <p>
+                            Minha missão é cuidar de você com um tratamento totalmente personalizado, pensado para suas necessidades específicas e objetivos únicos.
+                        </p>
+                        <p>
+                            Aqui você encontrará todas as informações para agendar seu horário com facilidade e conhecer meus cursos especializados em estética corporal e pós-operatório.
+                        </p>
+                    </div>
+                    <div class="about-image slide-in-right">
+                        <img src="assets/home2.jpg" alt="Foto de Franciele Alves - Esteticista" class="profile-image">
+                    </div>
                 </div>
-                <div class="map-container">
-                    <iframe                                                            
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1234567890123!2d-46.99 
-                    75!3d-22.7087318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890a 
-                    def!2sRua%20C%C3%A2ndido%20Bueno%2C%20434%20-%20Centro%2C%20Jaguari%C3%BAna%20-%20SP!5 
-                    !3m2!1spt-BR!2sbr!4v1631234567890!5m2!1spt-BR!2sbr" width="100%" height="300"          
-                    style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                
+
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="slimshape" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Nossos Produtos</h2>
+                <p class="section-subtitle fade-in">Soluções exclusivas para sua saúde e bem-estar</p>
+                
+                <div class="premium-product-card slide-in-left">
+                    <div class="product-ribbon">
+                        <span>MAIS VENDIDO</span>
+                    </div>
+                    <div class="premium-product-wrapper">
+                        <div class="premium-product-image">
+                            <img src="assets/slimshape-home.jpg" alt="Imagem do produto Slim Shape" class="hover-scale">
+                            <div class="product-badge pulse-animation">EXCLUSIVO</div>
+                        </div>
+                        
+                        <div class="premium-product-content">
+                            <h3 class="product-title">SLIM SHAPE</h3>
+                            <p class="product-subtitle">Descubra o poder do controle</p>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p><strong>Adeus vontade de doces!</strong> Com Slim Shape, você finalmente controla suas compulsões.</p>
+                            </div>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p><strong>Fórmula exclusiva</strong> que age diretamente no controle da sua vontade de comer açúcar, para uma dieta equilibrada sem sacrifícios.</p>
+                            </div>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <p><strong>Fácil de usar</strong> - Apenas 2 cápsulas diárias e comece a sentir a diferença em poucos dias.</p>
+                            </div>
+                            
+                            <div class="product-highlight">
+                                <p><i class="fas fa-heart"></i> SEM DIETAS MALUCAS E SEM SOFRIMENTO</p>
+                            </div>
+                            
+                            <div class="product-price-section">
+                                <div class="price-block">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20adquirir%20um%20slim%20shape" class="button button-gold btn-purchase">
+                                        <strong>COMPRAR AGORA</strong>
+                                    </a>
+                                    <a href="slimshape.html" class="button button-outline">
+                                        <i class="fas fa-info-circle"></i> <strong>MAIS DETALHES</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="ebooks" class="premium-product-card slide-in-right reverse-layout">
+                    <div class="product-ribbon" style="background-color: var(--color-gold);">
+                        <span style="color: var(--color-primary);">DIGITAL</span>
+                    </div>
+                    <div class="premium-product-wrapper">
+                        <div class="premium-product-image">
+                            <img src="assets/banner-detox.png" alt="Imagem do produto Desinflamar Seu Corpo em 15 Dias - Ebook" class="hover-scale">
+                            <div class="product-badge pulse-animation" style="background-color: var(--color-gold); color: var(--color-primary);">E-BOOK</div>
+                        </div>
+                        
+                        <div class="premium-product-content">
+                            <h3 class="product-title">DESINFLAMAR SEU CORPO</h3>
+                            <p class="product-subtitle">Transforme sua saúde em apenas 15 dias</p>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <p><strong>Guia completo e prático</strong> para transformar sua saúde, reduzir inflamações e recuperar sua energia vital.</p>
+                            </div>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
+                                    <i class="fas fa-glass-whiskey"></i>
+                                </div>
+                                <p><strong>Receitas exclusivas</strong> de sucos detox que eliminam toxinas do seu corpo e promovem bem-estar imediato.</p>
+                            </div>
+                            
+                            <div class="premium-feature">
+                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <p><strong>Solução acessível</strong> que permite seguir uma rotina saudável sem complicações, mesmo com uma agenda ocupada.</p>
+                            </div>
+                            
+                            <div class="product-highlight" style="background-color: rgba(215, 188, 122, 0.15);">
+                                <p><i class="fas fa-sync-alt"></i> RESULTADOS COMPROVADOS EM APENAS 15 DIAS!</p>
+                            </div>
+                            
+                            <div class="product-price-section">
+                                <div class="price-block">
+                                </div>
+                                <div class="product-actions">
+                                    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20adquirir%20o%20ebook%20desinflamar" class="button button-gold btn-purchase">
+                                        <strong>COMPRAR AGORA</strong>
+                                    </a>
+                                    <a href="ebook-detox.html" class="button button-outline">
+                                        <i class="fas fa-info-circle"></i> <strong>MAIS INFORMAÇÕES</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section id="tratamentos" class="section" style="background-color: #f8f7f5;">
+            <div class="container">
+                <h2 class="section-title fade-in">Nossos Tratamentos</h2>
+                <p class="section-subtitle fade-in">Soluções personalizadas para cada necessidade e objetivo</p>
+                
+                <div class="treatments-cards-container">
+                    <!-- Pós-operatório -->
+                    <div class="treatment-modern-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="treatment-icon">
+                            <i class="fas fa-star-of-life"></i>
+                        </div>
+                        <h3 class="treatment-modern-title">PÓS-OPERATÓRIO</h3>
+                        <div class="treatment-modern-line"></div>
+                        <p class="treatment-modern-description">Acelere sua recuperação, minimize inchaços e potencialize os resultados da sua cirurgia com técnicas avançadas e acompanhamento especializado.</p>
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20tratamento%20pós-operatório" class="treatment-modern-button">Agendar Avaliação</a>
+                    </div>
+                            
+                    <!-- Tratamento Corporal -->
+                    <div class="treatment-modern-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="treatment-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3 class="treatment-modern-title">TRATAMENTO CORPORAL</h3>
+                        <div class="treatment-modern-line"></div>
+                        <p class="treatment-modern-description">Tratamentos personalizados focados em gordura localizada, celulite e flacidez, combinando tecnologia e técnicas manuais para modelar seu corpo.</p>
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20a%20minha%20avaliação%20corporal" class="treatment-modern-button">Agendar Avaliação</a>
+                    </div>
+                    
+                    <!-- Drenagem Linfática -->
+                    <div class="treatment-modern-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="treatment-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="treatment-modern-title">DRENAGEM LINFÁTICA</h3>
+                        <div class="treatment-modern-line"></div>
+                        <p class="treatment-modern-description">Técnica suave e precisa que estimula o sistema linfático, eliminando toxinas, reduzindo retenção de líquidos e melhorando a circulação.</p>
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20a%20minha%20drenagem" class="treatment-modern-button">Agendar Sessão</a>
+                    </div>
+                    
+                    <!-- Pós-Parto -->
+                    <div class="treatment-modern-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="treatment-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 class="treatment-modern-title">PÓS-PARTO</h3>
+                        <div class="treatment-modern-line"></div>
+                        <p class="treatment-modern-description">Cuidados especiais para o corpo pós-parto, incluindo taping para auxiliar na drenagem da região abdominal e tratamento de diástase com conforto e segurança.</p>
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20tratamento%20pós-parto" class="treatment-modern-button">Agendar Sessão</a>
+                    </div>
+                </div>
+                
+                <!-- Indicadores/Dots para navegação em mobile-->
+                <div class="mobile-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+                </div>
+                
+                <!-- Before/After Showcase -->
+                <h3 class="section-title fade-in" style="font-size: 1.8rem; margin-top: 60px;">Resultados Reais</h3>
+                <p class="section-subtitle fade-in">Veja a transformação de nossas clientes</p>
+                
+                <!-- Grade de tratamentos com antes/depois -->
+                <div class="treatment-grid">
+                    <!-- PÓS-OPERATÓRIO -->
+                    <div class="treatment-card fade-in">
+                        <h3 class="treatment-title">PÓS-OPERATÓRIO</h3>
+                        <p class="treatment-description">Acelere sua recuperação, minimize inchaços e potencialize os resultados da sua cirurgia com técnicas avançadas e acompanhamento especializado.</p>
+                        <div class="beer-slider" data-beer-label="Depois">
+                            <img src="assets/depois_pos_operatorio.png" alt="Depois do tratamento pós-operatório">
+                            <div class="beer-reveal" data-beer-label="Antes">
+                                <img src="assets/antes_pos_operatorio.png" alt="Antes do tratamento pós-operatório">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TRATAMENTO CORPORAL -->
+                    <div class="treatment-card fade-in">
+                        <h3 class="treatment-title">TRATAMENTO CORPORAL</h3>
+                        <p class="treatment-description">Tratamentos personalizados focados em gordura localizada, celulite e flacidez, combinando tecnologia e técnicas manuais para modelar seu corpo.</p>
+                        <div class="beer-slider" data-beer-label="Depois">
+                            <img src="assets/depois_tratamento_corporal.png" alt="Depois do tratamento corporal">
+                            <div class="beer-reveal" data-beer-label="Antes">
+                                <img src="assets/antes_tratamento_corporal.png" alt="Antes do tratamento corporal">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- DRENAGEM LINFÁTICA -->
+                    <div class="treatment-card fade-in">
+                        <h3 class="treatment-title">DRENAGEM LINFÁTICA</h3>
+                        <p class="treatment-description">Técnica suave e precisa que estimula o sistema linfático, eliminando toxinas, reduzindo retenção de líquidos e melhorando a circulação.</p>
+                        <div class="beer-slider" data-beer-label="Depois">
+                            <img src="assets/depois_drenagem.png" alt="Depois da drenagem linfática">
+                            <div class="beer-reveal" data-beer-label="Antes">
+                                <img src="assets/antes_drenagem.png" alt="Antes da drenagem linfática">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PÓS-PARTO -->
+                    <div class="treatment-card fade-in">
+                        <h3 class="treatment-title">PÓS-PARTO</h3>
+                        <p class="treatment-description">Cuidados especiais para o corpo pós-parto, incluindo taping para auxiliar na drenagem da região abdominal e tratamento de diástase com conforto e segurança.</p>
+                        <div class="beer-slider" data-beer-label="Depois">
+                            <img src="assets/depois_pos_parto.png" alt="Depois do tratamento pós-parto">
+                            <div class="beer-reveal" data-beer-label="Antes">
+                                <img src="assets/antes_pos_parto.png" alt="Antes do tratamento pós-parto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="text-align: center; margin-top: 50px;">
+                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20uma%20avaliação" class="button button-primary fade-in">AGENDE SUA AVALIAÇÃO GRATUITA</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Depoimentos - Seção Completamente Redesenhada -->
+        <section class="section testimonials-section" style="background-color: #fff;">
+            <div class="container">
+                <h2 class="section-title fade-in">O Que Meus Clientes Dizem</h2>
+                <p class="section-subtitle fade-in">Depoimentos de quem já experimentou nossos tratamentos e cursos</p>
+                
+                <div class="testimonials-container">
+                    <!-- Depoimento Cliente 1 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author">
+                                <h4 class="testimonial-name">Fabiana Ribeiro</h4>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Eu sou suspeita a falar da minha esteticista preferida, além de muito bonita, simpática, educada é uma excelente profissional, tem uma massagem incrível e tem domínio e muito conhecimento sobre a estética, tanto facial, quanto corporal. Está sempre atualizada em tudo deste ramo e trazendo novidades para a clínica e equipe. Simplesmente amo o trabalho dela e a clínica que ela atende. Parabéns Fran ❤️👏🏻"</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento Cliente 2 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author">
+                                <h4 class="testimonial-name">Kyteria Silva</h4>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Maos de fadas uma proficional e amiga maravilhosa,me ajudou muito c meu pos operatório desde o terceiro dia cuidou de mim com todo carinho.
+                                Cuidou de cada detalhe cicatrização,inchasso,tirou tdas as minhas dúvidas e tudo ficou perfeito amei e ja estou sentindo falta logo aparesso obg por tudo e parabéns pelo seu trabalho"</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento Cliente 3 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-header">
+                            <div class="testimonial-author">
+                                <h4 class="testimonial-name">Débora Wassano</h4>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"A Fran é ótima profissional. Atendimento ótimo e atenta aos detalhes. Ela fez o meu tapping pós cesárea e realmente recomendo. O procedimento trouxe uma alívio enorme para o desconforto que eu estava sentindo.
+                                Fiz também a drenagem linfática durante a gravidez, o que ajudou muito o meu bem estar!"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicadores/Dots para navegação em mobile -->
+                <div class="testimonial-navigation">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <div class="social-icons" style="display: flex; gap: 20px; justify-content: center;">
+                        <a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" class="social-icon fade-in" style="background: var(--color-primary); color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Entre em Contato</h2>
+                <p class="section-subtitle fade-in">Estamos prontos para atender você e esclarecer todas as suas dúvidas</p>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 50px;">
+                    <div class="contact-info slide-in-left" style="flex: 1; min-width: 300px;">
+                        <div class="card" style="height: auto;">
+                            <h3 style="margin-bottom: 25px;">Informações de Contato</h3>
+                            
+                            <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                                <div style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Endereço</h4>
+                                    <p><a href="https://www.google.com/maps/place/ESTETICISTA+FRANCIELLE+ALVES/@-22.7087318,-46.990675,20z/data=!4m6!3m5!1s0x94c8e9734579839d:0xf29682c37fe475eb!8m2!3d-22.7086177!4d-46.9901234!16s%2Fg%2F11sqf197l7?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="color: #666;">Rua Cândido Bueno, 434 - Centro, Jaguariúna - SP</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                                <div style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Telefone</h4>
+                                    <p><a href="tel:+5519993772963" style="color: #666;">(19) 99377-2963</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                                <div style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Email</h4>
+                                    <p><a href="mailto:esteticafranciellealves@gmail.com" style="color: #666;">esteticafranciellealves@gmail.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item" style="display: flex; align-items: flex-start;">
+                                <div style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Instagram</h4>
+                                    <p><a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" rel="noopener noreferrer" style="color: #666;">@franciellealvesoficial</a></p>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 30px;">
+                                <h4 style="margin-bottom: 15px;">Siga-nos nas Redes Sociais</h4>
+                                <div class="social-icons" style="display: flex; gap: 15px;">
+                                    <a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://wa.me/5519993772963" target="_blank" style="background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container slide-in-right" style="flex: 1.3; min-width: 300px; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow); height: 100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.96270397324847!2d-46.99067502060778!3d-22.7087318376431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8e9734579839d%3A0xf29682c37fe475eb!2sESTETICISTA%20FRANCIELLE%20ALVES!5e0!3m2!1spt-BR!2sbr!4v1720320054607!5m2!1spt-BR!2sbr" width="100%" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="text-align: center; margin-top: 50px;">
+                    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20mais%20informações" class="button button-gold fade-in" style="margin-right: 15px;">
+                        <i class="fab fa-whatsapp"></i> FALE CONOSCO PELO WHATSAPP
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer" role="contentinfo">
+    
+    <!-- Footer simples e sóbrio -->
+    <footer style="background-color: var(--color-primary); padding: 40px 0 0; margin-top: 0;">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Francielle Alves. Todos os direitos reservados.</p>
+            <!-- Seção principal do footer com grid simples -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                <!-- Coluna 1: Logo e Informações -->
+                <div>
+                    <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                    <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                        Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
+                    </p>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Links Rápidos</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+
+                        <li style="margin-bottom: 10px;">
+                            <a href="#tratamentos" style="color: white; text-decoration: none; font-size: 0.95rem;">Tratamentos</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="tapping.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Curso de Taping</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="ebook-detox.html" style="color: white; text-decoration: none; font-size: 0.95rem;">E-book Detox</a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="slimshape.html" style="color: white; text-decoration: none; font-size: 0.95rem;">SlimShape</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Contato</h3>
+                    <div style="margin-bottom: 15px;">
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Endereço:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Rua Cândido Bueno, 434<br>Centro, Jaguariúna - SP</p>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Telefone:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">(19) 99377-2963</p>
+                    </div>
+                    <div>
+                        <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Email:</p>
+                        <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">esteticafranciellealves@gmail.com</p>
+                    </div>
+                </div>
+                
+                <!-- Coluna 4: Botões CTA -->
+                <div>
+                    <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Agendar Consulta
+                        </a>
+                        <a href="tapping.html" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                            <i class="fas fa-book" style="margin-right: 8px;"></i> Conhecer Cursos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div style="background-color: rgba(0,0,0,0.2); padding: 20px 0; margin-top: 30px;">
+            <div class="container">
+                <p style="color: rgba(255,255,255,0.6); margin: 0; text-align: center; font-size: 0.9rem;">
+                    &copy; 2025 Francielle Alves | Todos os direitos reservados
+                </p>
             </div>
         </div>
     </footer>
-
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/libs/BeerSlider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar AOS para animações de entrada
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 50
+            });
+            
+            // Efeito Parallax para o footer
+            const parallaxFooter = document.getElementById('parallax-footer');
+            const parallaxImg = document.getElementById('parallax-img');
+            
+            if (parallaxFooter && parallaxImg) {
+                window.addEventListener('scroll', function() {
+                    const scrollPosition = window.scrollY;
+                    const footerPosition = parallaxFooter.offsetTop;
+                    const windowHeight = window.innerHeight;
+                    
+                    // Verificar se o footer está visível no viewport
+                    if (scrollPosition + windowHeight > footerPosition) {
+                        // Calcular quanto do footer está visível
+                        const visibleAmount = (scrollPosition + windowHeight) - footerPosition;
+                        const parallaxValue = visibleAmount * 0.2;
+                        
+                        // Aplicar o efeito parallax à imagem
+                        parallaxImg.style.transform = `translateY(-${parallaxValue}px) scale(${1 + visibleAmount/2000})`;
+                    }
+                });
+            }
+            
+            // Função para configurar um carousel mobile
+            const setupMobileCarousel = (containerSelector, cardSelector, dotsSelector) => {
+                // Forçar o primeiro item a ser visível no início quando a página carrega
+                if (window.innerWidth <= 767) {
+                    const container = document.querySelector(containerSelector);
+                    // Selecionar os dots adequados dependendo do seletor
+                    const dots = dotsSelector === '.testimonial-navigation' ? 
+                        document.querySelectorAll(`${dotsSelector} .testimonial-nav-dot`) : 
+                        document.querySelectorAll(`${dotsSelector} .dot`);
+                    const cards = document.querySelectorAll(cardSelector);
+                    let autoScrollInterval = null;
+                    let userInteracted = false;
+                    
+                    console.log(`Configurando carousel: ${containerSelector}`);
+                    console.log(`- Número de cards: ${cards.length}`);
+                    console.log(`- Número de dots: ${dots.length}`);
+                    
+                    if (!container || !dots.length || !cards.length) {
+                        console.warn(`Não foi possível configurar o carousel ${containerSelector}`);
+                        return;
+                    }
+                    
+                    // Função para iniciar o scroll automático
+                    const startAutoScroll = () => {
+                        if (!userInteracted) {
+                            // Primeiramente, certifique-se de que o primeiro card está visível
+                            if (containerSelector === '.testimonials-container') {
+                                setTimeout(() => {
+                                    container.scrollTo({
+                                        left: 0,
+                                        behavior: 'auto'
+                                    });
+                                }, 200);
+                            }
+                            
+                            let currentIndex = 0;
+                            autoScrollInterval = setInterval(() => {
+                                currentIndex = (currentIndex + 1) % cards.length;
+                                const card = cards[currentIndex];
+                                
+                                // Calcular a posição centralizada
+                                const cardRect = card.getBoundingClientRect();
+                                const containerRect = container.getBoundingClientRect();
+                                const scrollPos = card.offsetLeft - container.offsetLeft - 
+                                                  (containerRect.width / 2) + (cardRect.width / 2);
+                                
+                                container.scrollTo({
+                                    left: scrollPos,
+                                    behavior: 'smooth'
+                                });
+                                
+                                dots.forEach(d => d.classList.remove('active'));
+                                dots[currentIndex].classList.add('active');
+                            }, 5000);
+                        }
+                    };
+                    
+                    // Função para parar o scroll automático
+                    const stopAutoScroll = () => {
+                        userInteracted = true;
+                        if (autoScrollInterval) {
+                            clearInterval(autoScrollInterval);
+                            autoScrollInterval = null;
+                        }
+                    };
+                    
+                    // Adicionar evento de scroll completo para inicializar corretamente
+                    setTimeout(() => {
+                        if (containerSelector === '.testimonials-container') {
+                            // Força rolar para o início para garantir o acesso ao primeiro card
+                            container.scrollLeft = 0;
+                        }
+                    }, 500);
+                    
+                    // Adicionar evento keydown para navegação com teclado
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            // Parar o scroll automático quando o usuário clica
+                            stopAutoScroll();
+                            
+                            // Calcular a posição para scroll com centralização
+                            const card = cards[index];
+                            const cardRect = card.getBoundingClientRect();
+                            const containerRect = container.getBoundingClientRect();
+                            
+                            // Centralizar o card na tela
+                            let targetPosition;
+                            if (index === 0) {
+                                targetPosition = 0; // Forçar scroll para o início para o primeiro card
+                            } else {
+                                targetPosition = card.offsetLeft - container.offsetLeft - 
+                                              (containerRect.width / 2) + (cardRect.width / 2);
+                            }
+                            
+                            container.scrollTo({
+                                left: targetPosition,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Atualizar dot ativo
+                            dots.forEach(d => d.classList.remove('active'));
+                            dot.classList.add('active');
+                        });
+                    });
+                    
+                    // Detectar interação com o container
+                    container.addEventListener('touchstart', stopAutoScroll);
+                    container.addEventListener('mousedown', stopAutoScroll);
+                    
+                    // Atualizar dot ativo durante o scroll
+                    container.addEventListener('scroll', () => {
+                        const scrollPosition = container.scrollLeft;
+                        const containerWidth = container.offsetWidth;
+                        
+                        cards.forEach((card, index) => {
+                            const cardLeft = card.offsetLeft - container.offsetLeft;
+                            const cardCenter = cardLeft + (card.offsetWidth / 2);
+                            const containerCenter = scrollPosition + (containerWidth / 2);
+                            const distance = Math.abs(cardCenter - containerCenter);
+                            
+                            // Verifica qual card está mais próximo do centro
+                            if (distance < card.offsetWidth * 0.75) {
+                                dots.forEach(d => d.classList.remove('active'));
+                                dots[index].classList.add('active');
+                            }
+                        });
+                    });
+                    
+                    // Iniciar o scroll automático
+                    startAutoScroll();
+                }
+            };
+            
+            // Configurar os carousels
+            setupMobileCarousel('.treatments-cards-container', '.treatment-modern-card', '.mobile-dots');
+            
+            // Usar o mesmo padrão para o carrossel de depoimentos
+            setupMobileCarousel('.testimonials-container', '.testimonial-card', '.testimonial-navigation');
+            
+            // Garantir que todos os carousels comecem pelo primeiro item
+            window.addEventListener('load', function() {
+                // Forçar scroll para o início em ambos os carousels várias vezes
+                const containers = [
+                    document.querySelector('.treatments-cards-container'),
+                    document.querySelector('.testimonials-container')
+                ];
+                
+                // Forçar o scroll para o início após o carregamento, várias vezes com atraso
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(function() {
+                        containers.forEach(container => {
+                            if (container) container.scrollLeft = 0;
+                        });
+                    }, 300 * i);
+                }
+                
+                // Ativar o primeiro dot em cada carousel
+                const treatmentDots = document.querySelectorAll('.mobile-dots .dot');
+                const testimonialDots = document.querySelectorAll('.testimonial-navigation .dot');
+                
+                treatmentDots.forEach(dot => dot.classList.remove('active'));
+                testimonialDots.forEach(dot => dot.classList.remove('active'));
+                
+                if (treatmentDots.length > 0) {
+                    treatmentDots[0].classList.add('active');
+                }
+                
+                if (testimonialDots.length > 0) {
+                    testimonialDots[0].classList.add('active');
+                }
+                
+                // Configuração específica para o carrossel de depoimentos
+                const testimonialContainer = document.querySelector('.testimonials-container');
+                const testimonialCards = document.querySelectorAll('.testimonial-card');
+                const testimonyDots = document.querySelectorAll('.testimonial-navigation .dot');
+                
+                if (testimonialContainer && testimonialCards.length > 0 && testimonyDots.length > 0) {
+                    testimonialContainer.addEventListener('scroll', function() {
+                        const scrollPosition = testimonialContainer.scrollLeft;
+                        const containerWidth = testimonialContainer.offsetWidth;
+                        
+                        testimonialCards.forEach((card, index) => {
+                            const cardLeft = card.offsetLeft - testimonialContainer.offsetLeft;
+                            const cardCenter = cardLeft + (card.offsetWidth / 2);
+                            const containerCenter = scrollPosition + (containerWidth / 2);
+                            const distance = Math.abs(cardCenter - containerCenter);
+                            
+                            // Verifica qual card está mais próximo do centro
+                            if (distance < card.offsetWidth * 0.6) {
+                                testimonyDots.forEach(d => d.classList.remove('active'));
+                                testimonyDots[index].classList.add('active');
+                            }
+                        });
+                    });
+                    
+                    // Adicionar eventos de clique aos dots
+                    testimonyDots.forEach((dot, index) => {
+                        dot.addEventListener('click', function() {
+                            const card = testimonialCards[index];
+                            if (card) {
+                                const cardRect = card.getBoundingClientRect();
+                                const containerRect = testimonialContainer.getBoundingClientRect();
+                                const scrollPos = card.offsetLeft - testimonialContainer.offsetLeft - 
+                                                (containerRect.width / 2) + (cardRect.width / 2);
+                                
+                                testimonialContainer.scrollTo({
+                                    left: scrollPos,
+                                    behavior: 'smooth'
+                                });
+                                
+                                testimonyDots.forEach(d => d.classList.remove('active'));
+                                dot.classList.add('active');
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="js/modern-script.js" defer></script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -245,6 +1480,5 @@
         ]
     }
     </script>
-    <script src="js/script.js"></script>
 </body>
 </html>
