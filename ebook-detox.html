@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-book Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações. Francielle Alves.">
+    <meta name="keywords" content="desinflamar, detox, e-book, saúde, bem-estar, Francielle Alves, sucos detox, alimentação saudável">
+    <meta name="author" content="Francielle Alves">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="E-book Detox - Francielle Alves">
+    <meta property="og:description" content="Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações.">
+    <meta property="og:image" content="assets/banner-detox.png">
+    <meta property="og:url" content="https://franciellealves.com/ebook-detox.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Desinflamar Seu Corpo em 15 Dias - E-book | Francielle Alves</title>
+    
+    <!-- Fontes e estilos -->    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <style>
+        :root {
+            --color-primary: #3d4c35;
+            --color-gold: #d7bc7a;
+            --color-light: #f8f7f5;
+            --color-dark: #333;
+            --color-accent: #20ba5a;
+            --font-primary: 'Montserrat', sans-serif;
+            --font-accent: 'Montserrat Alternates', sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            color: var(--color-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title .icon-circle {
+            width: 70px;
+            height: 70px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            color: white;
+            font-size: 28px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-title h2 span {
+            color: var(--color-gold);
+        }
+        
+        .section-title .divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-gold);
+            margin: 0 auto 20px;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        /* Hero Style */
+        .hero-section {
+            position: relative;
+            padding: 120px 0;
+            background-color: var(--color-primary);
+            color: white;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/bg-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        .hero-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .feature-list {
+            margin-bottom: 30px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .feature-item i {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .testimonial-bubble {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(61, 76, 53, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            max-width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .testimonial-bubble img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--color-gold);
+            margin-right: 15px;
+        }
+        
+        .testimonial-bubble p {
+            font-style: italic;
+            color: #fff;
+            margin: 0 0 5px;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-bubble .author {
+            color: var(--color-gold);
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+        /* Custom Buttons */
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c8ae6b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary i {
+            margin-left: 10px;
+        }
+        
+        .security-badge {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .security-badge i {
+            color: var(--color-gold);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .security-badge span {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+        }
+        
+        /* Recipe Cards */
+        .recipe-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .recipe-image-container {
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f1f8e9;
+        }
+        
+        .recipe-badge {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            padding: 6px 12px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .badge-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        .badge-gold {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+        }
+        
+        .recipe-content {
+            padding: 25px;
+        }
+        
+        .recipe-title {
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        
+        .recipe-description {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            min-height: 80px;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            align-items: center;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .meta-item i {
+            color: var(--color-gold);
+            margin-right: 5px;
+        }
+        
+        .meta-item span {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Benefits */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 28px;
+        }
+        
+        .benefit-title {
+            color: var(--color-primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .benefit-description {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Callout Box */
+        .callout-box {
+            background-color: rgba(215, 188, 122, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .callout-box i {
+            color: var(--color-gold);
+            font-size: 24px;
+            margin-right: 15px;
+        }
+        
+        .callout-box p {
+            margin: 0;
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .footer-brand {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .footer-logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-description {
+            margin-bottom: 20px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-nav {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-nav h3 {
+            color: var(--color-gold);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-nav ul {
+            list-style: none;
+        }
+        
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            opacity: 1;
+            color: var(--color-gold);
+        }
+        
+        .footer-contact {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item i {
+            color: var(--color-gold);
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .recipe-card, .benefit-card {
+                min-width: 100%;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        /* Whatsapp float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Estilos avançados para o footer premium com parallax */
+        .footer-photo-section {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: -1px;
+            perspective: 1000px;
+        }
+        
+        /* Elementos decorativos de fundo */
+        .footer-accent-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .accent-circle {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid rgba(215, 188, 122, 0.2);
+            opacity: 0.6;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -50px;
+            border-width: 3px;
+            animation: float-slow 15s infinite alternate ease-in-out;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -50px;
+            right: 10%;
+            border-width: 2px;
+            animation: float-slow 12s infinite alternate-reverse ease-in-out;
+        }
+        
+        .accent-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, rgba(215, 188, 122, 0.2), transparent);
+            transform-origin: center;
+        }
+        
+        .line-1 {
+            width: 100%;
+            height: 1px;
+            top: 30%;
+            transform: rotate(-5deg);
+            animation: float-slow 20s infinite alternate ease-in-out;
+        }
+        
+        .line-2 {
+            width: 100%;
+            height: 1px;
+            bottom: 25%;
+            transform: rotate(5deg);
+            animation: float-slow 25s infinite alternate-reverse ease-in-out;
+        }
+        
+        @keyframes float-slow {
+            0% {
+                transform: translateY(0) rotate(0);
+            }
+            100% {
+                transform: translateY(20px) rotate(3deg);
+            }
+        }
+        
+        /* Contêiner de imagem do footer */
+        .footer-image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-primary);
+        }
+        
+        .footer-profile-image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 500px;
+            width: auto;
+            object-fit: cover;
+            z-index: 1; /* Garantir que a imagem apareça acima do fundo */
+        }
+        
+        /* Overlay de imagem com conteúdo */
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, var(--color-primary) 0%, rgba(61, 76, 53, 0.85) 30%, rgba(61, 76, 53, 0.7) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 100px 20px 40px;
+            z-index: 2;
+        }
+        
+        .overlay-content {
+            text-align: center;
+            color: white;
+        }
+        
+        /* Assinatura da marca */
+        .brand-signature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .signature-line {
+            height: 2px;
+            width: 70px;
+            background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+            margin: 0 20px;
+        }
+        
+        .brand-signature h4 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            color: var(--color-gold);
+            font-family: 'Montserrat Alternates', sans-serif;
+            letter-spacing: 1px;
+        }
+        
+        .profession-title {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+        
+        .brand-tagline {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin: 0 0 25px;
+            opacity: 0.85;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        /* Área de CTA com botões premium */
+        .overlay-cta {
+            margin: 0 0 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            min-width: 200px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .overlay-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255,255,255,0.1);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .overlay-button:hover:before {
+            width: 100%;
+        }
+        
+        .overlay-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+        
+        .primary-btn {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+        }
+        
+        .secondary-btn {
+            background-color: rgba(255,255,255,0.15);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+        
+        /* Ícones Sociais */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--color-gold);
+            color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Loader */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--color-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#profile">Perfil</a></li>
+                <li><a href="index.html#slimshape">Slim Shape</a></li>
+                <li><a href="index.html#ebooks" class="active">E-books</a></li>
+                <li><a href="index.html#tratamentos">Tratamentos</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="tapping.html">Curso</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20o%20ebook%20detox" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">E-BOOK EXCLUSIVO</div>
+                        
+                        <h1 class="hero-title">DESINFLAMAR SEU CORPO<br>EM 15 DIAS</h1>
+                        
+                        <p class="hero-description">
+                            Um guia completo com receitas detox e dicas para eliminar inflamações, 
+                            recuperar sua energia e transformar sua saúde.
+                        </p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>20 receitas exclusivas de sucos detox</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Plano completo passo-a-passo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Lista de alimentos anti-inflamatórios</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Dicas para manutenção a longo prazo</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary">
+                            QUERO ADQUIRIR AGORA <i class="fas fa-arrow-right"></i>
+                        </a>
+                        
+                        <div class="security-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Satisfação garantida ou seu dinheiro de volta</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <img src="assets/ebook/ebook5.jpg" alt="E-book Desinflamar Seu Corpo em 15 Dias">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Receitas Detox Section -->
+        <section class="section light-bg">
+            <div class="container">
+                <div class="section-title">
+                    <div class="icon-circle">
+                        <i class="fas fa-blender"></i>
+                    </div>
+                    <h2>Receitas de <span>Sucos Detox</span></h2>
+                    <div class="divider"></div>
+                    <p>O e-book contém 20 receitas exclusivas de sucos detox para desinflamar seu corpo e recuperar sua energia</p>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                    <!-- Receita 1 -->
+                    <div class="recipe-card" data-aos="fade-up">
+                        <div class="recipe-image-container">
+                            <img src="assets/ebook/ebook4.jpg" alt="Suco Detox Energizante" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="recipe-badge badge-primary">ENERGIZANTE</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Suco Detox Energizante</h3>
+                            <p class="recipe-description">Um suco rico em nutrientes e antioxidantes, ideal para começar o dia com energia e disposição.</p>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 minutos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Nível iniciante</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Receita 2 -->
+                    <div class="recipe-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recipe-image-container" style="background-color: #fff8e1;">
+                            <img src="assets/ebook/ebook2.png" alt="Golden Detox" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="recipe-badge badge-gold">ANTIOXIDANTE</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Smoothie Antioxidante com Frutas Vermelhas</h3>
+                            <p class="recipe-description">Perfeito para o meio da manhã ou como lanche da tarde, esse smoothie é rico em antioxidantes e vitaminas.</p>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7 minutos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Nível intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Receita 3 -->
+                    <div class="recipe-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="recipe-image-container" style="background-color: #e8f5e9;">
+                            <img src="assets/ebook/ebook1.jpg" alt="Detox Tropical" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div class="recipe-badge badge-primary">FORTALECER</div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Smoothie Cremoso de Banana e Cúrcuma</h3>
+                            <p class="recipe-description">Esse smoothie é rico em antioxidantes e ótimo para fortalecer o sistema imunológico, ideal para o café da manhã.</p>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 minutos</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Nível iniciante</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- E-book Overview Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <div class="icon-circle">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2>O Que Você Vai <span>Encontrar</span></h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+                    <div style="flex: 1; min-width: 300px;" data-aos="fade-right">
+                        <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
+                    </div>
+                    <div style="flex: 1; min-width: 300px;" data-aos="fade-left">
+                        <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 1.5rem;">Por Que Este E-book é Diferente?</h3>
+                        <p style="margin-bottom: 15px; line-height: 1.6; color: #444;">O <strong>E-book Desinflamar Seu Corpo em 15 Dias</strong> foi desenvolvido após anos de experiência no tratamento de pessoas com problemas relacionados à inflamação crônica. Ele oferece um programa completo e prático que pode ser facilmente incorporado à sua rotina.</p>
+                        <p style="margin-bottom: 25px; line-height: 1.6; color: #444;">Este não é apenas mais um guia teórico - é um programa passo a passo com receitas testadas e aprovadas que realmente funcionam para reduzir a inflamação e recuperar sua energia vital.</p>
+                        
+                        <div class="callout-box">
+                            <i class="fas fa-bolt"></i>
+                            <p>
+                                <strong>COMECE HOJE MESMO</strong> a cuidar do seu corpo e descubra o poder de desinflamar de dentro para fora.
+                            </p>
+                        </div>
+                        
+                        <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary" style="margin-top: 20px;">
+                            <strong>APROVEITE E GARANTA O SEU</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Benefícios Section -->
+        <section class="section light-bg">
+            <div class="container">
+                <div class="section-title">
+                    <div class="icon-circle">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h2>Benefícios do <span>Programa Detox</span></h2>
+                    <div class="divider"></div>
+                    <p>Conheça os principais benefícios do nosso programa de desintoxicação de 15 dias</p>
+                </div>
+                
+                <div class="detox-benefits-container">
+                    <!-- Benefício 1 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-icon">
+                            <i class="fas fa-fire-alt"></i>
+                        </div>
+                        <h3 class="benefit-title">Redução da Inflamação</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            Aprenda como identificar e eliminar os alimentos inflamatórios da sua dieta, 
+                            reduzindo dores e desconfortos no corpo.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefício 2 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="benefit-title">Mais Energia</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            Com a eliminação de toxinas e a redução da inflamação, você sentirá 
+                            um aumento significativo nos seus níveis de energia e disposição.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefício 3 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="benefit-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3 class="benefit-title">Perda de Peso Natural</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            A redução da inflamação facilita o processo de emagrecimento, 
+                            ajudando seu corpo a funcionar de forma mais eficiente.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefício 4 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="benefit-title">Clareza Mental</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            Muitas pessoas relatam uma notável melhora na clareza mental 
+                            e foco quando eliminam alimentos inflamatórios.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefício 5 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="benefit-title">Melhor Sono</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            Desinflamar o corpo pode melhorar significativamente a qualidade 
+                            do seu sono, deixando você mais descansado.
+                        </p>
+                    </div>
+                    
+                    <!-- Benefício 6 -->
+                    <div class="detox-benefit-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="benefit-title">Saúde a Longo Prazo</h3>
+                        <div class="benefit-line"></div>
+                        <p class="benefit-description">
+                            Os hábitos que você aprenderá neste ebook contribuem para 
+                            a saúde a longo prazo e prevenção de doenças.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Indicadores/Dots para navegação em mobile -->
+                <div class="detox-navigation">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                    <span class="dot" data-index="5"></span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section" style="background-color: var(--color-primary); color: white;">
+            <div class="container" style="text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; font-weight: 700;">Transforme Sua Saúde Hoje</h2>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; opacity: 0.9;">
+                    Não espere mais para cuidar do seu corpo. Comece sua jornada de desintoxicação agora mesmo e sinta a diferença em apenas 15 dias.                
+                </p>
+                <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+                    QUERO COMEÇAR AGORA <i class="fas fa-arrow-right"></i>
+                </a>
+                <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">
+                    Acesso imediato após a compra | Garantia de 7 dias
+                </p>
+            </div>
+        </section>
+        
+        <!-- Perguntas Frequentes Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <div class="icon-circle">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <h2>Perguntas <span>Frequentes</span></h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;" data-aos="fade-up">
+                        <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">Quanto tempo leva para ver resultados?</h3>
+                        <p style="color: #555; line-height: 1.6;">
+                            A maioria das pessoas relata melhoras já nos primeiros 4-5 dias, como aumento de energia e redução do inchaço. Para resultados completos, recomendamos seguir o plano por 15 dias.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="100">
+                        <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">Preciso de algum equipamento especial?</h3>
+                        <p style="color: #555; line-height: 1.6;">
+                            Não! Todas as receitas podem ser preparadas com utensílios básicos de cozinha. Um liquidificador comum é o suficiente para todas as receitas de sucos detox.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="200">
+                        <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">Posso substituir alguns ingredientes?</h3>
+                        <p style="color: #555; line-height: 1.6;">
+                            Sim! O e-book inclui uma seção com alternativas para ingreditentes mais comuns, facilitando adaptações conforme sua preferência ou disponibilidade.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="300">
+                        <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">O que está incluso no e-book?</h3>
+                        <p style="color: #555; line-height: 1.6;">
+                            Você receberá o e-book em formato PDF com 20 receitas de sucos detox, um plano de 15 dias, lista de compras, dicas nutricionais sobre alimentos anti-inflamatórios e estratégias para manutenção a longo prazo.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">Existe garantia de satisfação?</h3>
+                        <p style="color: #555; line-height: 1.6;">
+                            Sim! Oferecemos garantia de 7 dias. Se você não ficar satisfeito com o conteúdo, basta solicitar o reembolso dentro desse período.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer simples e sóbrio -->
+        <footer style="background-color: var(--color-primary); padding: 40px 0 0; margin-top: 0;">
+            <div class="container">
+                <!-- Seção principal do footer com grid simples -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
+                    <!-- Coluna 1: Logo e Informações -->
+                    <div>
+                        <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                        <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
+                        </p>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Coluna 2: Links Rápidos -->
+                    <div>
+                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Links Rápidos</h3>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 10px;">
+                                <a href="index.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Página Inicial</a>
+                            </li>
+
+                            <li style="margin-bottom: 10px;">
+                                <a href="index.html#tratamentos" style="color: white; text-decoration: none; font-size: 0.95rem;">Tratamentos</a>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <a href="tapping.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Curso de Taping</a>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <a href="slimshape.html" style="color: white; text-decoration: none; font-size: 0.95rem;">SlimShape</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Coluna 3: Contato -->
+                    <div>
+                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Contato</h3>
+                        <div style="margin-bottom: 15px;">
+                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Endereço:</p>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Rua Eliseu Teixeira de Camargo, 135<br>Jardim Chapadão, Campinas/SP</p>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Telefone:</p>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">(19) 99377-2963</p>
+                        </div>
+                        <div>
+                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Email:</p>
+                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">esteticafranciellealves@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Coluna 4: Botões CTA -->
+                    <div>
+                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Agendar Consulta
+                            </a>
+                            <a href="https://pay.kiwify.com.br/0QaAAyo" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
+                                <i class="fas fa-book" style="margin-right: 8px;"></i> Comprar E-book
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div style="background-color: rgba(0,0,0,0.2); padding: 20px 0; margin-top: 30px;">
+                <div class="container">
+                    <p style="color: rgba(255,255,255,0.6); margin: 0; text-align: center; font-size: 0.9rem;">
+                        &copy; 2025 Francielle Alves | Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-quad',
+            once: true
+        });
+        
+        // Preloader
+        $(window).on('load', function() {
+            $('.loader').fadeOut('slow');
+        });
+        
+        // Menu toggle para mobile
+        $('.menu-toggle').on('click', function() {
+            $(this).toggleClass('active');
+            $('.nav-links').toggleClass('active');
+        });
+        
+        // Back to top botão
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('.back-to-top').addClass('show');
+            } else {
+                $('.back-to-top').removeClass('show');
+            }
+        });
+        
+        $('.back-to-top').on('click', function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Efeito hover para cards de receitas
+        $('.recipe-card').hover(function() {
+            $(this).css('transform', 'translateY(-10px)');
+        }, function() {
+            $(this).css('transform', 'translateY(0)');
+        });
+        
+        // Footer image positioning (sem efeito parallax)
+        
+        // Efeito hover para cards de benefícios
+        $('.detox-benefit-card').hover(function() {
+            $(this).css('transform', 'translateY(-10px)');
+        }, function() {
+            $(this).css('transform', 'translateY(0)');
+        });
+        
+        // Função para configurar carrosséis mobile
+        function setupMobileCarousel(containerSelector, cardSelector, dotsSelector, enableAutoScroll = true) {
+            const container = document.querySelector(containerSelector);
+            const cards = document.querySelectorAll(cardSelector);
+            const dotsContainer = document.querySelector(dotsSelector);
+            const dots = dotsContainer ? dotsContainer.querySelectorAll('.dot') : [];
+            
+            if (!container || !cards.length) return;
+            
+            let startX, startScrollLeft, userInteracted = false;
+            let autoScrollInterval = null;
+            
+            // Função para iniciar o scroll automático
+            const startAutoScroll = () => {
+                if (autoScrollInterval) clearInterval(autoScrollInterval);
+                
+                // Se enableAutoScroll for false, não configure o scroll automático
+                if (!enableAutoScroll) return;
+                
+                if (!userInteracted && window.innerWidth <= 768) {
+                    
+                    let currentIndex = 0;
+                    autoScrollInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % cards.length;
+                        const card = cards[currentIndex];
+                        
+                        // Calcular a posição centralizada
+                        const cardRect = card.getBoundingClientRect();
+                        const containerRect = container.getBoundingClientRect();
+                        const scrollPos = card.offsetLeft - container.offsetLeft - 
+                                        (containerRect.width / 2) + (cardRect.width / 2);
+                        
+                        container.scrollTo({
+                            left: scrollPos,
+                            behavior: 'smooth'
+                        });
+                        
+                        dots.forEach(d => d.classList.remove('active'));
+                        dots[currentIndex].classList.add('active');
+                    }, 5000);
+                }
+            };
+            
+            // Função para parar o scroll automático
+            const stopAutoScroll = () => {
+                userInteracted = true;
+                if (autoScrollInterval) {
+                    clearInterval(autoScrollInterval);
+                    autoScrollInterval = null;
+                }
+            };
+            
+            // Adicionar evento de scroll completo para inicializar corretamente
+            setTimeout(() => {
+                if (containerSelector === '.detox-benefits-container') {
+                    // Força rolar para o início para garantir o acesso ao primeiro card
+                    container.scrollLeft = 0;
+                }
+            }, 500);
+            
+            // Eventos para mobile swipe
+            container.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX;
+                startScrollLeft = container.scrollLeft;
+                stopAutoScroll();
+            }, { passive: true });
+            
+            container.addEventListener('scroll', () => {
+                if (dots.length === 0) return;
+                
+                const containerWidth = container.offsetWidth;
+                const scrollPosition = container.scrollLeft;
+                
+                // Determinar qual card está mais próximo do centro
+                let closestCardIndex = 0;
+                let minDistance = Infinity;
+                
+                cards.forEach((card, index) => {
+                    const cardLeft = card.offsetLeft - container.offsetLeft;
+                    const cardCenter = cardLeft + (card.offsetWidth / 2);
+                    const containerCenter = scrollPosition + (containerWidth / 2);
+                    const distance = Math.abs(cardCenter - containerCenter);
+                    
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        closestCardIndex = index;
+                    }
+                });
+                
+                // Atualizar os dots
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[closestCardIndex]) {
+                    dots[closestCardIndex].classList.add('active');
+                }
+            });
+            
+            // Configurar os cliques nos dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    stopAutoScroll();
+                    const card = cards[index];
+                    if (!card) return;
+                    
+                    const cardRect = card.getBoundingClientRect();
+                    const containerRect = container.getBoundingClientRect();
+                    const scrollPos = card.offsetLeft - container.offsetLeft - 
+                                    (containerRect.width / 2) + (cardRect.width / 2);
+                    
+                    container.scrollTo({
+                        left: scrollPos,
+                        behavior: 'smooth'
+                    });
+                    
+                    dots.forEach(d => d.classList.remove('active'));
+                    dot.classList.add('active');
+                });
+            });
+            
+            // Iniciar o scroll automático
+            startAutoScroll();
+            
+            // Reiniciar scroll automático quando a janela for redimensionada
+            window.addEventListener('resize', () => {
+                startAutoScroll();
+            });
+        }
+        
+        // Configurar o carrossel de benefícios em dispositivos móveis
+        if (window.innerWidth <= 768) {
+            // Desativando o scroll automático para o carrossel de benefícios detox
+            setupMobileCarousel('.detox-benefits-container', '.detox-benefit-card', '.detox-navigation', false);
+        }
+    </script>
+</body>
+</html>
