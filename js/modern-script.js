@@ -99,6 +99,14 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('nav-hidden');
         }
         
+        // Fechar menu se estiver aberto durante o scroll
+        if (navLinks && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            const spans = menuToggle.querySelectorAll('span');
+            spans.forEach(span => span.classList.remove('active'));
+        }
+        
         lastScrollTop = scrollTop;
     });
     
@@ -116,6 +124,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Prevent body scrolling when menu is open
             document.body.classList.toggle('menu-open');
+            
+            // Reset header state when menu is clicked
+            header.classList.remove('scrolled', 'nav-hidden');
         });
         
         // Close menu when clicking outside
