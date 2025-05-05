@@ -576,7 +576,7 @@
         .back-to-top {
             position: fixed;
             bottom: 30px;
-            left: 30px;
+            right: 30px;
             width: 50px;
             height: 50px;
             background-color: var(--color-primary);
@@ -885,12 +885,10 @@
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#profile">Perfil</a></li>
-                <li><a href="index.html#slimshape">Slim Shape</a></li>
-                <li><a href="index.html#ebooks" class="active">E-books</a></li>
-                <li><a href="index.html#tratamentos">Tratamentos</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
-                <li><a href="tapping.html">Curso</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#perguntas">Perguntas</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Abrir menu">
                 <span></span>
@@ -928,7 +926,7 @@
                         <div class="feature-list">
                             <div class="feature-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>20 receitas exclusivas de sucos detox</span>
+                                <span>15 receitas exclusivas de sucos detox</span>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-check-circle"></i>
@@ -963,7 +961,7 @@
         </section>
         
         <!-- Receitas Detox Section -->
-        <section class="section light-bg">
+        <section id="receitas" class="section light-bg">
             <div class="container">
                 <div class="section-title">
                     <div class="icon-circle">
@@ -971,7 +969,7 @@
                     </div>
                     <h2>Receitas de <span>Sucos Detox</span></h2>
                     <div class="divider"></div>
-                    <p>O e-book contém 20 receitas exclusivas de sucos detox para desinflamar seu corpo e recuperar sua energia</p>
+                    <p>O e-book contém 15 receitas exclusivas de sucos detox para desinflamar seu corpo e recuperar sua energia</p>
                 </div>
                 
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
@@ -1080,7 +1078,7 @@
         </section>
         
         <!-- Benefícios Section -->
-        <section class="section light-bg">
+        <section id="beneficios" class="section light-bg">
             <div class="container">
                 <div class="section-title">
                     <div class="icon-circle">
@@ -1200,7 +1198,7 @@
         </section>
         
         <!-- Perguntas Frequentes Section -->
-        <section class="section">
+        <section id="perguntas" class="section">
             <div class="container">
                 <div class="section-title">
                     <div class="icon-circle">
@@ -1239,7 +1237,7 @@
                     <div class="faq-item" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;" data-aos="fade-up" data-aos-delay="300">
                         <h3 style="color: var(--color-primary); font-size: 1.3rem; margin-bottom: 10px;">O que está incluso no e-book?</h3>
                         <p style="color: #555; line-height: 1.6;">
-                            Você receberá o e-book em formato PDF com 20 receitas de sucos detox, um plano de 15 dias, lista de compras, dicas nutricionais sobre alimentos anti-inflamatórios e estratégias para manutenção a longo prazo.
+                            Você receberá o e-book em formato PDF com 15 receitas de sucos detox, um plano de 15 dias, lista de compras, dicas nutricionais sobre alimentos anti-inflamatórios e estratégias para manutenção a longo prazo.
                         </p>
                     </div>
                     
@@ -1520,6 +1518,55 @@
             // Desativando o scroll automático para o carrossel de benefícios detox
             setupMobileCarousel('.detox-benefits-container', '.detox-benefit-card', '.detox-navigation', false);
         }
+
+        // 1. Quando abrir o menu, header volta para apenas 'header'
+        const header = document.querySelector('.header');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle && navLinks && header) {
+            menuToggle.addEventListener('click', function() {
+                header.classList.remove('scrolled', 'nav-hidden');
+            });
+        }
+
+        // 2. Se menu estiver aberto e scrollar, fecha o menu
+        window.addEventListener('scroll', function() {
+            if (navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                // Se usar animação nos spans do menu-toggle
+                const spans = menuToggle.querySelectorAll('span');
+                spans.forEach(span => span.classList.remove('active'));
+                // Se usar body.menu-open, descomente a linha abaixo:
+                // document.body.classList.remove('menu-open');
+            }
+        });
+
+        // Comportamento de ocultar/mostrar header ao scroll (igual modern-script.js)
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (!header) return;
+
+            // Adiciona classe scrolled para mudar aparência
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Comportamento de ocultar ao rolar para baixo e mostrar ao rolar para cima
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                // Rolando para baixo e já passou 200px do topo
+                header.classList.add('nav-hidden');
+            } else {
+                // Rolando para cima ou próximo ao topo
+                header.classList.remove('nav-hidden');
+            }
+
+            lastScrollTop = scrollTop;
+        });
     </script>
 </body>
 </html>
