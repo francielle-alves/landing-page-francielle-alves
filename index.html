@@ -1460,6 +1460,38 @@
         });
     </script>
     <script src="js/modern-script.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar BeerSlider para todos os elementos com configurações otimizadas para mobile
+        document.querySelectorAll('.beer-slider').forEach(function(el) {
+          new BeerSlider(el, {
+            start: 50,
+            prefix: 'beer',
+            touch: true
+          });
+        });
+
+        // Adicionar suporte específico para eventos touch
+        document.querySelectorAll('.beer-slider').forEach(function(slider) {
+          const range = slider.querySelector('.beer-range');
+          if (range) {
+            range.addEventListener('touchstart', function(e) {
+              e.preventDefault();
+            }, { passive: false });
+            
+            range.addEventListener('touchmove', function(e) {
+              e.preventDefault();
+              const touch = e.touches[0];
+              const rect = range.getBoundingClientRect();
+              const x = touch.clientX - rect.left;
+              const value = Math.round((x / rect.width) * 100);
+              range.value = Math.max(0, Math.min(100, value));
+              range.dispatchEvent(new Event('input'));
+            }, { passive: false });
+          }
+        });
+      });
+    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
