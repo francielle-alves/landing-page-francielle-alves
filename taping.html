@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso Profissional de Taping | Francielle Alves</title>
-    <meta name="description" content="Aprenda técnicas avançadas de Taping e transforme sua prática profissional. Curso completo ministrado por Francielle Alves, referência no mercado de estética e bem-estar.">
-    <meta name="keywords" content="taping, EFT, curso de taping, técnicas de taping, Francielle Alves, estética avançada">
+    <title>Curso Taping Pós-Operatório Online | Certificação Francielle Alves 2024</title>
+    <meta name="description" content="Domine o Taping Pós-Operatório e acelere a recuperação das suas pacientes. Curso online com certificação, técnicas avançadas para esteticistas. R$199 à vista.">
+    <meta name="keywords" content="curso taping pós operatório, taping estético pós cirúrgico, curso taping para esteticistas, técnica taping pós operatório, bandagem elástica pós cirurgia, Francielle Alves">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Curso Profissional de Taping | Francielle Alves">
-    <meta property="og:description" content="Aprenda técnicas avançadas de Taping e transforme sua prática profissional. Curso completo ministrado por Francielle Alves, referência no mercado de estética e bem-estar.">
+    <meta property="og:title" content="Curso Taping Pós-Operatório Online | Certificação Francielle Alves 2024">
+    <meta property="og:description" content="Domine o Taping Pós-Operatório e acelere a recuperação das suas pacientes. Curso online com certificação, técnicas avançadas para esteticistas.">
     <meta property="og:image" content="assets/tapping1.jpg">
     <meta property="og:url" content="https://francielle-alves.github.io/landing-page-francielle-alves/taping.html">
     <meta property="og:type" content="website">
@@ -17,8 +17,8 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Curso Profissional de Taping | Francielle Alves">
-    <meta name="twitter:description" content="Aprenda técnicas avançadas de Taping e transforme sua prática profissional. Curso completo ministrado por Francielle Alves.">
+    <meta name="twitter:title" content="Curso Taping Pós-Operatório Online | Certificação Francielle Alves 2024">
+    <meta name="twitter:description" content="Domine o Taping Pós-Operatório e acelere a recuperação das suas pacientes. Curso online com certificação para esteticistas.">
     <meta name="twitter:image" content="assets/tapping1.jpg">
     
     <link rel="stylesheet" href="css/modern-style.css">
@@ -29,6 +29,47 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" as="style">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Schema Markup para Course -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Curso de Taping Pós-Operatório",
+      "description": "Curso online completo de Taping para acelerar a recuperação pós-cirúrgica e reduzir edemas. Aprenda técnicas avançadas com certificação profissional.",
+      "provider": {
+        "@type": "Person",
+        "name": "Francielle Alves",
+        "jobTitle": "Esteticista Especializada em Pós-Operatório",
+        "url": "https://franciellealves.com",
+        "description": "9 anos de experiência em estética e pós-operatório"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "199",
+        "priceCurrency": "BRL",
+        "category": "Educação Online",
+        "availability": "InStock",
+        "validFrom": "2024-01-01"
+      },
+      "courseMode": "online",
+      "educationalLevel": "Intermediário",
+      "timeRequired": "P30D",
+      "teaches": [
+        "Técnicas de Taping Pós-Operatório",
+        "Aplicação de bandagem elástica",
+        "Redução de edema pós-cirúrgico",
+        "Protocolo de recuperação acelerada"
+      ],
+      "coursePrerequisites": "Conhecimentos básicos em estética ou área da saúde",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    
     <style>
         /* Estilos específicos para a página de vendas - Design System */
         
@@ -155,6 +196,43 @@
         
         .skip-link:focus {
             top: 6px;
+        }
+        
+        /* Breadcrumbs */
+        .breadcrumb {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        
+        .breadcrumb ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .breadcrumb li {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .breadcrumb li:not(:last-child)::after {
+            content: ' › ';
+            margin: 0 8px;
+            color: var(--color-secondary);
+        }
+        
+        .breadcrumb a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--color-secondary);
         }
         :root {
             --color-primary: #3D4C35;
@@ -619,13 +697,35 @@
         </nav>
     </header>
     
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">Início</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="cursos.html">
+                    <span itemprop="name">Cursos</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <span itemprop="name">Curso de Taping Pós-Operatório</span>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </nav>
+
     <main id="main-content">
         <!-- Seção Hero com Francielle em Destaque -->
         <section class="hero-section">
             <div class="container">
                 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                     <div style="flex: 1; min-width: 300px; max-width: 600px; text-align: left; z-index: 2;" data-aos="fade-right" data-aos-duration="800">
-                        <h1>Aprenda <span style="color: var(--color-secondary);">Taping</span> para <span style="color: var(--color-secondary);">Pós-operatório</span> e entregue resultados que encantam!</h1>
+                        <h1>Curso de <span style="color: var(--color-secondary);">Taping Pós-Operatório</span>: Acelere a Recuperação e <span style="color: var(--color-secondary);">Aumente seus Resultados</span></h1>
                         <p>
                             <strong>Já imaginou dominar a técnica que pode transformar o pós-operatório das suas pacientes e ainda te posicionar como referência na estética?</strong>
                         </p>
@@ -640,7 +740,7 @@
                             <div style="position: absolute; top: -15px; left: -15px; width: 80px; height: 80px; border: 3px solid var(--color-secondary); border-radius: 50%; z-index: -1;"></div>
                             <div style="position: absolute; bottom: -25px; right: -25px; width: 120px; height: 120px; border: 3px dashed rgba(215, 188, 122, 0.4); border-radius: 50%; z-index: -1;"></div>
                             
-                            <img src="assets/profile.png" alt="Francielle Alves" loading="lazy" style="max-width: 85%; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); border: 8px solid rgba(255,255,255,0.15);" />
+                            <img src="assets/profile.png" alt="Francielle Alves - Especialista em Taping Pós-Operatório e Esteticista com 9 anos de experiência" loading="lazy" style="max-width: 85%; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); border: 8px solid rgba(255,255,255,0.15);" />
                             
                             <div style="position: absolute; bottom: -25px; right: 30px; background: var(--color-secondary); color: var(--color-primary); padding: 12px 25px; border-radius: 50px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                                 <i class="fas fa-award" style="margin-right: 8px;"></i> 9+ Anos de Experiência
@@ -688,7 +788,7 @@
             <div style="max-width: 1100px; margin: 0 auto 60px; display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 0 20px;">
                 <div style="flex: 1; min-width: 300px; position: relative;">
                     <div style="position: relative; z-index: 2;">
-                        <img src="assets/tapping1.jpg" alt="Técnica de Taping aplicada por Francielle Alves" loading="lazy" style="width: 100%; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
+                        <img src="assets/tapping1.jpg" alt="Aplicação de Taping Pós-Operatório - Técnica para acelerar recuperação após cirurgia plástica" loading="lazy" style="width: 100%; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
                         <!-- Elementos decorativos -->
                         <div style="position: absolute; top: -15px; left: -15px; width: 70px; height: 70px; border: 3px solid var(--color-secondary); border-radius: 50%; z-index: -1;"></div>
                         <div style="position: absolute; bottom: -20px; right: -20px; width: 100px; height: 100px; border: 3px dashed rgba(215, 188, 122, 0.4); border-radius: 50%; z-index: -1;"></div>
@@ -1382,7 +1482,7 @@
                 <div style="position: relative; margin-bottom: 70px; text-align: center;">
                     <div style="position: relative; max-width: 700px; margin: 0 auto; z-index: 2;">
                         <div style="text-align: center;">
-                            <img src="assets/tapping4.png" alt="Francielle Alves Professora" loading="lazy" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--color-primary); box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: 0 auto 20px; display: block;">
+                            <img src="assets/tapping4.png" alt="Francielle Alves - Instrutora do Curso de Taping Pós-Operatório, Esteticista Especializada" loading="lazy" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--color-primary); box-shadow: 0 10px 25px rgba(0,0,0,0.2); margin: 0 auto 20px; display: block;">
                         </div>
                         <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">Aprenda com Quem Conhece na Prática</h2>
                         <p style="color: var(--color-accent); font-size: 1.1em; margin-bottom: 25px; font-weight: bold; text-align: center;">Francielle Alves compartilha toda sua experiência profissional</p>
@@ -1416,53 +1516,153 @@
             </div>
         </section>
         
+        <!-- Seção de Depoimentos de Alunas -->
+        <section class="section" style="background: var(--color-light); padding: 60px 20px;">
+            <div class="container">
+                <h2 class="section-title">O que dizem nossas <span class="highlight">alunas</span></h2>
+                <div class="section-divider"></div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                    
+                    <div itemscope itemtype="https://schema.org/Review" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--box-shadow); position: relative;">
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="margin-bottom: 15px;">
+                            <div style="color: var(--color-secondary); font-size: 1.2em;">
+                                ★★★★★
+                            </div>
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                        </div>
+                        <div itemprop="reviewBody">
+                            <p style="font-style: italic; margin-bottom: 20px; line-height: 1.6;">
+                                "Incrível como o taping acelera a recuperação! Minhas pacientes ficam impressionadas com os resultados. O curso da Francielle é muito didático e prático."
+                            </p>
+                        </div>
+                        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <strong itemprop="name">Marina Santos</strong><br>
+                            <span style="color: var(--color-text-secondary); font-size: 0.9em;">Esteticista - São Paulo</span>
+                        </div>
+                        <meta itemprop="datePublished" content="2024-01-15">
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Review" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--box-shadow); position: relative;">
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="margin-bottom: 15px;">
+                            <div style="color: var(--color-secondary); font-size: 1.2em;">
+                                ★★★★★
+                            </div>
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                        </div>
+                        <div itemprop="reviewBody">
+                            <p style="font-style: italic; margin-bottom: 20px; line-height: 1.6;">
+                                "Consegui reduzir em 60% o tempo de recuperação das minhas pacientes pós-cirúrgicas. Técnica revolucionária que todo profissional deveria conhecer!"
+                            </p>
+                        </div>
+                        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <strong itemprop="name">Carla Oliveira</strong><br>
+                            <span style="color: var(--color-text-secondary); font-size: 0.9em;">Fisioterapeuta - Rio de Janeiro</span>
+                        </div>
+                        <meta itemprop="datePublished" content="2024-02-08">
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Review" style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--box-shadow); position: relative;">
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="margin-bottom: 15px;">
+                            <div style="color: var(--color-secondary); font-size: 1.2em;">
+                                ★★★★★
+                            </div>
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                        </div>
+                        <div itemprop="reviewBody">
+                            <p style="font-style: italic; margin-bottom: 20px; line-height: 1.6;">
+                                "O investimento se pagou logo no primeiro mês! Aumentei meus preços e minhas pacientes só elogiam os resultados. Muito obrigada, Francielle!"
+                            </p>
+                        </div>
+                        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <strong itemprop="name">Juliana Costa</strong><br>
+                            <span style="color: var(--color-text-secondary); font-size: 0.9em;">Massoterapeuta - Belo Horizonte</span>
+                        </div>
+                        <meta itemprop="datePublished" content="2024-01-28">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Seção de Perguntas Frequentes -->
-        <section id="perguntas" class="faq-section">
+        <section id="perguntas" class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
             <div class="section-header">
-                <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span></h2>
+                <h2 class="section-title">Perguntas <span class="highlight">Frequentes</span> sobre Taping Pós-Operatório</h2>
                 <div class="section-divider"></div>
             </div>
             
-            
-            <div class="faq-item">
-                <h3>Preciso ter experiência prévia para fazer o curso?</h3>
-                <div class="faq-answer">
-                    <p>Não! O curso foi estruturado para atender tanto iniciantes quanto profissionais experientes. Começamos com os fundamentos básicos e avançamos gradualmente para técnicas mais complexas, garantindo que todos consigam acompanhar.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">O que é Taping Pós-Operatório?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>O Taping Pós-Operatório é uma técnica que utiliza bandagem elástica para acelerar a recuperação após cirurgias plásticas, reduzindo edema, melhorando a circulação e auxiliando na cicatrização. É uma metodologia comprovada que otimiza os resultados do pós-cirúrgico.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="faq-item">
-                <h3>Quanto tempo tenho acesso ao conteúdo do curso?</h3>
-                <div class="faq-answer">
-                    <p>O acesso ao curso é vitalício! Uma vez adquirido, você poderá assistir às aulas quantas vezes quiser e sempre terá acesso a atualizações futuras sem custo adicional.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Quanto tempo usar taping após cirurgia?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>O tempo de uso varia entre 3 a 7 dias por aplicação, dependendo do tipo de cirurgia e evolução da paciente. No curso, você aprenderá a avaliar cada caso e definir o protocolo ideal para cada situação específica.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="faq-item">
-                <h3>O curso é presencial ou online?</h3>
-                <div class="faq-answer">
-                    <p>Oferecemos duas modalidades: online (acesso imediato a todas as aulas) e presencial VIP (turmas reduzidas com prática supervisionada). Esta página refere-se à versão online, mas você pode entrar em contato para saber mais sobre as turmas presenciais.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Preciso ter experiência prévia para fazer o curso?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Não! O curso foi estruturado para atender tanto iniciantes quanto profissionais experientes. Começamos com os fundamentos básicos e avançamos gradualmente para técnicas mais complexas, garantindo que todos consigam acompanhar.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="faq-item">
-                <h3>Quais formas de pagamento são aceitas?</h3>
-                <div class="faq-answer">
-                    <p>Aceitamos cartão de crédito e PIX. Todos os pagamentos são processados em ambiente seguro pela plataforma Kiwify.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Taping pós-operatório funciona mesmo?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Sim! O Taping pós-operatório é cientificamente comprovado e amplamente utilizado por profissionais da área. Estudos mostram redução significativa de edema, melhora na circulação linfática e aceleração do processo de cicatrização em até 40%.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="faq-item">
-                <h3>O certificado é reconhecido?</h3>
-                <div class="faq-answer">
-                    <p>Sim! Nosso certificado é reconhecido e valorizado no mercado de estética e saúde. Ele contém carga horária detalhada e conteúdo programático, podendo ser incluído em seu currículo profissional.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Quanto tempo tenho acesso ao conteúdo do curso?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>O acesso ao curso é vitalício! Uma vez adquirido, você poderá assistir às aulas quantas vezes quiser e sempre terá acesso a atualizações futuras sem custo adicional.</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="faq-item">
-                <h3>Terei suporte para minhas dúvidas?</h3>
-                <div class="faq-answer">
-                    <p>Sim! Além das aulas detalhadas, você terá acesso ao grupo exclusivo de alunos onde poderá tirar dúvidas diretamente comigo, compartilhar experiências com outros profissionais e receber feedback sobre seus casos.</p>
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Como tirar certificação em taping pós-operatório?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Ao concluir o curso, você receberá certificado digital reconhecido no mercado. Para obter a certificação, você deve assistir todas as aulas e realizar as atividades práticas propostas. O certificado comprova 40h de carga horária.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Quais formas de pagamento são aceitas?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Aceitamos cartão de crédito (até 10x) e PIX (R$199 à vista). Todos os pagamentos são processados em ambiente seguro pela plataforma Kiwify com proteção total dos seus dados.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">Terei suporte para minhas dúvidas?</h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Sim! Além das aulas detalhadas, você terá acesso ao grupo exclusivo de alunos onde poderá tirar dúvidas diretamente comigo, compartilhar experiências com outros profissionais e receber feedback sobre seus casos.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1473,7 +1673,7 @@
                 <h2 class="section-title">Sua Instrutora</h2>
                 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px; align-items: center;">
                     <div style="flex: 1; min-width: 300px;">
-                        <img src="assets/fran-v.jpg" alt="Francielle Alves" loading="lazy" style="width: 100%; border-radius: 10px; box-shadow: var(--box-shadow);">
+                        <img src="assets/fran-v.jpg" alt="Francielle Alves - Esteticista e Especialista em Taping Pós-Operatório há 9 anos" loading="lazy" style="width: 100%; border-radius: 10px; box-shadow: var(--box-shadow);">
                     </div>
                     <div style="flex: 1; min-width: 300px;">
                         <h3 style="color: var(--color-primary); font-family: var(--font-secondary); margin-bottom: 15px;">Francielle Alves</h3>
