@@ -69,36 +69,41 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(element);
     });
     
+    // Mobile menu toggle (declared before scroll handler that references them)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
     // Navbar hide/show on scroll
     const header = document.querySelector('.header');
     let lastScrollTop = 0;
-    
+
     // Adicionar padding-top no primeiro elemento para compensar a altura do header
-    const firstSection = document.querySelector('main').firstElementChild;
-    if (firstSection) {
-        const headerHeight = header.offsetHeight;
-        firstSection.style.paddingTop = headerHeight + 'px';
+    const mainEl = document.querySelector('main');
+    if (mainEl) {
+        const firstSection = mainEl.firstElementChild;
+        if (firstSection) {
+            const headerHeight = header.offsetHeight;
+            firstSection.style.paddingTop = headerHeight + 'px';
+        }
     }
-    
+
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         // Adiciona classe scrolled para mudar aparência
         if (scrollTop > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
-        
+
         // Comportamento de ocultar ao rolar para baixo e mostrar ao rolar para cima
         if (scrollTop > lastScrollTop && scrollTop > 200) {
-            // Rolando para baixo e já passou 200px do topo
             header.classList.add('nav-hidden');
         } else {
-            // Rolando para cima ou próximo ao topo
             header.classList.remove('nav-hidden');
         }
-        
+
         // Fechar menu se estiver aberto durante o scroll
         if (navLinks && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
@@ -106,13 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const spans = menuToggle.querySelectorAll('span');
             spans.forEach(span => span.classList.remove('active'));
         }
-        
+
         lastScrollTop = scrollTop;
     });
-    
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
     
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
@@ -201,99 +202,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     answer.style.maxHeight = null;
                 }
             });
-        });
-    }
-    
-    // Inicializar biblioteca BeerSlider para comparativos antes/depois
-    if (typeof BeerSlider === 'function') {
-        // Selecionar todos os elementos beer-slider e inicializar
-        const beerSliders = document.querySelectorAll('.beer-slider');
-        if (beerSliders.length > 0) {
-            beerSliders.forEach(slider => {
-                new BeerSlider(slider);
-            });
-        }
-    }
-    
-    // Initialize testimonial sliders if any
-    const testimonialsContainer = document.querySelector('.testimonial-container');
-    if (testimonialsContainer) {
-        let currentSlide = 0;
-        const testimonials = testimonialsContainer.querySelectorAll('.testimonial-item');
-        const totalSlides = testimonials.length;
-        
-        // Create navigation dots
-        const dotsContainer = document.createElement('div');
-        dotsContainer.className = 'testimonial-dots';
-        
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('span');
-            dot.className = i === 0 ? 'dot active' : 'dot';
-            dot.addEventListener('click', () => {
-                goToSlide(i);
-            });
-            dotsContainer.appendChild(dot);
-        }
-        
-        testimonialsContainer.appendChild(dotsContainer);
-        
-        // Create prev/next buttons
-        const prevButton = document.createElement('button');
-        prevButton.className = 'testimonial-prev';
-        prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
-        prevButton.addEventListener('click', () => {
-            goToSlide(currentSlide - 1);
-        });
-        
-        const nextButton = document.createElement('button');
-        nextButton.className = 'testimonial-next';
-        nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
-        nextButton.addEventListener('click', () => {
-            goToSlide(currentSlide + 1);
-        });
-        
-        testimonialsContainer.appendChild(prevButton);
-        testimonialsContainer.appendChild(nextButton);
-        
-        function goToSlide(slideIndex) {
-            if (slideIndex < 0) {
-                slideIndex = totalSlides - 1;
-            } else if (slideIndex >= totalSlides) {
-                slideIndex = 0;
-            }
-            
-            testimonials.forEach((slide, index) => {
-                slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
-            });
-            
-            // Update dots
-            const dots = dotsContainer.querySelectorAll('.dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === slideIndex);
-            });
-            
-            currentSlide = slideIndex;
-        }
-        
-        // Set initial positions
-        testimonials.forEach((slide, index) => {
-            slide.style.transform = `translateX(${100 * index}%)`;
-        });
-        
-        // Auto slide
-        let slideInterval = setInterval(() => {
-            goToSlide(currentSlide + 1);
-        }, 5000);
-        
-        // Pause auto slide on hover
-        testimonialsContainer.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
-        });
-        
-        testimonialsContainer.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(() => {
-                goToSlide(currentSlide + 1);
-            }, 5000);
         });
     }
     

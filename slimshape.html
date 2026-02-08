@@ -15,14 +15,29 @@
     <meta name="twitter:title" content="Slim Shape - Francielle Alves">
     <meta name="twitter:description" content="Descubra o poder do controle com Slim Shape. Suplemento exclusivo para controle do desejo por doces e açúcar.">
     <meta name="twitter:image" content="assets/product.png">
+    <meta property="og:type" content="product">
     <title>Slim Shape - Descubra o poder do controle | Francielle Alves</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="canonical" href="https://franciellealves.com/slimshape.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3M0E5KL9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3M0E5KL9R');
+    </script>
     <link rel="stylesheet" href="css/modern-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
     <!-- Preloader -->
     <div class="loader">
         <div class="spinner"></div>
@@ -32,7 +47,10 @@
         <nav class="navbar" role="navigation">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-links">
@@ -42,7 +60,7 @@
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#formula">Fórmula Exclusiva</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -52,7 +70,7 @@
     
     
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top" role="button" tabindex="0" aria-label="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
     </div>
     
@@ -63,7 +81,7 @@
         </a>
     </div>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section - Versão Premium -->
         <section class="product-hero">
             <div class="product-hero-bg"></div>
@@ -111,7 +129,10 @@
                             
                             <!-- Imagem do produto centralizada e destacada -->
                             <div class="product-visual-top">
-                                <img src="assets/slimshape-product.png" alt="Slim Shape - Suplemento para controle do desejo por doces e açúcar" class="product-main-image">
+                                <picture>
+                                    <source srcset="assets/slimshape-product.webp" type="image/webp">
+                                    <img src="assets/slimshape-product.png" alt="Slim Shape - Suplemento para controle do desejo por doces e açúcar" class="product-main-image" width="600" height="600" loading="lazy">
+                                </picture>
                             </div>
                             
                             <!-- Ícones de benefícios rápidos -->
@@ -134,7 +155,10 @@
                         <!-- Depoimento da especialista em um card separado -->
                         <div class="specialist-endorsement">
                             <div class="specialist-photo">
-                                <img src="assets/profile.png" alt="Francielle Alves" class="specialist-image">
+                                <picture>
+                                    <source srcset="assets/profile.webp" type="image/webp">
+                                    <img src="assets/profile.png" alt="Francielle Alves" class="specialist-image" width="400" height="501" loading="lazy">
+                                </picture>
                             </div>
                             <div class="specialist-quote">
                                 <p>"Eu mesma uso e recomendo!"</p>
@@ -213,19 +237,34 @@
                 
                 <div class="product-showcase">
                     <div class="product-image-wrapper fade-in">
-                        <img src="assets/slimshape1.jpg" alt="Slim Shape" class="product-main-image" id="main-product-image">
+                        <picture>
+                            <source srcset="assets/slimshape1.webp" type="image/webp">
+                            <img src="assets/slimshape1.jpg" alt="Slim Shape" class="product-main-image" id="main-product-image" width="600" height="901" loading="lazy">
+                        </picture>
                         <div class="product-image-thumbs">
                             <div class="product-thumb">
-                                <img src="assets/slimshape1.jpg" alt="Detalhe da embalagem" class="thumb-img">
+                                <picture>
+                                    <source srcset="assets/slimshape1.webp" type="image/webp">
+                                    <img src="assets/slimshape1.jpg" alt="Detalhe da embalagem" class="thumb-img" width="600" height="901" loading="lazy">
+                                </picture>
                             </div>
                             <div class="product-thumb">
-                                <img src="assets/slimshape2.jpg" alt="Detalhe da embalagem" class="thumb-img">
+                                <picture>
+                                    <source srcset="assets/slimshape2.webp" type="image/webp">
+                                    <img src="assets/slimshape2.jpg" alt="Detalhe da embalagem" class="thumb-img" width="600" height="901" loading="lazy">
+                                </picture>
                             </div>
                             <div class="product-thumb">
-                                <img src="assets/slimshape3.jpg" alt="Slim Shape em uso" class="thumb-img">
+                                <picture>
+                                    <source srcset="assets/slimshape3.webp" type="image/webp">
+                                    <img src="assets/slimshape3.jpg" alt="Slim Shape em uso" class="thumb-img" width="600" height="901" loading="lazy">
+                                </picture>
                             </div>
                             <div class="product-thumb">
-                                <img src="assets/slimshape5.jpg" alt="Slim Shape ingredientes" class="thumb-img">
+                                <picture>
+                                    <source srcset="assets/slimshape5.webp" type="image/webp">
+                                    <img src="assets/slimshape5.jpg" alt="Slim Shape ingredientes" class="thumb-img" width="600" height="901" loading="lazy">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -368,7 +407,10 @@
                 
                 <div class="composition-content">
                     <div class="composition-image fade-in">
-                        <img src="assets/slimshape5.jpg" alt="Ingredientes do Slim Shape" class="ingredients-image">
+                        <picture>
+                            <source srcset="assets/slimshape5.webp" type="image/webp">
+                            <img src="assets/slimshape5.jpg" alt="Ingredientes do Slim Shape" class="ingredients-image" width="600" height="901" loading="lazy">
+                        </picture>
                         <div class="composition-seal">
                             <i class="fas fa-certificate"></i>
                             <div class="seal-text">
@@ -495,7 +537,10 @@
                             <div class="cta-main">
                                 <div class="cta-image-column">
                                     <div class="product-image-large">
-                                        <img src="assets/slimshape-product.png" alt="Slim Shape - Embalagem" class="product-img">
+                                        <picture>
+                                            <source srcset="assets/slimshape-product.webp" type="image/webp">
+                                            <img src="assets/slimshape-product.png" alt="Slim Shape - Embalagem" class="product-img" width="600" height="600" loading="lazy">
+                                        </picture>
                                         <div class="product-badges">
                                             <div class="product-badge-authentic">
                                                 <i class="fas fa-check-circle"></i> Original
@@ -560,7 +605,7 @@
                 
                 <div style="text-align: center;">
                     <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20adquirir%20o%20Slim%20Shape" class="button button-gold" style="font-size: 1.2rem; padding: 15px 30px;">
-                        <i class="fab fa-whatsapp"></i> ADQUIRA O SEU SLIM SHAPE
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> ADQUIRA O SEU SLIM SHAPE
                     </a>
                 </div>
             </div>
@@ -574,13 +619,16 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
                 <!-- Coluna 1: Logo e Informações -->
                 <div>
-                    <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                    </picture>
                     <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
                         Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
                     </p>
                     <div style="display: flex; gap: 10px;">
                         <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -627,7 +675,7 @@
                     <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
                     <div style="display: flex; flex-direction: column; gap: 15px;">
                         <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20adquirir%20o%20Slim%20Shape" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
-                            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Adquirir SlimShape
+                            <i class="fab fa-whatsapp" style="margin-right: 8px;" aria-hidden="true"></i> Adquirir SlimShape
                         </a>
                         <a href="https://pay.hotmart.com/N64783410U" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
                             <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Comprar Agora
@@ -651,7 +699,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
     <script>
         // Remover preloader ao carregar a página
         window.addEventListener('load', function() {
@@ -1062,6 +1110,25 @@
     showImage(0);
     startAutoplay();
   });
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Slim Shape",
+  "description": "Suplemento exclusivo para controle do desejo por doces e açúcar. Descubra o poder do controle.",
+  "image": "https://franciellealves.com/assets/product.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "Francielle Alves"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://franciellealves.com/slimshape.html",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock"
+  }
+}
 </script>
 </body>
 </html>

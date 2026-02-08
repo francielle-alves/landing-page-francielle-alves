@@ -10,9 +10,22 @@
     <meta property="og:description" content="Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações.">
     <meta property="og:image" content="assets/banner-detox.png">
     <title>Desinflamar Seu Corpo em 15 Dias - E-book | Francielle Alves</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="canonical" href="https://franciellealves.com/ebook-detox-novo.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3M0E5KL9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3M0E5KL9R');
+    </script>
     <link rel="stylesheet" href="css/modern-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <style>
         :root {
@@ -209,12 +222,16 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
     <!-- Preloader -->
     <div class="loader"><div class="spinner"></div></div>
     <header class="header" role="banner">
         <nav class="navbar" role="navigation">
             <div class="logo-container">
-                <a href="index.html"><img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista"></a>
+                <picture>
+                    <source srcset="assets/icon/logo.webp" type="image/webp">
+                    <a href="index.html"><img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista"></a>
+                </picture>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#profile">Perfil</a></li>
@@ -224,14 +241,14 @@
                 <li><a href="index.html#contato">Contato</a></li>
                 <li><a href="taping.html">Curso</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </nav>
     </header>
-    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20o%20e-book%20Detox" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <div class="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></div>
-    <main>
+    <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20mais%20informações%20sobre%20o%20e-book%20Detox" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    <div class="back-to-top" role="button" tabindex="0" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></div>
+    <main id="main-content">
         <!-- HERO -->
         <section class="product-hero">
             <div class="product-hero-bg"></div>
@@ -253,10 +270,16 @@
                         </div>
                     </div>
                     <div class="product-hero-image fade-in">
-                        <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias">
+                        <picture>
+                            <source srcset="assets/banner-detox.webp" type="image/webp">
+                            <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias" width="576" height="432" loading="lazy">
+                        </picture>
                         <div class="product-hero-badge"><div class="pulse-effect"></div><span>LANÇAMENTO</span></div>
                         <div class="testimonial-float">
-                            <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image">
+                            <picture>
+                                <source srcset="assets/profile.webp" type="image/webp">
+                                <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image" width="400" height="501" loading="lazy">
+                            </picture>
                             <div class="testimonial-float-content">"Eu mesma aplico esse método!"<span>- Francielle Alves</span></div>
                         </div>
                     </div>
@@ -334,7 +357,10 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testimonial-card fade-in">
-                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                <picture>
+                                    <source srcset="assets/profile.webp" type="image/webp">
+                                    <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                </picture>
                                 <div class="testimonial-content">
                                     <div class="testimonial-name">Juliana S.</div>
                                     <p>“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
@@ -343,7 +369,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial-card fade-in">
-                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                <picture>
+                                    <source srcset="assets/profile.webp" type="image/webp">
+                                    <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                </picture>
                                 <div class="testimonial-content">
                                     <div class="testimonial-name">Carlos M.</div>
                                     <p>“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
@@ -352,7 +381,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="testimonial-card fade-in">
-                                <div class="testimonial-avatar"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                <picture>
+                                    <source srcset="assets/profile.webp" type="image/webp">
+                                    <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                </picture>
                                 <div class="testimonial-content">
                                     <div class="testimonial-name">Renata F.</div>
                                     <p>“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
@@ -372,7 +404,7 @@
                 <h2 class="section-title fade-in">Garanta Agora Seu E-book Exclusivo</h2>
                 <p class="section-description fade-in">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
                 <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
-                    <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;">
+                    <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;" loading="lazy">
                     <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
                 </div>
                 <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold button-lg primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>
@@ -421,7 +453,10 @@
         <nav class="navbar" role="navigation">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-links">
@@ -432,7 +467,7 @@
                 <li><a href="index.html#contato">Contato</a></li>
                 <li><a href="taping.html">Curso</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -441,7 +476,7 @@
     </header>
 
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top" role="button" tabindex="0" aria-label="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
     </div>
     <div class="main-content-area">
@@ -464,7 +499,7 @@
                                     <li style="color: white;"><strong>Lista detalhada</strong> dos mais poderosos alimentos anti-inflamatórios</li>
                                 </ul>
                                 <div class="guarantee-badge" style="background-color: rgba(255,255,255,0.1);">
-                                    <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;">
+                                    <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;" loading="lazy">
                                     <div>
                                         <strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong>
                                         <p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p>
@@ -481,13 +516,19 @@
                                 </a>
                         </div>
                         <div class="product-hero-image fade-in">
-                            <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias">
+                            <picture>
+                                <source srcset="assets/banner-detox.webp" type="image/webp">
+                                <img src="assets/banner-detox.png" alt="Capa do E-book Desinflamar Seu Corpo em 15 Dias" width="576" height="432" loading="lazy">
+                            </picture>
                             <div class="product-hero-badge">
                                 <div class="pulse-effect"></div>
                                 <span>LANÇAMENTO</span>
                             </div>
                             <div class="testimonial-float">
-                                <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image">
+                                <picture>
+                                    <source srcset="assets/profile.webp" type="image/webp">
+                                    <img src="assets/profile.png" alt="Francielle Alves - autora do e-book" class="testimonial-float-image" width="400" height="501" loading="lazy">
+                                </picture>
                                 <div class="testimonial-float-content">
                                     "Eu mesma aplico esse método!"
                                     <span>- Francielle Alves</span>
@@ -585,7 +626,10 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial-card fade-in">
-                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                    <picture>
+                                        <source srcset="assets/profile.webp" type="image/webp">
+                                        <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Juliana S. - cliente real"></div>
+                                    </picture>
                                     <div class="testimonial-content">
                                         <div class="testimonial-name">Juliana S.</div>
                                         <p>“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
@@ -594,7 +638,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card fade-in">
-                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                    <picture>
+                                        <source srcset="assets/profile.webp" type="image/webp">
+                                        <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Carlos M. - cliente real"></div>
+                                    </picture>
                                     <div class="testimonial-content">
                                         <div class="testimonial-name">Carlos M.</div>
                                         <p>“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
@@ -603,7 +650,10 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-card fade-in">
-                                    <div class="testimonial-avatar"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                    <picture>
+                                        <source srcset="assets/profile.webp" type="image/webp">
+                                        <div class="testimonial-avatar" width="400" height="501" loading="lazy"><img src="assets/profile.png" alt="Renata F. - cliente real"></div>
+                                    </picture>
                                     <div class="testimonial-content">
                                         <div class="testimonial-name">Renata F.</div>
                                         <p>“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
@@ -624,7 +674,7 @@
                     <h2 class="section-title fade-in">Garanta Agora Seu E-book Exclusivo</h2>
                     <p class="section-description fade-in">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
                     <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
-                        <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;">
+                        <img src="assets/icon/shield.png" alt="Garantia de satisfação" style="width: 40px; height: 40px; margin-right: 15px;" loading="lazy">
                         <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
                     </div>
                     <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold button-lg primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>
@@ -652,10 +702,16 @@
 
                             
                             <div style="flex: 1; min-width: 320px; position: relative; margin-bottom: 30px;" class="fade-in">
-                                <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border: 4px solid var(--color-highlight); border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                                <picture>
+                                    <source srcset="assets/banner-detox.webp" type="image/webp">
+                                    <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border: 4px solid var(--color-highlight); border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);" width="576" height="432" loading="lazy">
+                                </picture>
                                 
                                 <div style="position: absolute; bottom: -20px; right: -20px; display: flex; align-items: center; max-width: 250px; z-index: 3; background-color: rgba(61, 76, 53, 0.85); padding: 10px; border-radius: 8px;">
-                                    <img src="assets/profile.png" alt="Francielle Alves" style="width: 70px; height: 70px; border-radius: 4px; object-fit: cover; margin-right: 12px; border: 2px solid var(--color-highlight);">
+                                    <picture>
+                                        <source srcset="assets/profile.webp" type="image/webp">
+                                        <img src="assets/profile.png" alt="Francielle Alves" style="width: 70px; height: 70px; border-radius: 4px; object-fit: cover; margin-right: 12px; border: 2px solid var(--color-highlight);" width="400" height="501" loading="lazy">
+                                    </picture>
                                     <div style="font-size: 1rem; font-style: italic; color: white; line-height: 1.4; font-weight: 600;">
                                         "Eu mesma aplico esse método!"
                                         <span style="display: block; font-size: 0.9rem; font-weight: 700; color: var(--color-highlight); margin-top: 5px;">- Francielle Alves</span>
@@ -704,7 +760,10 @@
                         <div style="background: linear-gradient(to right, #f5f5f5, #ffffff, #f5f5f5); padding: 40px; border-radius: 10px; margin: 30px 0;">
                             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
                                 <div style="flex: 1; min-width: 300px;">
-                                    <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                                    <picture>
+                                        <source srcset="assets/banner-detox.webp" type="image/webp">
+                                        <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);" width="576" height="432" loading="lazy">
+                                    </picture>
                                 </div>
                                 <div style="flex: 1; min-width: 300px;">
                                     <h3 style="color: var(--color-primary); margin-bottom: 15px; font-family: var(--font-secondary);">Por Que Este E-book É Diferente?</h3>
@@ -823,7 +882,10 @@
                         <div class="swiper-slide">
                           <div class="testimonial-card fade-in">
                             <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
-                              <img src="assets/profile.png" alt="Cliente 1" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <picture>
+                                  <source srcset="assets/profile.webp" type="image/webp">
+                                  <img src="assets/profile.png" alt="Cliente 1" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);" width="400" height="501" loading="lazy">
+                              </picture>
                               <div style="font-weight: 700; color: var(--color-primary);">Juliana S.</div>
                             </div>
                             <p style="font-size: 1.1rem; margin-bottom: 0;">“Nunca imaginei que um simples e-book pudesse transformar tanto minha saúde! Senti mais energia, menos inchaço e voltei a usar roupas que não serviam mais.”</p>
@@ -833,7 +895,10 @@
                         <div class="swiper-slide">
                           <div class="testimonial-card fade-in">
                             <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
-                              <img src="assets/profile.png" alt="Cliente 2" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <picture>
+                                  <source srcset="assets/profile.webp" type="image/webp">
+                                  <img src="assets/profile.png" alt="Cliente 2" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);" width="400" height="501" loading="lazy">
+                              </picture>
                               <div style="font-weight: 700; color: var(--color-primary);">Carlos M.</div>
                             </div>
                             <p style="font-size: 1.1rem; margin-bottom: 0;">“O plano é fácil de seguir, as receitas são deliciosas e realmente senti diferença nas dores do corpo. Recomendo para todos!”</p>
@@ -843,7 +908,10 @@
                         <div class="swiper-slide">
                           <div class="testimonial-card fade-in">
                             <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 18px;">
-                              <img src="assets/profile.png" alt="Cliente 3" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);">
+                              <picture>
+                                  <source srcset="assets/profile.webp" type="image/webp">
+                                  <img src="assets/profile.png" alt="Cliente 3" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-highlight);" width="400" height="501" loading="lazy">
+                              </picture>
                               <div style="font-weight: 700; color: var(--color-primary);">Renata F.</div>
                             </div>
                             <p style="font-size: 1.1rem; margin-bottom: 0;">“Além de emagrecer, minha pele ficou muito melhor e me sinto renovada! Vale cada centavo.”</p>
@@ -862,7 +930,7 @@
                     <h2 style="color: var(--color-primary); margin-bottom: 16px; font-size: 2.2rem; font-weight: 700;">Garanta Agora Seu E-book Exclusivo</h2>
                     <p style="margin-bottom: 30px; font-size: 1.15rem;">Dê o próximo passo para transformar sua saúde, eliminar inflamações e conquistar mais disposição. Oferta especial por tempo limitado!</p>
                     <div class="guarantee-badge" style="justify-content: center; margin-bottom: 25px;">
-                      <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;">
+                      <img src="assets/icon/shield.png" alt="Garantia" style="width: 40px; height: 40px; margin-right: 15px;" loading="lazy">
                       <div><strong style="color: var(--color-highlight); font-size: 1.1rem;">Satisfação Garantida</strong><p style="margin: 0; font-size: 0.9rem;">ou seu dinheiro de volta em até 7 dias</p></div>
                     </div>
                     <a href="https://pay.kiwify.com.br/0QaAAyo" class="button-cta primary-cta" style="font-size: 1.2rem; padding: 18px 40px; margin-bottom: 16px;">QUERO MEU E-BOOK AGORA <i class="fas fa-arrow-right"></i></a>

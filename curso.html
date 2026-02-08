@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos - Franciele Alves Esteticista</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="canonical" href="https://franciellealves.com/curso.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3M0E5KL9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3M0E5KL9R');
+    </script>
     <meta name="description" content="Cursos especializados em pós-operatório, drenagem linfática e taping oferecidos por Franciele Alves.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
     <header class="header" role="banner">
         <nav class="navbar" role="navigation">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" class="icon-large" alt="Logo Franciele Alves - Esteticista">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-links">
@@ -22,17 +39,20 @@
                 <li><a href="#taping-pos-parto">Taping Pós Parto</a></li>
                 <li><a href="#drenagem-linfatica">Drenagem Linfática</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <section class="course-section">
             <div class="course-header">
-                <img src="assets/curso.png" alt="Foto de Franciele Alves" class="profile-image">
+                <picture>
+                    <source srcset="assets/curso.webp" type="image/webp">
+                    <img src="assets/curso.png" alt="Foto de Franciele Alves" class="profile-image" width="600" height="752" loading="lazy">
+                </picture>
                 <h1 class="career-title">Eleve a sua carreira para o próximo nível</h1>
             </div>
             <div class="course-content">
@@ -183,6 +203,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/modern-script.js"></script>
 </body>
 </html>

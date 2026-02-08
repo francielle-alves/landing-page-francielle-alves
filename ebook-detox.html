@@ -12,14 +12,28 @@
     <meta property="og:image" content="assets/banner-detox.png">
     <meta property="og:url" content="https://franciellealves.com/ebook-detox.html">
     <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="product">
     <title>Desinflamar Seu Corpo em 15 Dias - E-book | Francielle Alves</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="canonical" href="https://franciellealves.com/ebook-detox.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3M0E5KL9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3M0E5KL9R');
+    </script>
     
     <!-- Fontes e estilos -->    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/modern-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
     
     <style>
         :root {
@@ -872,6 +886,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
     <!-- Preloader -->
     <div class="loader">
         <div class="spinner"></div>
@@ -881,7 +896,10 @@
         <nav class="navbar" role="navigation">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-links">
@@ -890,7 +908,7 @@
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#perguntas">Perguntas</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -899,16 +917,16 @@
     </header>
     
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top" role="button" tabindex="0" aria-label="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
     </div>
     
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20o%20ebook%20detox" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20o%20ebook%20detox" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">
@@ -953,7 +971,10 @@
                     </div>
                     
                     <div class="hero-image">
-                        <img src="assets/ebook/ebook5.jpg" alt="E-book Desinflamar Seu Corpo em 15 Dias">
+                        <picture>
+                            <source srcset="assets/ebook/ebook5.webp" type="image/webp">
+                            <img src="assets/ebook/ebook5.jpg" alt="E-book Desinflamar Seu Corpo em 15 Dias" width="600" height="900" loading="lazy">
+                        </picture>
                         
                     </div>
                 </div>
@@ -976,7 +997,10 @@
                     <!-- Receita 1 -->
                     <div class="recipe-card" data-aos="fade-up">
                         <div class="recipe-image-container">
-                            <img src="assets/ebook/ebook4.jpg" alt="Suco Detox Energizante" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook4.webp" type="image/webp">
+                                <img src="assets/ebook/ebook4.jpg" alt="Suco Detox Energizante" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="900" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-primary">ENERGIZANTE</div>
                         </div>
                         <div class="recipe-content">
@@ -998,7 +1022,10 @@
                     <!-- Receita 2 -->
                     <div class="recipe-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="recipe-image-container" style="background-color: #fff8e1;">
-                            <img src="assets/ebook/ebook2.png" alt="Golden Detox" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook2.webp" type="image/webp">
+                                <img src="assets/ebook/ebook2.png" alt="Golden Detox" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="858" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-gold">ANTIOXIDANTE</div>
                         </div>
                         <div class="recipe-content">
@@ -1020,7 +1047,10 @@
                     <!-- Receita 3 -->
                     <div class="recipe-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="recipe-image-container" style="background-color: #e8f5e9;">
-                            <img src="assets/ebook/ebook1.jpg" alt="Detox Tropical" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook1.webp" type="image/webp">
+                                <img src="assets/ebook/ebook1.jpg" alt="Detox Tropical" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="900" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-primary">FORTALECER</div>
                         </div>
                         <div class="recipe-content">
@@ -1055,7 +1085,10 @@
                 
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
                     <div style="flex: 1; min-width: 300px;" data-aos="fade-right">
-                        <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
+                        <picture>
+                            <source srcset="assets/banner-detox.webp" type="image/webp">
+                            <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);" width="576" height="432" loading="lazy">
+                        </picture>
                     </div>
                     <div style="flex: 1; min-width: 300px;" data-aos="fade-left">
                         <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 1.5rem;">Por Que Este E-book é Diferente?</h3>
@@ -1259,13 +1292,16 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
                     <!-- Coluna 1: Logo e Informações -->
                     <div>
-                        <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                        <picture>
+                            <source srcset="assets/icon/logo.webp" type="image/webp">
+                            <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
+                        </picture>
                         <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
                             Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
                         </p>
                         <div style="display: flex; gap: 10px;">
                             <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
-                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -1312,7 +1348,7 @@
                         <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
                         <div style="display: flex; flex-direction: column; gap: 15px;">
                             <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
-                                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Agendar Consulta
+                                <i class="fab fa-whatsapp" style="margin-right: 8px;" aria-hidden="true"></i> Agendar Consulta
                             </a>
                             <a href="https://pay.kiwify.com.br/0QaAAyo" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
                                 <i class="fas fa-book" style="margin-right: 8px;"></i> Comprar E-book
@@ -1335,8 +1371,7 @@
     </main>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
     <script>
         // Inicializa AOS (Animate on Scroll)
         AOS.init({
@@ -1344,47 +1379,58 @@
             easing: 'ease-out-quad',
             once: true
         });
-        
+
         // Preloader
-        $(window).on('load', function() {
-            $('.loader').fadeOut('slow');
-        });
-        
-        // Menu toggle para mobile
-        $('.menu-toggle').on('click', function() {
-            $(this).toggleClass('active');
-            $('.nav-links').toggleClass('active');
-        });
-        
-        // Back to top botão
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 300) {
-                $('.back-to-top').addClass('show');
-            } else {
-                $('.back-to-top').removeClass('show');
+        window.addEventListener('load', function() {
+            var loader = document.querySelector('.loader');
+            if (loader) {
+                loader.style.transition = 'opacity 0.6s ease';
+                loader.style.opacity = '0';
+                setTimeout(function() { loader.style.display = 'none'; }, 600);
             }
         });
-        
-        $('.back-to-top').on('click', function() {
-            $('html, body').animate({scrollTop: 0}, 800);
-            return false;
+
+        // Menu toggle para mobile
+        var menuToggleBtn = document.querySelector('.menu-toggle');
+        if (menuToggleBtn) {
+            menuToggleBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
+        }
+
+        // Back to top botão
+        var backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', function() {
+            if (backToTopBtn) {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            }
         });
-        
-        // Efeito hover para cards de receitas
-        $('.recipe-card').hover(function() {
-            $(this).css('transform', 'translateY(-10px)');
-        }, function() {
-            $(this).css('transform', 'translateY(0)');
-        });
-        
-        // Footer image positioning (sem efeito parallax)
-        
-        // Efeito hover para cards de benefícios
-        $('.detox-benefit-card').hover(function() {
-            $(this).css('transform', 'translateY(-10px)');
-        }, function() {
-            $(this).css('transform', 'translateY(0)');
-        });
+
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Efeito hover para cards (via CSS é preferível, mas mantendo funcionalidade)
+        function addHoverEffect(selector) {
+            document.querySelectorAll(selector).forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        }
+        addHoverEffect('.recipe-card');
+        addHoverEffect('.detox-benefit-card');
         
         // Função para configurar carrosséis mobile
         function setupMobileCarousel(containerSelector, cardSelector, dotsSelector, enableAutoScroll = true) {
@@ -1567,6 +1613,25 @@
 
             lastScrollTop = scrollTop;
         });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "E-book Desinflamar Seu Corpo em 15 Dias",
+      "description": "Guia completo com receitas detox e dicas para eliminar inflamações em 15 dias.",
+      "image": "https://franciellealves.com/assets/banner-detox.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Francielle Alves"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://franciellealves.com/ebook-detox.html",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock"
+      }
+    }
     </script>
 </body>
 </html>
