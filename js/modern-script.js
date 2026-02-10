@@ -11,40 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
     
-    // Inicializar Swiper para tratamentos apenas em mobile
-    function initTreatmentsSwiper() {
-        if (window.innerWidth <= 767) {
-            // Só inicializa em dispositivos móveis
-            const treatmentsSwiper = new Swiper('.swiper-treatments-container', {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                centeredSlides: true,
-                loop: true,
-                autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.treatments-pagination',
-                    clickable: true,
-                },
-                breakpoints: {
-                    // Quando a largura da tela for >= 480px
-                    480: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 20,
-                    },
-                }
-            });
-        }
-    }
-    
-    // Inicializar na carga e redimensionamento
-    initTreatmentsSwiper();
-    window.addEventListener('resize', function() {
-        initTreatmentsSwiper();
-    });
-
     // Scroll animations for elements with animation classes
     const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
     
