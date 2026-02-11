@@ -4136,9 +4136,9 @@ a:hover {
   transform: scale(1.05);
 }
 
-.fas.fa-star,
-.fas.fa-award,
-.fas.fa-chalkboard-teacher {
+.icon-container .fas.fa-star,
+.icon-container .fas.fa-award,
+.icon-container .fas.fa-chalkboard-teacher {
   color: var(--color-primary);
   font-size: 2em;
   display: block;
