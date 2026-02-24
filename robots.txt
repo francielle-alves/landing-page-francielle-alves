@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /tapping.html
+
+Sitemap: https://franciellealves.com/sitemap.xml

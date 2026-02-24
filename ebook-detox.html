@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="E-book Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações. Francielle Alves.">
-    <meta name="keywords" content="desinflamar, detox, e-book, saúde, bem-estar, Francielle Alves, sucos detox, alimentação saudável">
+    <meta name="description" content="E-book Desinflamar Seu Corpo em 15 Dias por Francielle Alves, esteticista referência em Jaguariúna. Receitas detox exclusivas e guia completo anti-inflamatório.">
+    <meta name="keywords" content="e-book detox, desinflamar corpo, receitas detox, Francielle Alves, esteticista jaguariúna, saúde bem-estar, alimentação anti-inflamatória">
     <meta name="author" content="Francielle Alves">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="E-book Detox - Francielle Alves">
-    <meta property="og:description" content="Desinflamar Seu Corpo em 15 Dias - Um guia completo com receitas detox e dicas para eliminar inflamações.">
+    <meta property="og:title" content="E-book Detox | Francielle Alves - Esteticista em Jaguariúna">
+    <meta property="og:description" content="E-book Desinflamar Seu Corpo em 15 Dias por Francielle Alves, referência em estética em Jaguariúna e região de Campinas.">
     <meta property="og:image" content="assets/banner-detox.png">
     <meta property="og:url" content="https://franciellealves.com/ebook-detox.html">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Desinflamar Seu Corpo em 15 Dias - E-book | Francielle Alves</title>
+    <meta property="og:type" content="product">
+    <title>E-book Detox - Desinflamar Seu Corpo em 15 Dias | Francielle Alves - Jaguariúna</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="canonical" href="https://franciellealves.com/ebook-detox.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3M0E5KL9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V3M0E5KL9R');
+    </script>
     
     <!-- Fontes e estilos -->    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/modern-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
     
     <style>
         :root {
@@ -872,6 +886,7 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteudo principal</a>
     <!-- Preloader -->
     <div class="loader">
         <div class="spinner"></div>
@@ -881,7 +896,10 @@
         <nav class="navbar" role="navigation">
             <div class="logo-container">
                 <a href="index.html">
-                    <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    <picture>
+                        <source srcset="assets/icon/logo.webp" type="image/webp">
+                        <img src="assets/icon/logo.png" class="icon-large" alt="Logo Francielle Alves - Esteticista">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-links">
@@ -889,8 +907,11 @@
                 <li><a href="#receitas">Receitas</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#perguntas">Perguntas</a></li>
+                <li><a href="taping.html">Curso de Taping</a></li>
+                <li><a href="slimshape.html">SlimShape</a></li>
+                <li><a href="cursos-vip.html">Curso VIP</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -899,16 +920,16 @@
     </header>
     
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top" role="button" tabindex="0" aria-label="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
     </div>
     
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20o%20ebook%20detox" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20saber%20mais%20sobre%20o%20ebook%20detox" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">
@@ -953,7 +974,10 @@
                     </div>
                     
                     <div class="hero-image">
-                        <img src="assets/ebook/ebook5.jpg" alt="E-book Desinflamar Seu Corpo em 15 Dias">
+                        <picture>
+                            <source srcset="assets/ebook/ebook5.webp" type="image/webp">
+                            <img src="assets/ebook/ebook5.jpg" alt="E-book Desinflamar Seu Corpo em 15 Dias" width="600" height="900" loading="lazy">
+                        </picture>
                         
                     </div>
                 </div>
@@ -976,7 +1000,10 @@
                     <!-- Receita 1 -->
                     <div class="recipe-card" data-aos="fade-up">
                         <div class="recipe-image-container">
-                            <img src="assets/ebook/ebook4.jpg" alt="Suco Detox Energizante" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook4.webp" type="image/webp">
+                                <img src="assets/ebook/ebook4.jpg" alt="Suco Detox Energizante" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="900" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-primary">ENERGIZANTE</div>
                         </div>
                         <div class="recipe-content">
@@ -998,7 +1025,10 @@
                     <!-- Receita 2 -->
                     <div class="recipe-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="recipe-image-container" style="background-color: #fff8e1;">
-                            <img src="assets/ebook/ebook2.png" alt="Golden Detox" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook2.webp" type="image/webp">
+                                <img src="assets/ebook/ebook2.png" alt="Golden Detox" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="858" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-gold">ANTIOXIDANTE</div>
                         </div>
                         <div class="recipe-content">
@@ -1020,7 +1050,10 @@
                     <!-- Receita 3 -->
                     <div class="recipe-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="recipe-image-container" style="background-color: #e8f5e9;">
-                            <img src="assets/ebook/ebook1.jpg" alt="Detox Tropical" style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="assets/ebook/ebook1.webp" type="image/webp">
+                                <img src="assets/ebook/ebook1.jpg" alt="Detox Tropical" style="width: 100%; height: 100%; object-fit: cover;" width="600" height="900" loading="lazy">
+                            </picture>
                             <div class="recipe-badge badge-primary">FORTALECER</div>
                         </div>
                         <div class="recipe-content">
@@ -1055,7 +1088,10 @@
                 
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
                     <div style="flex: 1; min-width: 300px;" data-aos="fade-right">
-                        <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);">
+                        <picture>
+                            <source srcset="assets/banner-detox.webp" type="image/webp">
+                            <img src="assets/banner-detox.png" alt="E-book Desinflamar Seu Corpo em 15 Dias" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 15px 30px rgba(0,0,0,0.15);" width="576" height="432" loading="lazy">
+                        </picture>
                     </div>
                     <div style="flex: 1; min-width: 300px;" data-aos="fade-left">
                         <h3 style="color: var(--color-primary); margin-bottom: 20px; font-size: 1.5rem;">Por Que Este E-book é Diferente?</h3>
@@ -1252,91 +1288,68 @@
             </div>
         </section>
         
-        <!-- Footer simples e sóbrio -->
-        <footer style="background-color: var(--color-primary); padding: 40px 0 0; margin-top: 0;">
-            <div class="container">
-                <!-- Seção principal do footer com grid simples -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px;">
-                    <!-- Coluna 1: Logo e Informações -->
-                    <div>
-                        <img src="assets/icon/logo.png" alt="Francielle Alves" style="height: 45px; margin-bottom: 20px;">
-                        <p style="color: #fff; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
-                            Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
-                        </p>
-                        <div style="display: flex; gap: 10px;">
-                            <a href="https://www.instagram.com/franciellealvesoficial/" aria-label="Instagram" style="color: white; font-size: 1.1rem; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Coluna 2: Links Rápidos -->
-                    <div>
-                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Links Rápidos</h3>
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li style="margin-bottom: 10px;">
-                                <a href="index.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Página Inicial</a>
-                            </li>
-
-                            <li style="margin-bottom: 10px;">
-                                <a href="index.html#tratamentos" style="color: white; text-decoration: none; font-size: 0.95rem;">Tratamentos</a>
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <a href="taping.html" style="color: white; text-decoration: none; font-size: 0.95rem;">Curso de Taping</a>
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <a href="slimshape.html" style="color: white; text-decoration: none; font-size: 0.95rem;">SlimShape</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Coluna 3: Contato -->
-                    <div>
-                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Contato</h3>
-                        <div style="margin-bottom: 15px;">
-                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Endereço:</p>
-                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Rua Eliseu Teixeira de Camargo, 135<br>Jardim Chapadão, Campinas/SP</p>
-                        </div>
-                        <div style="margin-bottom: 15px;">
-                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Telefone:</p>
-                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">(19) 99377-2963</p>
-                        </div>
-                        <div>
-                            <p style="margin: 0 0 5px; color: white; font-size: 0.95rem;">Email:</p>
-                            <p style="margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem;">esteticafranciellealves@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Coluna 4: Botões CTA -->
-                    <div>
-                        <h3 style="color: var(--color-gold); font-weight: 600; font-size: 1.15rem; margin-bottom: 20px;">Ações Rápidas</h3>
-                        <div style="display: flex; flex-direction: column; gap: 15px;">
-                            <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" style="display: inline-flex; align-items: center; background-color: var(--color-gold); color: var(--color-primary); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
-                                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Agendar Consulta
-                            </a>
-                            <a href="https://pay.kiwify.com.br/0QaAAyo" style="display: inline-flex; align-items: center; background-color: transparent; color: white; border: 1px solid var(--color-gold); padding: 12px 20px; border-radius: 3px; font-weight: 600; text-decoration: none; font-size: 0.9rem;">
-                                <i class="fas fa-book" style="margin-right: 8px;"></i> Comprar E-book
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Copyright -->
-            <div style="background-color: rgba(0,0,0,0.2); padding: 20px 0; margin-top: 30px;">
-                <div class="container">
-                    <p style="color: rgba(255,255,255,0.6); margin: 0; text-align: center; font-size: 0.9rem;">
-                        &copy; 2025 Francielle Alves | Todos os direitos reservados
-                    </p>
-                </div>
-            </div>
-        </footer>
-        
     </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="assets/icon/logo.png" alt="Francielle Alves" class="footer-logo">
+                    <p class="footer-description">
+                        Oferecendo tratamentos estéticos especializados e produtos de excelência para sua beleza e bem-estar.
+                    </p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/franciellealvesoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="index.html#tratamentos">Tratamentos</a></li>
+                        <li><a href="taping.html">Curso de Taping</a></li>
+                        <li><a href="slimshape.html">SlimShape</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contato</h3>
+                    <div class="footer-contact-group">
+                        <p class="footer-contact-label">Endereço:</p>
+                        <p class="footer-contact-value">Rua Cândido Bueno, 434<br>Centro, Jaguariúna - SP</p>
+                    </div>
+                    <div class="footer-contact-group">
+                        <p class="footer-contact-label">Telefone:</p>
+                        <p class="footer-contact-value">(19) 99377-2963</p>
+                    </div>
+                    <div>
+                        <p class="footer-contact-label">Email:</p>
+                        <p class="footer-contact-value">esteticafranciellealves@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Ações Rápidas</h3>
+                    <div class="footer-cta-wrapper">
+                        <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" class="footer-cta-primary">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Agendar Consulta
+                        </a>
+                        <a href="https://pay.kiwify.com.br/0QaAAyo" target="_blank" rel="noopener noreferrer" class="footer-cta-secondary">
+                            <i class="fas fa-book"></i> Comprar E-book
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>&copy; 2026 Francielle Alves | Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
+    <script src="js/modern-script.js"></script>
     <script>
         // Inicializa AOS (Animate on Scroll)
         AOS.init({
@@ -1344,47 +1357,20 @@
             easing: 'ease-out-quad',
             once: true
         });
-        
-        // Preloader
-        $(window).on('load', function() {
-            $('.loader').fadeOut('slow');
-        });
-        
-        // Menu toggle para mobile
-        $('.menu-toggle').on('click', function() {
-            $(this).toggleClass('active');
-            $('.nav-links').toggleClass('active');
-        });
-        
-        // Back to top botão
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 300) {
-                $('.back-to-top').addClass('show');
-            } else {
-                $('.back-to-top').removeClass('show');
-            }
-        });
-        
-        $('.back-to-top').on('click', function() {
-            $('html, body').animate({scrollTop: 0}, 800);
-            return false;
-        });
-        
-        // Efeito hover para cards de receitas
-        $('.recipe-card').hover(function() {
-            $(this).css('transform', 'translateY(-10px)');
-        }, function() {
-            $(this).css('transform', 'translateY(0)');
-        });
-        
-        // Footer image positioning (sem efeito parallax)
-        
-        // Efeito hover para cards de benefícios
-        $('.detox-benefit-card').hover(function() {
-            $(this).css('transform', 'translateY(-10px)');
-        }, function() {
-            $(this).css('transform', 'translateY(0)');
-        });
+
+        // Efeito hover para cards (via CSS é preferível, mas mantendo funcionalidade)
+        function addHoverEffect(selector) {
+            document.querySelectorAll(selector).forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        }
+        addHoverEffect('.recipe-card');
+        addHoverEffect('.detox-benefit-card');
         
         // Função para configurar carrosséis mobile
         function setupMobileCarousel(containerSelector, cardSelector, dotsSelector, enableAutoScroll = true) {
@@ -1519,54 +1505,25 @@
             setupMobileCarousel('.detox-benefits-container', '.detox-benefit-card', '.detox-navigation', false);
         }
 
-        // 1. Quando abrir o menu, header volta para apenas 'header'
-        const header = document.querySelector('.header');
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (menuToggle && navLinks && header) {
-            menuToggle.addEventListener('click', function() {
-                header.classList.remove('scrolled', 'nav-hidden');
-            });
-        }
-
-        // 2. Se menu estiver aberto e scrollar, fecha o menu
-        window.addEventListener('scroll', function() {
-            if (navLinks && navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-                // Se usar animação nos spans do menu-toggle
-                const spans = menuToggle.querySelectorAll('span');
-                spans.forEach(span => span.classList.remove('active'));
-                // Se usar body.menu-open, descomente a linha abaixo:
-                // document.body.classList.remove('menu-open');
-            }
-        });
-
-        // Comportamento de ocultar/mostrar header ao scroll (igual modern-script.js)
-        let lastScrollTop = 0;
-        window.addEventListener('scroll', function() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (!header) return;
-
-            // Adiciona classe scrolled para mudar aparência
-            if (scrollTop > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-
-            // Comportamento de ocultar ao rolar para baixo e mostrar ao rolar para cima
-            if (scrollTop > lastScrollTop && scrollTop > 200) {
-                // Rolando para baixo e já passou 200px do topo
-                header.classList.add('nav-hidden');
-            } else {
-                // Rolando para cima ou próximo ao topo
-                header.classList.remove('nav-hidden');
-            }
-
-            lastScrollTop = scrollTop;
-        });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "E-book Desinflamar Seu Corpo em 15 Dias",
+      "description": "Guia completo com receitas detox e dicas para eliminar inflamações em 15 dias.",
+      "image": "https://franciellealves.com/assets/banner-detox.png",
+      "brand": {
+        "@type": "Brand",
+        "name": "Francielle Alves"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://franciellealves.com/ebook-detox.html",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock"
+      }
+    }
     </script>
 </body>
 </html>
