@@ -37,6 +37,19 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
     
     <style>
+        /* Hero - textos adicionais */
+        .hero-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .hero-description em {
+            color: rgba(215, 188, 122, 0.95);
+            font-style: italic;
+        }
+
         /* Estilos para os cards de produtos premium */
         .premium-product-card {
             background-color: #fff;
@@ -654,8 +667,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#profile">Perfil</a></li>
-                <li><a href="#slimshape">Slim Shape</a></li>
-                <li><a href="#ebooks">E-books</a></li>
+                <li><a href="slimshape.html">Slim Shape</a></li>
+                <li><a href="ebook-detox.html">E-books</a></li>
                 <li><a href="#tratamentos">Tratamentos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="taping.html">Curso de Taping</a></li>
@@ -698,14 +711,18 @@
                     <div class="hero-text">
                         <h1 class="hero-title fade-in">Francielle Alves</h1>
                         <p class="hero-subtitle fade-in">
-                            Esteticista e Linfoterapeuta em Jaguariúna - Referência em pós-operatório e taping na região de Campinas
+                            Especialista em Pós-Operatório e Formação Profissional em Taping
+                        </p>
+                        <p class="hero-description fade-in">
+                            Atendimentos presenciais e cursos para profissionais da estética.<br>
+                            <em>Recuperação mais rápida, menos inchaço e resultados mais definidos após sua cirurgia.</em>
                         </p>
                         <div class="hero-buttons fade-in">
                             <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20meu%20horário" class="button button-gold">
-                                <i class="fab fa-whatsapp" aria-hidden="true"></i> AGENDE SEU HORÁRIO
+                                <i class="fas fa-heart" aria-hidden="true"></i> QUERO CUIDAR DE MIM
                             </a>
                             <a href="taping.html" class="button button-secondary">
-                                <i class="fas fa-book"></i> CURSO DE TAPING
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i> QUERO ME ESPECIALIZAR
                             </a>
                         </div>
                     </div>
@@ -741,129 +758,6 @@
             </div>
         </section>
 
-        <!-- Products Section -->
-        <section id="slimshape" class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">Nossos Produtos</h2>
-                <p class="section-subtitle fade-in">Soluções exclusivas para sua saúde e bem-estar</p>
-                
-                <div class="premium-product-card slide-in-left">
-                    <div class="product-ribbon">
-                        <span>MAIS VENDIDO</span>
-                    </div>
-                    <div class="premium-product-wrapper">
-                        <div class="premium-product-image">
-                            <picture>
-                                <source srcset="assets/slimshape-home.webp" type="image/webp">
-                                <img src="assets/slimshape-home.jpg" alt="Imagem do produto Slim Shape" class="hover-scale" width="600" height="901" loading="lazy">
-                            </picture>
-                            <div class="product-badge pulse-animation">EXCLUSIVO</div>
-                        </div>
-                        
-                        <div class="premium-product-content">
-                            <h3 class="product-title">SLIM SHAPE</h3>
-                            <p class="product-subtitle">Descubra o poder do controle</p>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon">
-                                    <i class="fas fa-check"></i>
-                                </div>
-                                <p><strong>Adeus vontade de doces!</strong> Com Slim Shape, você finalmente controla suas compulsões.</p>
-                            </div>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p><strong>Fórmula exclusiva</strong> que age diretamente no controle da sua vontade de comer açúcar, para uma dieta equilibrada sem sacrifícios.</p>
-                            </div>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <p><strong>Fácil de usar</strong> - Apenas 2 cápsulas diárias e comece a sentir a diferença em poucos dias.</p>
-                            </div>
-                            
-                            <div class="product-highlight">
-                                <p><i class="fas fa-heart"></i> SEM DIETAS MALUCAS E SEM SOFRIMENTO</p>
-                            </div>
-                            
-                            <div class="product-price-section">
-                                <div class="price-block">
-                                </div>
-                                <div class="product-actions">
-                                    <a href="https://wa.me/5519993772963?text=Olá%20gostaria%20de%20adquirir%20um%20slim%20shape" class="button button-gold btn-purchase">
-                                        <strong>COMPRAR AGORA</strong>
-                                    </a>
-                                    <a href="slimshape.html" class="button button-outline">
-                                        <i class="fas fa-info-circle"></i> <strong>MAIS DETALHES</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="ebooks" class="premium-product-card slide-in-right reverse-layout">
-                    <div class="product-ribbon" style="background-color: var(--color-gold);">
-                        <span style="color: var(--color-primary);">DIGITAL</span>
-                    </div>
-                    <div class="premium-product-wrapper">
-                        <div class="premium-product-image">
-                            <picture>
-                                <source srcset="assets/banner-detox.webp" type="image/webp">
-                                <img src="assets/banner-detox.png" alt="Imagem do produto Desinflamar Seu Corpo em 15 Dias - Ebook" class="hover-scale" width="576" height="432" loading="lazy">
-                            </picture>
-                            <div class="product-badge pulse-animation" style="background-color: var(--color-gold); color: var(--color-primary);">E-BOOK</div>
-                        </div>
-                        
-                        <div class="premium-product-content">
-                            <h3 class="product-title">DESINFLAMAR SEU CORPO</h3>
-                            <p class="product-subtitle">Transforme sua saúde em apenas 15 dias</p>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
-                                    <i class="fas fa-book"></i>
-                                </div>
-                                <p><strong>Guia completo e prático</strong> para transformar sua saúde, reduzir inflamações e recuperar sua energia vital.</p>
-                            </div>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
-                                    <i class="fas fa-glass-whiskey"></i>
-                                </div>
-                                <p><strong>Receitas exclusivas</strong> de sucos detox que eliminam toxinas do seu corpo e promovem bem-estar imediato.</p>
-                            </div>
-                            
-                            <div class="premium-feature">
-                                <div class="premium-feature-icon" style="background: linear-gradient(to bottom right, var(--color-gold), #b89b5e);">
-                                    <i class="fas fa-leaf"></i>
-                                </div>
-                                <p><strong>Solução acessível</strong> que permite seguir uma rotina saudável sem complicações, mesmo com uma agenda ocupada.</p>
-                            </div>
-                            
-                            <div class="product-highlight" style="background-color: rgba(215, 188, 122, 0.15);">
-                                <p><i class="fas fa-sync-alt"></i> RESULTADOS COMPROVADOS EM APENAS 15 DIAS!</p>
-                            </div>
-                            
-                            <div class="product-price-section">
-                                <div class="price-block">
-                                </div>
-                                <div class="product-actions">
-                                    <a href="https://pay.kiwify.com.br/0QaAAyo" class="button button-gold btn-purchase">
-                                        <strong>COMPRAR AGORA</strong>
-                                    </a>
-                                    <a href="ebook-detox.html" class="button button-outline">
-                                        <i class="fas fa-info-circle"></i> <strong>MAIS INFORMAÇÕES</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Treatments Section -->
         <section id="tratamentos" class="section" style="background-color: #f8f7f5;">
