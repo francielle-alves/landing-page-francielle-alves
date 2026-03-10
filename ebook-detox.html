@@ -12,7 +12,7 @@
     <meta property="og:image" content="assets/banner-detox.png">
     <meta property="og:url" content="https://franciellealves.com/ebook-detox.html">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:type" content="product">
+    <meta property="og:type" content="website">
     <title>E-book Detox - Desinflamar Seu Corpo em 15 Dias | Francielle Alves - Jaguariúna</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
@@ -454,7 +454,8 @@
         }
         
         .footer-logo {
-            width: 150px;
+            height: 45px;
+            width: auto;
             margin-bottom: 20px;
         }
         
@@ -964,13 +965,13 @@
                             </div>
                         </div>
                         
-                        <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary">
-                            QUERO ADQUIRIR AGORA <i class="fas fa-arrow-right"></i>
+                        <a href="assets/ebook/Desinflamar-seu-corpo-em-15-dias.pdf" download class="btn-primary">
+                            BAIXAR E-BOOK GRÁTIS <i class="fas fa-download"></i>
                         </a>
-                        
+
                         <div class="security-badge">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Satisfação garantida ou seu dinheiro de volta</span>
+                            <i class="fas fa-gift"></i>
+                            <span>Download gratuito e imediato</span>
                         </div>
                     </div>
                     
@@ -1106,8 +1107,8 @@
                             </p>
                         </div>
                         
-                        <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary" style="margin-top: 20px;">
-                            <strong>APROVEITE E GARANTA O SEU</strong>
+                        <a href="assets/ebook/Desinflamar-seu-corpo-em-15-dias.pdf" download class="btn-primary" style="margin-top: 20px;">
+                            <strong>BAIXAR E-BOOK GRÁTIS</strong> <i class="fas fa-download"></i>
                         </a>
                     </div>
                 </div>
@@ -1225,11 +1226,11 @@
                 <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; opacity: 0.9;">
                     Não espere mais para cuidar do seu corpo. Comece sua jornada de desintoxicação agora mesmo e sinta a diferença em apenas 15 dias.                
                 </p>
-                <a href="https://pay.kiwify.com.br/0QaAAyo" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
-                    QUERO COMEÇAR AGORA <i class="fas fa-arrow-right"></i>
+                <a href="assets/ebook/Desinflamar-seu-corpo-em-15-dias.pdf" download class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+                    BAIXAR E-BOOK GRÁTIS <i class="fas fa-download"></i>
                 </a>
                 <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">
-                    Acesso imediato após a compra | Garantia de 7 dias
+                    Download gratuito e imediato
                 </p>
             </div>
         </section>
@@ -1334,8 +1335,8 @@
                         <a href="https://wa.me/5519993772963?text=Olá%2C%20gostaria%20de%20agendar%20um%20horário" class="footer-cta-primary">
                             <i class="fab fa-whatsapp" aria-hidden="true"></i> Agendar Consulta
                         </a>
-                        <a href="https://pay.kiwify.com.br/0QaAAyo" target="_blank" rel="noopener noreferrer" class="footer-cta-secondary">
-                            <i class="fas fa-book"></i> Comprar E-book
+                        <a href="assets/ebook/Desinflamar-seu-corpo-em-15-dias.pdf" download class="footer-cta-secondary">
+                            <i class="fas fa-download"></i> Baixar E-book
                         </a>
                     </div>
                 </div>
@@ -1506,6 +1507,17 @@
             setupMobileCarousel('.detox-benefits-container', '.detox-benefit-card', '.detox-navigation', false);
         }
 
+        // Track ebook download clicks in Google Analytics
+        document.querySelectorAll('a[download]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'file_download', {
+                    file_name: 'Desinflamar-seu-corpo-em-15-dias.pdf',
+                    file_extension: 'pdf',
+                    link_text: this.textContent.trim()
+                });
+            });
+        });
+
     </script>
     <script type="application/ld+json">
     {
@@ -1521,6 +1533,7 @@
       "offers": {
         "@type": "Offer",
         "url": "https://franciellealves.com/ebook-detox.html",
+        "price": "0",
         "priceCurrency": "BRL",
         "availability": "https://schema.org/InStock"
       }
