@@ -252,6 +252,142 @@ a:hover {
   transition: var(--transition-fast);
 }
 
+/* App Promo Banner — V1 */
+.app-promo-banner {
+  background: linear-gradient(135deg, #b85e38 0%, #c4714a 50%, #d4896a 100%);
+  margin-top: 80px;
+  padding: 48px 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-promo-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.app-promo-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.app-promo-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.app-promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.app-promo-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #fff;
+  padding: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.app-promo-headline {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.app-promo-sub {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.app-promo-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border-radius: 50px;
+  background: #fff;
+  color: #c4714a;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+.app-promo-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.28);
+}
+
+@media (max-width: 768px) {
+  .app-promo-banner {
+    margin-top: 70px;
+    padding: 40px 20px;
+  }
+
+  .app-promo-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .app-promo-badge {
+    justify-content: center;
+  }
+
+  .app-promo-headline {
+    font-size: 1.5rem;
+  }
+
+  .app-promo-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
