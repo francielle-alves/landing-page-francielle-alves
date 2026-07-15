@@ -4315,6 +4315,7 @@ a:hover {
   font-family: var(--font-secondary);
   font-size: clamp(2.2rem, 5vw, 3.2rem);
   margin-bottom: 16px;
+  color: #fff;
 }
 .ebooks-hero p {
   max-width: 620px;
